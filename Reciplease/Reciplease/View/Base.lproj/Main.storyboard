@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oOo-3a-zQJ">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -20,138 +18,145 @@
             <objects>
                 <viewController id="ZoY-du-9Jq" customClass="SearchViewController" customModule="Reciplease" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kMx-Te-OTk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="arC-yv-dFt">
-                                <rect key="frame" x="20" y="20" width="374" height="734"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IrI-Kn-HiI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's in your  fridge ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqn-ls-WSa">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="23.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" What's in your  fridge ? " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqn-ls-WSa">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="TypoRoundLightDemo" family="Typo Round Light Demo" pointSize="20"/>
-                                        <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="NWO-mt-r5q">
-                                        <rect key="frame" x="0.0" y="33.5" width="374" height="63.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vrb-bB-ON9">
+                                        <rect key="frame" x="0.0" y="69.5" width="375" height="40"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="PwJ-RS-oNS">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="26"/>
-                                                <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Lemon, Cheese, Sausages ..." minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hky-iL-0C1">
-                                                        <rect key="frame" x="0.0" y="0.0" width="197.5" height="26"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
-                                                    </textField>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ngt-qo-Gqu">
-                                                        <rect key="frame" x="324" y="0.0" width="50" height="26"/>
-                                                        <color key="backgroundColor" red="0.34901961679999999" green="0.57254904510000004" blue="0.37647059560000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" secondItem="Ngt-qo-Gqu" secondAttribute="height" multiplier="27:14" id="VFB-dX-A4h"/>
-                                                        </constraints>
-                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" title=" Add ">
-                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        </state>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Add  " buttonSize="small">
-                                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="12"/>
-                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        </buttonConfiguration>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="TopLeft" distribution="equalCentering" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="770-Qf-K0l">
-                                                <rect key="frame" x="0.0" y="37" width="374" height="26.5"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your indgredients :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YE5-24-RV6">
-                                                        <rect key="frame" x="0.0" y="0.0" width="156.5" height="26.5"/>
-                                                        <fontDescription key="fontDescription" name="TypoRoundLightDemo" family="Typo Round Light Demo" pointSize="20"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PA9-0X-Syf">
-                                                        <rect key="frame" x="322.5" y="0.0" width="51.5" height="26.5"/>
-                                                        <color key="backgroundColor" red="0.5411764979" green="0.5411764979" blue="0.5411764979" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" secondItem="PA9-0X-Syf" secondAttribute="height" multiplier="25:13" id="X2g-FB-CDe"/>
-                                                        </constraints>
-                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" title="Clear">
-                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        </state>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Clear" buttonSize="small">
-                                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="12"/>
-                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        </buttonConfiguration>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="OAF-r1-R7i">
-                                        <rect key="frame" x="0.0" y="107" width="374" height="627"/>
-                                        <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l8K-if-fbN">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="583.5"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <string key="text">- Apple
-- Tomatoes
-- Curry
-- Chicken</string>
-                                                <color key="textColor" systemColor="labelColor"/>
-                                                <fontDescription key="fontDescription" name="TypoRoundLightDemo" family="Typo Round Light Demo" pointSize="20"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eac-vu-Na4">
-                                                <rect key="frame" x="-1" y="590" width="375" height="34"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Lemon, Cheese, Sausages ..." minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hky-iL-0C1">
+                                                <rect key="frame" x="0.0" y="0.0" width="321" height="40"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rg-vj-gx3">
+                                                <rect key="frame" x="321" y="0.0" width="54" height="40"/>
                                                 <color key="backgroundColor" red="0.34901961679999999" green="0.57254904510000004" blue="0.37647059560000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="Eac-vu-Na4" secondAttribute="height" multiplier="377:34" id="B4k-Ux-OU4"/>
+                                                    <constraint firstAttribute="height" constant="40" id="xOc-bu-tNd"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Search for recipes" buttonSize="small" titleAlignment="center">
-                                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title=" Add ">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <buttonConfiguration key="configuration" style="plain" title="Add  " buttonSize="medium">
+                                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="12"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </buttonConfiguration>
                                             </button>
                                         </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yjX-jE-8K7">
+                                        <rect key="frame" x="0.0" y="109.5" width="375" height="5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="l8K-if-fbN" firstAttribute="top" secondItem="OAF-r1-R7i" secondAttribute="top" id="0yp-ag-pH0"/>
-                                            <constraint firstItem="Eac-vu-Na4" firstAttribute="top" secondItem="l8K-if-fbN" secondAttribute="bottom" constant="10" id="TcJ-Lv-k6C"/>
+                                            <constraint firstAttribute="height" constant="5" id="qcP-Jc-nSI"/>
                                         </constraints>
                                     </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z8f-xT-KlY">
+                                        <rect key="frame" x="0.0" y="114.5" width="375" height="5"/>
+                                        <color key="backgroundColor" red="0.2117646933" green="0.20000001789999999" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="5" id="cY1-MS-NM1"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VQG-B8-POh">
+                                        <rect key="frame" x="0.0" y="119.5" width="375" height="40"/>
+                                        <subviews>
+                                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="     Your indgredients :    " minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Vd2-r1-t01">
+                                                <rect key="frame" x="0.0" y="5" width="324" height="30.5"/>
+                                                <color key="backgroundColor" red="0.2117646933" green="0.20000001789999999" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="TypoRoundLightDemo" family="Typo Round Light Demo" pointSize="25"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jte-Da-uVA">
+                                                <rect key="frame" x="324" y="0.0" width="51" height="40"/>
+                                                <color key="backgroundColor" red="0.5411764979" green="0.5411764979" blue="0.5411764979" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="vFI-Aq-CFI"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title=" Add ">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <buttonConfiguration key="configuration" style="plain" title="Clear">
+                                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="10"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l8K-if-fbN">
+                                        <rect key="frame" x="0.0" y="159.5" width="375" height="368.5"/>
+                                        <color key="backgroundColor" red="0.2117646933" green="0.20000001789999999" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <string key="text">- Apple
+- Tomatoes
+- Curry
+- Chicken</string>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="TypoRoundLightDemo" family="Typo Round Light Demo" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eac-vu-Na4">
+                                        <rect key="frame" x="0.0" y="528" width="375" height="45"/>
+                                        <color key="backgroundColor" red="0.34901961679999999" green="0.57254904510000004" blue="0.37647059560000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="hOs-wg-0b1"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Search for recipes" buttonSize="small" titleAlignment="center">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="ums-I8-79q">
+                                        <rect key="frame" x="0.0" y="573" width="375" height="30"/>
+                                        <color key="tintColor" red="0.34901961679999999" green="0.57254904510000004" blue="0.37647059560000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="bdh-OO-gwx"/>
+                                        </constraints>
+                                    </activityIndicatorView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hSC-bj-Wno"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.2117646933" green="0.20000001789999999" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="hSC-bj-Wno" firstAttribute="trailing" secondItem="arC-yv-dFt" secondAttribute="trailing" constant="20" id="7bK-xM-c2V"/>
-                            <constraint firstItem="hSC-bj-Wno" firstAttribute="bottom" secondItem="arC-yv-dFt" secondAttribute="bottom" constant="20" id="HJO-wL-buW"/>
-                            <constraint firstItem="arC-yv-dFt" firstAttribute="top" secondItem="hSC-bj-Wno" secondAttribute="top" constant="20" id="Iyr-rw-9sM"/>
-                            <constraint firstItem="arC-yv-dFt" firstAttribute="leading" secondItem="hSC-bj-Wno" secondAttribute="leading" constant="20" id="rzf-bI-Oqi"/>
+                            <constraint firstItem="hSC-bj-Wno" firstAttribute="bottom" secondItem="IrI-Kn-HiI" secondAttribute="bottom" constant="20" id="JhZ-Hu-5VZ"/>
+                            <constraint firstItem="IrI-Kn-HiI" firstAttribute="top" secondItem="hSC-bj-Wno" secondAttribute="top" id="Olo-lE-0XI"/>
+                            <constraint firstItem="IrI-Kn-HiI" firstAttribute="leading" secondItem="hSC-bj-Wno" secondAttribute="leading" id="dLb-PP-clF"/>
+                            <constraint firstAttribute="trailing" secondItem="IrI-Kn-HiI" secondAttribute="trailing" id="eYo-hS-yEV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Reciplease" id="LtA-lR-paX"/>
-                    <connections>
-                        <outlet property="ingredientTextField" destination="hky-iL-0C1" id="hVJ-KA-1IE"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hD4-MQ-7Pw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-265.21739130434787" y="43.526785714285715"/>
+            <point key="canvasLocation" x="-266.39999999999998" y="42.728635682158924"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ngb-D4-6Oh">
             <objects>
                 <navigationController id="oOo-3a-zQJ" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="7KL-0x-IRk">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <navigationBarAppearance key="standardAppearance">
                             <color key="backgroundColor" red="0.2117646933" green="0.20000001789999999" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <textAttributes key="titleTextAttributes">
-                                <fontDescription key="fontDescription" name="TypoRoundLightDemo" family="Typo Round Light Demo" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="TypoRoundLightDemo" family="Typo Round Light Demo" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </textAttributes>
                         </navigationBarAppearance>
@@ -172,12 +177,4 @@
             <point key="canvasLocation" x="-1048" y="44"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
