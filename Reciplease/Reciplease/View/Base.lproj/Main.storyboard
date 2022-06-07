@@ -141,6 +141,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Reciplease" id="LtA-lR-paX"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="ums-I8-79q" id="Z5w-Ef-uFW"/>
+                        <outlet property="addButton" destination="5rg-vj-gx3" id="r8w-gP-Vp7"/>
+                        <outlet property="clearButton" destination="Jte-Da-uVA" id="OLt-G3-6tz"/>
+                        <outlet property="ingrentTextField" destination="hky-iL-0C1" id="KvA-tR-awe"/>
+                        <outlet property="searchButton" destination="Eac-vu-Na4" id="aFx-h6-ZMQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hD4-MQ-7Pw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

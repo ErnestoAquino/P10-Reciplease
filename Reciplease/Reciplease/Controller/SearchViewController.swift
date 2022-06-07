@@ -9,11 +9,19 @@ import UIKit
 
 class SearchViewController: UIViewController {
 
-    @IBOutlet weak var ingredientTextField: UITextField!
+    @IBOutlet weak var ingrentTextField: UITextField!
+    @IBOutlet weak var addButton: UIButton!
+    @IBOutlet weak var clearButton: UIButton!
+    @IBOutlet weak var searchButton: UIButton!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        addButton.round()
+        clearButton.round()
+        searchButton.round()
         // Do any additional setup after loading the view.
     }
 
