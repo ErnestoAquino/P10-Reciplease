@@ -33,14 +33,20 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vrb-bB-ON9">
                                         <rect key="frame" x="0.0" y="69.5" width="375" height="40"/>
                                         <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wsk-re-FPA">
+                                                <rect key="frame" x="0.0" y="0.0" width="5" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="5" id="JOR-1W-BvV"/>
+                                                </constraints>
+                                            </stackView>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Lemon, Cheese, Sausages ..." minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hky-iL-0C1">
-                                                <rect key="frame" x="0.0" y="0.0" width="321" height="40"/>
+                                                <rect key="frame" x="5" y="0.0" width="311" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rg-vj-gx3">
-                                                <rect key="frame" x="321" y="0.0" width="54" height="40"/>
+                                                <rect key="frame" x="316" y="0.0" width="54" height="40"/>
                                                 <color key="backgroundColor" red="0.34901961679999999" green="0.57254904510000004" blue="0.37647059560000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="xOc-bu-tNd"/>
@@ -54,6 +60,12 @@
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </buttonConfiguration>
                                             </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mOj-vP-neU">
+                                                <rect key="frame" x="370" y="0.0" width="5" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="5" id="6DJ-fj-ziS"/>
+                                                </constraints>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </stackView>
@@ -72,17 +84,23 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VQG-B8-POh">
-                                        <rect key="frame" x="0.0" y="119.5" width="375" height="40"/>
+                                        <rect key="frame" x="0.0" y="119.5" width="375" height="50"/>
                                         <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mn4-IH-Wcv">
+                                                <rect key="frame" x="0.0" y="0.0" width="5" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="5" id="Li0-Pp-Axe"/>
+                                                </constraints>
+                                            </stackView>
                                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="     Your indgredients :    " minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Vd2-r1-t01">
-                                                <rect key="frame" x="0.0" y="5" width="324" height="30.5"/>
+                                                <rect key="frame" x="5" y="10" width="314" height="30.5"/>
                                                 <color key="backgroundColor" red="0.2117646933" green="0.20000001789999999" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" name="TypoRoundLightDemo" family="Typo Round Light Demo" pointSize="25"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jte-Da-uVA">
-                                                <rect key="frame" x="324" y="0.0" width="51" height="40"/>
+                                                <rect key="frame" x="319" y="5" width="51" height="40"/>
                                                 <color key="backgroundColor" red="0.5411764979" green="0.5411764979" blue="0.5411764979" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="vFI-Aq-CFI"/>
@@ -96,10 +114,16 @@
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </buttonConfiguration>
                                             </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OdZ-BL-4xd">
+                                                <rect key="frame" x="370" y="0.0" width="5" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="5" id="CyY-7C-dvz"/>
+                                                </constraints>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
                                     <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l8K-if-fbN">
-                                        <rect key="frame" x="0.0" y="159.5" width="375" height="368.5"/>
+                                        <rect key="frame" x="0.0" y="169.5" width="375" height="358.5"/>
                                         <color key="backgroundColor" red="0.2117646933" green="0.20000001789999999" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <string key="text">- Apple
 - Tomatoes
