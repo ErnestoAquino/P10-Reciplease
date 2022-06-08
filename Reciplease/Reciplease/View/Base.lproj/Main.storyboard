@@ -233,10 +233,10 @@
             </objects>
             <point key="canvasLocation" x="-1049" y="865"/>
         </scene>
-        <!--View Controller-->
+        <!--Search Result View Controller-->
         <scene sceneID="aks-T6-On1">
             <objects>
-                <viewController id="Cax-ZO-taj" sceneMemberID="viewController">
+                <viewController id="Cax-ZO-taj" customClass="SearchResultViewController" customModule="Reciplease" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n2W-zq-QgN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -318,7 +318,7 @@
         <!--Reciplease-->
         <scene sceneID="GYe-pY-Yo6">
             <objects>
-                <viewController id="Lny-9P-sKM" sceneMemberID="viewController">
+                <viewController id="Lny-9P-sKM" customClass="FavoriteRecipesListViewController" customModule="Reciplease" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mkm-ZO-jND">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
