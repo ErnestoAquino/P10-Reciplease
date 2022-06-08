@@ -179,12 +179,16 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hSC-bj-Wno"/>
                         <color key="backgroundColor" red="0.2117646933" green="0.20000001789999999" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="hSC-bj-Wno" firstAttribute="bottom" secondItem="IrI-Kn-HiI" secondAttribute="bottom" constant="20" id="JhZ-Hu-5VZ"/>
                             <constraint firstItem="IrI-Kn-HiI" firstAttribute="top" secondItem="hSC-bj-Wno" secondAttribute="top" id="Olo-lE-0XI"/>
                             <constraint firstItem="IrI-Kn-HiI" firstAttribute="leading" secondItem="hSC-bj-Wno" secondAttribute="leading" id="dLb-PP-clF"/>
                             <constraint firstAttribute="trailing" secondItem="IrI-Kn-HiI" secondAttribute="trailing" id="eYo-hS-yEV"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="pFZ-Qc-BZu" appends="YES" id="Otp-oT-mJh"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Reciplease" id="LtA-lR-paX"/>
                     <connections>
@@ -196,6 +200,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hD4-MQ-7Pw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="pFZ-Qc-BZu">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="ZoY-du-9Jq" id="bgC-G3-weS"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-266.39999999999998" y="42.728635682158924"/>
         </scene>
