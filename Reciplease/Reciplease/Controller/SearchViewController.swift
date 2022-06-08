@@ -15,7 +15,10 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
-
+    @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
+        ingrentTextField.resignFirstResponder()
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
