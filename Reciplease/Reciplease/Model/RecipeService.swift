@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+class RecipeService {
+    weak var viewDelegate: SearchDelegate?
+}
