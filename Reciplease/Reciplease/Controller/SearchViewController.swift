@@ -20,6 +20,10 @@ class SearchViewController: UIViewController {
         ingrentTextField.resignFirstResponder()
     }
 
+    @IBAction func addButtonTapped() {
+        
+    }
+
     @IBAction func clearButtonTapped() {
         listIngredientTextView.text = ""
     }
@@ -33,4 +37,19 @@ class SearchViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+}
+
+// MARK: -Extension
+extension SearchViewController: SearchDelegate {
+    /**
+     This function displays an alert to user.
+     
+     - parameter message: String with the message to be display in the alert.
+     */
+    func warningMessage(_ message: String) {
+        let alert: UIAlertController = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .cancel)
+        alert.addAction(action)
+        present(alert, animated: true)
+    }
 }
