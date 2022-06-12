@@ -10,6 +10,7 @@ import UIKit
 class SearchViewController: UIViewController {
 
     @IBOutlet weak var ingrentTextField: UITextField!
+    @IBOutlet weak var listIngredientTextView: UITextView!
     @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var clearButton: UIButton!
     @IBOutlet weak var searchButton: UIButton!
@@ -17,6 +18,10 @@ class SearchViewController: UIViewController {
     
     @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
         ingrentTextField.resignFirstResponder()
+    }
+
+    @IBAction func clearButtonTapped() {
+        listIngredientTextView.text = ""
     }
     
     
