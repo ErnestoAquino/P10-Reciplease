@@ -63,6 +63,9 @@
                                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="10"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="addButtonTapped" destination="ZoY-du-9Jq" eventType="touchUpInside" id="muD-Fs-5zV"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mOj-vP-neU">
                                                 <rect key="frame" x="370" y="0.0" width="5" height="40"/>
