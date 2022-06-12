@@ -17,4 +17,19 @@ extension RecipeService: SearchDelegate {
         viewDelegate?.warningMessage(message)
     }
 
+    /**
+     This function adds an new element to list ingredient text view.
+     
+     - parameter value: String to be added to text view.
+     */
+    func refreshListIngredientWith(_ value: String) {
+        viewDelegate?.refreshListIngredientWith(value)
+    }
+
+    /**
+     This function clears the list of ingredients.
+     */
+    func clearListIngredient() {
+        viewDelegate?.clearListIngredient()
+    }
 }
