@@ -32,4 +32,11 @@ extension RecipeService: SearchDelegate {
     func clearListIngredient() {
         viewDelegate?.clearListIngredient()
     }
+
+    /**
+     This function clears the ingredients text field.
+     */
+    func clearIngredientTextField() {
+        viewDelegate?.clearIngredientTextField()
+    }
 }
