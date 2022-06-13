@@ -11,4 +11,5 @@ protocol SearchDelegate: AnyObject {
     func warningMessage(_ message: String)
     func refreshListIngredientWith(_ value: String)
     func clearListIngredient()
+    func clearIngredientTextField()
 }
