@@ -71,4 +71,11 @@ extension SearchViewController: SearchDelegate {
     func clearListIngredient() {
         listIngredientTextView.text = ""
     }
+
+    /**
+     This function clears the ingredients text field.
+     */
+    func clearIngredientTextField() {
+        ingrentTextField.text = nil
+    }
 }
