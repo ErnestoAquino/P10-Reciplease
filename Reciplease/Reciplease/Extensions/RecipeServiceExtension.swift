@@ -31,6 +31,7 @@ extension RecipeService: SearchDelegate {
      */
     func clearListIngredient() {
         viewDelegate?.clearListIngredient()
+        listIngredients = []
     }
 
     /**
@@ -38,5 +39,13 @@ extension RecipeService: SearchDelegate {
      */
     func clearIngredientTextField() {
         viewDelegate?.clearIngredientTextField()
+    }
+
+    func showActivityIndicator(_ value: Bool) {
+        viewDelegate?.showActivityIndicator(value)
+    }
+
+    func goToSearchResultViewController() {
+        viewDelegate?.goToSearchResultViewController()
     }
 }
