@@ -12,4 +12,6 @@ protocol SearchDelegate: AnyObject {
     func refreshListIngredientWith(_ value: String)
     func clearListIngredient()
     func clearIngredientTextField()
+    func showActivityIndicator(_ value: Bool)
+    func goToSearchResultViewController()
 }
