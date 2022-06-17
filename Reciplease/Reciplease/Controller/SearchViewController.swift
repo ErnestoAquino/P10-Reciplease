@@ -16,28 +16,35 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
-    let recipeService = RecipeService()
+//    let recipeService = RecipeService()
     
     @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
         ingrentTextField.resignFirstResponder()
     }
 
     @IBAction func addButtonTapped() {
-        recipeService.addIngredients(ingrentTextField.text)
+//        recipeService.addIngredients(ingrentTextField.text)
+        RecipeService.shared.addIngredients(ingrentTextField.text)
         
     }
 
     @IBAction func clearButtonTapped() {
-        recipeService.clearListIngredient()
+//        recipeService.clearListIngredient()
+        RecipeService.shared.clearListIngredient()
     }
     
+    @IBAction func searchButtonTaped() {
+        RecipeService.shared.getRecipes()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        recipeService.viewDelegate = self
+        RecipeService.shared.viewDelegate = self
+//        recipeService.viewDelegate = self
         addButton.round()
         clearButton.round()
         searchButton.round()
+        activityIndicator.isHidden = true
     }
 
 }
@@ -77,5 +84,14 @@ extension SearchViewController: SearchDelegate {
      */
     func clearIngredientTextField() {
         ingrentTextField.text = nil
+    }
+
+    func showActivityIndicator(_ value: Bool) {
+        searchButton.isHidden = value
+        activityIndicator.isHidden = !value
+    }
+
+    func goToSearchResultViewController() {
+        performSegue(withIdentifier: "segueToResult", sender: nil)
     }
 }
