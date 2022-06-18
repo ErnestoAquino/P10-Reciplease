@@ -12,7 +12,8 @@ class RecipeService {
     weak var viewDelegate: SearchDelegate?
     var listIngredients: [String] = ["chicken", "curry", "tomatoes"]
     var listRecipes: [Recipe] = []
-// MARK: -Singleton Test
+
+    // MARK: -Singleton Test
     static let shared = RecipeService()
     private init() {}
 
@@ -63,6 +64,11 @@ class RecipeService {
         }
     }
 
+    /**
+     This function adds the recipes received in the request response to the listRepices variable.
+     
+     - parameter recipes: Response returned by the request.
+     */
     private func addRecipes(_ recipes: RecipeResponse) {
         guard let hits = recipes.hits else {return}
         for hit in hits {
