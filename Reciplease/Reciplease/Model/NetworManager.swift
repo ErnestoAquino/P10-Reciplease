@@ -38,5 +38,4 @@ class NetworkManager <T: Decodable>{
     }
 
 // MARK: -Funciones de test.
-
 }
