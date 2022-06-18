@@ -23,13 +23,11 @@ class SearchViewController: UIViewController {
     }
 
     @IBAction func addButtonTapped() {
-//        recipeService.addIngredients(ingrentTextField.text)
         RecipeService.shared.addIngredients(ingrentTextField.text)
         
     }
 
     @IBAction func clearButtonTapped() {
-//        recipeService.clearListIngredient()
         RecipeService.shared.clearListIngredient()
     }
     
@@ -40,7 +38,6 @@ class SearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         RecipeService.shared.viewDelegate = self
-//        recipeService.viewDelegate = self
         addButton.round()
         clearButton.round()
         searchButton.round()
