@@ -41,10 +41,18 @@ extension RecipeService: SearchDelegate {
         viewDelegate?.clearIngredientTextField()
     }
 
+    /**
+     This function displays the activity indicator.
+     
+     - parameter value: True to show or false to hide it.
+     */
     func showActivityIndicator(_ value: Bool) {
         viewDelegate?.showActivityIndicator(value)
     }
 
+    /**
+     This function allows you to follow the segue :segueToResult.
+     */
     func goToSearchResultViewController() {
         viewDelegate?.goToSearchResultViewController()
     }
