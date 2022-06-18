@@ -49,7 +49,7 @@ extension SearchResultViewController: UITableViewDataSource {
                             DispatchQueue.main.async {
                                 cell.imageRecipe.image = image
                                 cell.imageRecipe.isHidden = false
-                                cell.imageRecipe.contentMode = .scaleAspectFill
+                                cell.imageRecipe.contentMode = .scaleToFill
                             }
                         }
                     }
