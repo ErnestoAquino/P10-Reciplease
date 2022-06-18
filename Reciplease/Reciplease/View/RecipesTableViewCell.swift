@@ -15,6 +15,8 @@ class RecipesTableViewCell: UITableViewCell {
     @IBOutlet weak var ingredientsRecipeLabel: UILabel!
     @IBOutlet weak var yieldRecipeLabel: UILabel!
     @IBOutlet weak var timeRecipeLabel: UILabel!
+
+    let defaultImage = UIImage(named: "defaultImage")
     
     
     override func awakeFromNib() {
@@ -35,6 +37,9 @@ class RecipesTableViewCell: UITableViewCell {
         timeRecipeLabel.text = time
 
         guard let image = image else {
+            imageRecipe.image = defaultImage
+            imageRecipe.isHidden = false
+            imageRecipe.makeRounded()
             return
         }
     
