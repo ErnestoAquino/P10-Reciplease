@@ -330,7 +330,7 @@
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-                                                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eLQ-7o-wHn">
+                                                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="eLQ-7o-wHn">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                                 </imageView>
                                             </subviews>
@@ -454,6 +454,7 @@
     </scenes>
     <resources>
         <image name="alarm" catalog="system" width="124" height="128"/>
+        <image name="defaultImage" width="1834.5" height="1248.5"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="person.3.fill" catalog="system" width="128" height="61"/>
         <image name="suit.heart" catalog="system" width="128" height="109"/>
