@@ -86,11 +86,19 @@ extension SearchViewController: SearchDelegate {
         ingrentTextField.text = nil
     }
 
+    /**
+     This function displays the activity indicator.
+     
+     - parameter value: True to show or false to hide it.
+     */
     func showActivityIndicator(_ value: Bool) {
         searchButton.isHidden = value
         activityIndicator.isHidden = !value
     }
 
+    /**
+     This function allows you to follow the segue :segueToResult.
+     */
     func goToSearchResultViewController() {
         performSegue(withIdentifier: "segueToResult", sender: nil)
     }
