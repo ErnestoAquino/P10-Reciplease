@@ -13,6 +13,7 @@
 		944F0125285762D4006E097A /* NetworManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944F0124285762D4006E097A /* NetworManager.swift */; };
 		944F012828577575006E097A /* RecipeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944F012728577575006E097A /* RecipeResponse.swift */; };
 		944F012A285B6F8E006E097A /* RecipesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944F0129285B6F8D006E097A /* RecipesTableViewCell.swift */; };
+		94650BB8285E2E2900DB606A /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94650BB7285E2E2900DB606A /* UIImageViewExtension.swift */; };
 		947A587B2855E74200375EA7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 947A587A2855E74200375EA7 /* Alamofire */; };
 		947A58812855EC8200375EA7 /* RecipeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947A58802855EC8200375EA7 /* RecipeService.swift */; };
 		947A58832855ECE600375EA7 /* SearchDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947A58822855ECE600375EA7 /* SearchDelegateProtocol.swift */; };
@@ -46,6 +47,7 @@
 		944F0124285762D4006E097A /* NetworManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworManager.swift; sourceTree = "<group>"; };
 		944F012728577575006E097A /* RecipeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeResponse.swift; sourceTree = "<group>"; };
 		944F0129285B6F8D006E097A /* RecipesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTableViewCell.swift; sourceTree = "<group>"; };
+		94650BB7285E2E2900DB606A /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		947A58802855EC8200375EA7 /* RecipeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeService.swift; sourceTree = "<group>"; };
 		947A58822855ECE600375EA7 /* SearchDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDelegateProtocol.swift; sourceTree = "<group>"; };
 		947A58842855EFF900375EA7 /* RecipeServiceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeServiceExtension.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 			children = (
 				941AE44F284F5354005BEBB3 /* UIButtonExtension.swift */,
 				947A58842855EFF900375EA7 /* RecipeServiceExtension.swift */,
+				94650BB7285E2E2900DB606A /* UIImageViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				94D7AB31284CF0910082EE94 /* AppDelegate.swift in Sources */,
 				9401B02C284DF797003E1630 /* SearchViewController.swift in Sources */,
 				947D5BC72850CCE8002DBC86 /* SearchResultViewController.swift in Sources */,
+				94650BB8285E2E2900DB606A /* UIImageViewExtension.swift in Sources */,
 				947D5BC92850CD9B002DBC86 /* FavoriteRecipesListViewController.swift in Sources */,
 				944F012A285B6F8E006E097A /* RecipesTableViewCell.swift in Sources */,
 				947A58852855EFF900375EA7 /* RecipeServiceExtension.swift in Sources */,
