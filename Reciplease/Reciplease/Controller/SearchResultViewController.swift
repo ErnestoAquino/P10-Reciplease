@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireImage
 
 class SearchResultViewController: UIViewController {
 
@@ -38,6 +40,23 @@ extension SearchResultViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         let recipe = RecipeService.shared.listRecipes[indexPath.row]
+
+        // Zona de tests
+                if let imageUrl = recipe.image {
+                    AF.request(imageUrl).responseImage { response in
+                        if case .success(let image) = response.result {
+                            print("image downloaded: \(image)")
+                            DispatchQueue.main.async {
+                                cell.imageRecipe.image = image
+                                cell.imageRecipe.isHidden = false
+                                cell.imageRecipe.contentMode = .scaleAspectFill
+                            }
+                        }
+                    }
+                }
+
+                
+        // Fin zona de test
 
         cell.configure(image: recipe.imageData, nameRecipe: recipe.label, ingredients: recipe.ingredientLines?.joined(separator: ","), yield: "18", time: "0.0")
         return cell
