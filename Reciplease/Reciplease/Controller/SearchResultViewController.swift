@@ -50,6 +50,7 @@ extension SearchResultViewController: UITableViewDataSource {
                                 cell.imageRecipe.image = image
                                 cell.imageRecipe.isHidden = false
                                 cell.imageRecipe.contentMode = .scaleToFill
+                                cell.imageRecipe.makeRounded()
                             }
                         }
                     }
