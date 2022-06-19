@@ -42,7 +42,9 @@ struct Recipe: Decodable {
     var ingredientLines: [String]?
     var ingredients: [Ingredient]?
     var totalTime: Float?
+
     var imageData: Data?
+    var portions: Int?
 }
 
 struct Ingredient: Decodable {
