@@ -30,11 +30,15 @@ class RecipesTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    func configure(image: Data?, nameRecipe: String?, ingredients: String?, yield: String?, time: String?) {
+    func configure(image: Data?, nameRecipe: String?, ingredients: String?, yield: Int?, time: String?) {
         nameRecipeLabel.text = nameRecipe
         ingredientsRecipeLabel.text = ingredients
-        yieldRecipeLabel.text = yield
         timeRecipeLabel.text = time
+        
+        if let yield = yield {
+            yieldRecipeLabel.text = String(yield)
+        }
+        
 
         guard let image = image else {
             imageRecipe.image = defaultImage
