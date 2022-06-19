@@ -72,7 +72,8 @@ class RecipeService {
     private func addRecipes(_ recipes: RecipeResponse) {
         guard let hits = recipes.hits else {return}
         for hit in hits {
-            guard let newRecipe = hit.recipe else {return}
+            guard var newRecipe = hit.recipe else {return}
+            newRecipe.portions = Int(newRecipe.yield ?? 0)
             listRecipes.append(newRecipe)
         }
     }
