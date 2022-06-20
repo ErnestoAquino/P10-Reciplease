@@ -74,6 +74,7 @@ class RecipeService {
         for hit in hits {
             guard var newRecipe = hit.recipe else {return}
             newRecipe.portions = Int(newRecipe.yield ?? 0)
+            newRecipe.preparationTime = Int(newRecipe.totalTime ?? 0)
             listRecipes.append(newRecipe)
         }
     }
