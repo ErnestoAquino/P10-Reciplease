@@ -56,18 +56,6 @@ extension SearchResultViewController: UITableViewDataSource {
                     }
                 }
 
-                
-        // Fin zona de test
-//        if let portions = recipe.portions {
-//            let portionsString = String(portions)
-//            cell.yieldRecipeLabel.text = portionsString
-//        }
-//
-//        if let preparationTime = recipe.preparationTime {
-//            let timeHowString = String(preparationTime)
-//            cell.timeRecipeLabel.text = timeHowString + "m"
-//        }
-
         cell.configure(image: recipe.imageData, nameRecipe: recipe.label, ingredients: recipe.ingredientLines?.joined(separator: ","), yield: recipe.portions, time: recipe.preparationTime)
         return cell
     }
