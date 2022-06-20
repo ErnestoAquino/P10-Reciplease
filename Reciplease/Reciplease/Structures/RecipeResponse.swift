@@ -45,6 +45,7 @@ struct Recipe: Decodable {
 
     var imageData: Data?
     var portions: Int?
+    var preparationTime: Int?
 }
 
 struct Ingredient: Decodable {
