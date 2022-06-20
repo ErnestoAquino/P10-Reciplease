@@ -22,6 +22,7 @@
 		947D5BC92850CD9B002DBC86 /* FavoriteRecipesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947D5BC82850CD9B002DBC86 /* FavoriteRecipesListViewController.swift */; };
 		94A4D4DA284D113D00A42169 /* TypoRoundThinDemo-dJyK.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94A4D4D8284D113D00A42169 /* TypoRoundThinDemo-dJyK.ttf */; };
 		94A4D4DB284D113D00A42169 /* TypoRoundLightDemo-wAg3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94A4D4D9284D113D00A42169 /* TypoRoundLightDemo-wAg3.ttf */; };
+		94C10AA428610F19005A0BEA /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C10AA328610F18005A0BEA /* RecipeDetailViewController.swift */; };
 		94D7AB31284CF0910082EE94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D7AB30284CF0910082EE94 /* AppDelegate.swift */; };
 		94D7AB33284CF0910082EE94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D7AB32284CF0910082EE94 /* SceneDelegate.swift */; };
 		94D7AB38284CF0910082EE94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94D7AB36284CF0910082EE94 /* Main.storyboard */; };
@@ -55,6 +56,7 @@
 		947D5BC82850CD9B002DBC86 /* FavoriteRecipesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRecipesListViewController.swift; sourceTree = "<group>"; };
 		94A4D4D8284D113D00A42169 /* TypoRoundThinDemo-dJyK.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TypoRoundThinDemo-dJyK.ttf"; sourceTree = "<group>"; };
 		94A4D4D9284D113D00A42169 /* TypoRoundLightDemo-wAg3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TypoRoundLightDemo-wAg3.ttf"; sourceTree = "<group>"; };
+		94C10AA328610F18005A0BEA /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
 		94D7AB2D284CF0910082EE94 /* Reciplease.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reciplease.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D7AB30284CF0910082EE94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94D7AB32284CF0910082EE94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				9401B02B284DF797003E1630 /* SearchViewController.swift */,
 				947D5BC62850CCE8002DBC86 /* SearchResultViewController.swift */,
 				947D5BC82850CD9B002DBC86 /* FavoriteRecipesListViewController.swift */,
+				94C10AA328610F18005A0BEA /* RecipeDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				944F012A285B6F8E006E097A /* RecipesTableViewCell.swift in Sources */,
 				947A58852855EFF900375EA7 /* RecipeServiceExtension.swift in Sources */,
 				94D7AB33284CF0910082EE94 /* SceneDelegate.swift in Sources */,
+				94C10AA428610F19005A0BEA /* RecipeDetailViewController.swift in Sources */,
 				947A58812855EC8200375EA7 /* RecipeService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
