@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct RecipeResponse: Decodable {
     let from: Int?
@@ -70,4 +71,16 @@ struct Links: Decodable {
 struct Link: Decodable {
     let href: String?
     let title: String?
+}
+
+// MARK: -Test for recipe local.
+
+struct LocalRecipe {
+    var image: Data?
+    var name: String
+    var portions: String
+    var preparationTime: String
+    var ingredientsDetail: [String]
+    var urlImage: String?
+    var sourceUrl: String?
 }
