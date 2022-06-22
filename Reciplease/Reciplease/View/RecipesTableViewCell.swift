@@ -30,7 +30,7 @@ class RecipesTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    func configure(image: Data?, nameRecipe: String?, ingredients: String?, yield: Int?, time: Int?) {
+    func configure(image: Data?, nameRecipe: String?, ingredients: String?, yield: String?, time: String?) {
         nameRecipeLabel.text = nameRecipe
         ingredientsRecipeLabel.text = ingredients
         
