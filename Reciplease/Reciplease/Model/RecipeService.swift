@@ -6,12 +6,17 @@
 //
 
 import Foundation
+import Alamofire
+import AlamofireImage
 
 class RecipeService {
 // MARK: - Variables
     weak var viewDelegate: SearchDelegate?
     var listIngredients: [String] = ["chicken", "curry", "tomatoes"]
     var listRecipes: [Recipe] = []
+
+    // variable de test.
+    var test_recipes: [LocalRecipe] = []
 
     // MARK: -Singleton Test
     static let shared = RecipeService()
@@ -61,6 +66,7 @@ class RecipeService {
                 return
             }
             self.addRecipes(recipeResponse)
+            self.test_addRecipes(recipeResponse)
         }
     }
 
@@ -138,5 +144,21 @@ class RecipeService {
     
     // MARK: - Funciones de test.
 
+    private func test_addRecipes(_ recipes: RecipeResponse) {
 
+        guard let hits = recipes.hits else { return }
+        for hit in hits {
+            guard let recipe = hit.recipe else { return }
+            let image = recipe.imageData
+            let portions = String(Int(recipe.yield ?? 0)) + " servings\t"
+            let title = recipe.label ?? ""
+            let time = String(Int(recipe.totalTime ?? 0)) + " minutes\t"
+            let ingredients = recipe.ingredientLines ?? []
+            let source = recipe.url
+            let url = recipe.image
+
+            let newRecipe = LocalRecipe(image: image, name: title, portions: portions, preparationTime: time, ingredientsDetail: ingredients, urlImage: url, sourceUrl: source)
+            test_recipes.append(newRecipe)
+            }
+    }
 }
