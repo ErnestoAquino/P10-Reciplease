@@ -356,12 +356,12 @@
                                             <outlet property="nameRecipeLabel" destination="yGb-t3-n2M" id="QBv-LO-4na"/>
                                             <outlet property="timeRecipeLabel" destination="jOI-Yj-UO6" id="5Lh-bn-vj5"/>
                                             <outlet property="yieldRecipeLabel" destination="A3f-FX-gPx" id="tEo-GE-Gcz"/>
-                                            <segue destination="Iao-35-4uV" kind="show" id="Wd1-j0-VR8"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="Cax-ZO-taj" id="gvE-rX-CqK"/>
+                                    <outlet property="delegate" destination="Cax-ZO-taj" id="pUn-dH-RFt"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -383,15 +383,15 @@
             </objects>
             <point key="canvasLocation" x="520.79999999999995" y="42.728635682158924"/>
         </scene>
-        <!--View Controller-->
+        <!--Recipe Detail View Controller-->
         <scene sceneID="E0F-tB-4wb">
             <objects>
-                <viewController id="Iao-35-4uV" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RecipeDetailViewController" id="Iao-35-4uV" customClass="RecipeDetailViewController" customModule="Reciplease" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AnX-tK-j8r" customClass="RecipesTableViewCell" customModule="Reciplease" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yhm-Dn-7yD">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yhm-Dn-7yD">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="244"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="yhm-Dn-7yD" secondAttribute="height" multiplier="123:80" id="GhZ-fj-Suj"/>
@@ -411,13 +411,13 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="dos-HX-XTn">
                                 <rect key="frame" x="20" y="274.5" width="335" height="20"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minutos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7UV-3f-GZ8">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minutos" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7UV-3f-GZ8">
                                         <rect key="frame" x="0.0" y="0.0" width="111" height="20"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" red="0.5411764979" green="0.5411764979" blue="0.5411764979" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alarm" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lIo-Zu-Dba">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alarm" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lIo-Zu-Dba">
                                         <rect key="frame" x="112" y="-0.5" width="40.5" height="19.5"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </imageView>
@@ -427,14 +427,14 @@
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="45u-FT-nba">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="45u-FT-nba">
                                         <rect key="frame" x="291" y="1.5" width="44" height="17.5"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </imageView>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ecf-Dt-U42">
-                                <rect key="frame" x="10" y="529" width="355" height="45"/>
+                                <rect key="frame" x="10" y="622" width="355" height="45"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZr-MP-1Kk">
                                         <rect key="frame" x="0.0" y="0.0" width="355" height="45"/>
@@ -447,16 +447,19 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="getDirectionButtonTaped" destination="Iao-35-4uV" eventType="touchUpInside" id="yN7-7v-EwB"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="faZ-go-pYN">
-                                <rect key="frame" x="20" y="304.5" width="335" height="214.5"/>
+                                <rect key="frame" x="20" y="304.5" width="335" height="307.5"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="h6t-Fi-xUv">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="214.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="307.5"/>
                                         <color key="backgroundColor" red="0.2117646933" green="0.20000001789999999" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -486,6 +489,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4rK-Yd-SJ7"/>
+                    <connections>
+                        <outlet property="detailRecipeText" destination="h6t-Fi-xUv" id="y3Y-pc-7au"/>
+                        <outlet property="getDirectionsButton" destination="cZr-MP-1Kk" id="wHg-PK-hHg"/>
+                        <outlet property="imageRecipe" destination="yhm-Dn-7yD" id="XBl-Lv-e2d"/>
+                        <outlet property="portionsRecipeLabel" destination="4Uw-D1-Szd" id="Dbi-Ma-awT"/>
+                        <outlet property="preparationTimeLabel" destination="7UV-3f-GZ8" id="BQV-Fk-aM8"/>
+                        <outlet property="titleRecipeLabel" destination="CZf-Le-uvn" id="2T1-3I-7k7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y3J-BA-OhN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
