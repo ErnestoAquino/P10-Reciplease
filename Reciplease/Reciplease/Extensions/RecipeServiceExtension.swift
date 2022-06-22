@@ -32,6 +32,7 @@ extension RecipeService: SearchDelegate {
     func clearListIngredient() {
         viewDelegate?.clearListIngredient()
         listIngredients = []
+        test_recipes = []
     }
 
     /**
