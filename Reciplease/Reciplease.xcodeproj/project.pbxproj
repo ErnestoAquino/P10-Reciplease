@@ -105,8 +105,8 @@
 			children = (
 				9401B02B284DF797003E1630 /* SearchViewController.swift */,
 				947D5BC62850CCE8002DBC86 /* SearchResultViewController.swift */,
-				947D5BC82850CD9B002DBC86 /* FavoriteRecipesListViewController.swift */,
 				94C10AA328610F18005A0BEA /* RecipeDetailViewController.swift */,
+				947D5BC82850CD9B002DBC86 /* FavoriteRecipesListViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
