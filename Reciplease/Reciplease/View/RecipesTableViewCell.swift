@@ -33,23 +33,15 @@ class RecipesTableViewCell: UITableViewCell {
     func configure(image: Data?, nameRecipe: String?, ingredients: String?, yield: String?, time: String?) {
         nameRecipeLabel.text = nameRecipe
         ingredientsRecipeLabel.text = ingredients
-        
-        if let yield = yield {
-            yieldRecipeLabel.text = String(yield)
-        }
-
-        if let time = time {
-            timeRecipeLabel.text = String(time) + " m"
-        }
-
-        guard let image = image else {
-            imageRecipe.image = defaultImage
-            imageRecipe.isHidden = false
+        yieldRecipeLabel.text = yield
+        timeRecipeLabel.text = time
+        if let image = image {
+            imageRecipe.image = UIImage(data: image)
             imageRecipe.makeRounded()
-            return
+        } else {
+            imageRecipe.image = defaultImage
+            imageRecipe.makeRounded()
         }
-    
-        imageRecipe.image = UIImage(data: image)
     }
 
 }

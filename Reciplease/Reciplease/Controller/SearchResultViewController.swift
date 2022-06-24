@@ -73,6 +73,7 @@ extension SearchResultViewController: UITableViewDataSource {
                 if case .success (let image) = response.result {
                     DispatchQueue.main.async {
                         cell.imageRecipe.image = image
+                        cell.imageRecipe.makeRounded()
                         RecipeService.shared.test_recipes[indexPath.row].image = response.data
                     }
                 }
