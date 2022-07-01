@@ -8,6 +8,10 @@
 import Foundation
 
 extension RecipeService: SearchDelegate {
+    func goToSearchResultViewController(recipes: [LocalRecipe], nextURL: String?) {
+        viewDelegate?.goToSearchResultViewController(recipes: test_recipes, nextURL: nextURL)
+    }
+    
     /**
      This function displays an alert to the user.
      
@@ -50,11 +54,17 @@ extension RecipeService: SearchDelegate {
     func showActivityIndicator(_ value: Bool) {
         viewDelegate?.showActivityIndicator(value)
     }
+}
 
-    /**
-     This function allows you to follow the segue :segueToResult.
-     */
-    func goToSearchResultViewController() {
-        viewDelegate?.goToSearchResultViewController()
+extension RecipeService {
+    convenience init() {
+        self.init(recipes: [], nextRexipes: nil)
+    }
+}
+
+// Test
+extension RecipeService: SearchResultDelegate {
+    func reloadTableView() {
+        searchResultViewDelegate?.reloadTableView()
     }
 }
