@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+protocol FavoriteDetailDelegate {
+    func removeRecipe(index: Int)
+}
