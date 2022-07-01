@@ -43,5 +43,4 @@ class RecipesTableViewCell: UITableViewCell {
             imageRecipe.makeRounded()
         }
     }
-
 }
