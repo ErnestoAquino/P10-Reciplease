@@ -96,7 +96,7 @@ extension SearchViewController: SearchDelegate {
 
     func goToSearchResultViewController(recipes: [LocalRecipe], nextURL: String?) {
         if let destinationVC = storyboard?.instantiateViewController(withIdentifier: "SearchResultViewController") as? SearchResultViewController {
-            let  recipeService = RecipeService(recipes: recipeService.test_recipes, nextRexipes: recipeService.nextRecipes)
+            let  recipeService = RecipeService(recipes: recipeService.listRecipes, nextRexipes: recipeService.nextRecipes)
             destinationVC.recipeService = recipeService
             self.navigationController?.pushViewController(destinationVC, animated: true)
         }

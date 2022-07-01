@@ -9,7 +9,7 @@ import Foundation
 
 extension RecipeService: SearchDelegate {
     func goToSearchResultViewController(recipes: [LocalRecipe], nextURL: String?) {
-        viewDelegate?.goToSearchResultViewController(recipes: test_recipes, nextURL: nextURL)
+        viewDelegate?.goToSearchResultViewController(recipes: listRecipes, nextURL: nextURL)
     }
     
     /**
@@ -36,7 +36,7 @@ extension RecipeService: SearchDelegate {
     func clearListIngredient() {
         viewDelegate?.clearListIngredient()
         listIngredients = []
-        test_recipes = []
+        listRecipes = []
     }
 
     /**

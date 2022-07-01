@@ -35,7 +35,7 @@ extension SearchResultViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let section = recipeService?.test_recipes.count {
+        if let section = recipeService?.listRecipes.count {
             return section
         } else {
             return 0
@@ -47,7 +47,7 @@ extension SearchResultViewController: UITableViewDataSource {
             return UITableViewCell()
         }
 
-        if let recipe = recipeService?.test_recipes[indexPath.row] {
+        if let recipe = recipeService?.listRecipes[indexPath.row] {
             if recipe.image == nil {
                     self.recipeService?.getImage(index: indexPath.row)
             }
@@ -57,7 +57,7 @@ extension SearchResultViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        guard let last = recipeService?.test_recipes.count else {return}
+        guard let last = recipeService?.listRecipes.count else {return}
         let lastRecipe = last - 1
         if indexPath.row == lastRecipe {
             recipeService?.getNextRecipes()
@@ -70,7 +70,7 @@ extension SearchResultViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "RecipeDetailViewController") as? RecipeDetailViewController {
-            vc.recipe = recipeService?.test_recipes[indexPath.row]
+            vc.recipe = recipeService?.listRecipes[indexPath.row]
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }

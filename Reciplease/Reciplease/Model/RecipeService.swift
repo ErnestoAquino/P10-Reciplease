@@ -16,11 +16,11 @@ class RecipeService {
     var listIngredients: [String] = ["chicken", "curry", "tomatoes"]
     var response: RecipeResponse?
     var nextRecipes: String?
-    var test_recipes: [LocalRecipe] = []
+    var listRecipes: [LocalRecipe] = []
     let networkManager = NetworkManager<RecipeResponse>()
 
     init(recipes: [LocalRecipe], nextRexipes: String?) {
-        self.test_recipes = recipes
+        self.listRecipes = recipes
         self.nextRecipes = nextRexipes
     }
 
@@ -69,7 +69,7 @@ class RecipeService {
             }
             self.response = recipeResponse
             self.test_addRecipes(recipeResponse)
-            self.goToSearchResultViewController(recipes: self.test_recipes, nextURL: self.nextRecipes)
+            self.goToSearchResultViewController(recipes: self.listRecipes, nextURL: self.nextRecipes)
         }
     }
 
@@ -161,7 +161,7 @@ class RecipeService {
             let url = recipe.image
 
             let newRecipe = LocalRecipe(image: image, name: title, portions: portions, preparationTime: time, ingredientsDetail: ingredients, urlImage: url, sourceUrl: source)
-            test_recipes.append(newRecipe)
+            listRecipes.append(newRecipe)
             }
     }
 
@@ -187,11 +187,11 @@ class RecipeService {
     }
 
     func getImage(index: Int) {
-        guard index < test_recipes.count else {return}
-        if test_recipes[index].image == nil {
-            networkManager.getImage(url: test_recipes[index].urlImage) { img in
+        guard index < listRecipes.count else {return}
+        if listRecipes[index].image == nil {
+            networkManager.getImage(url: listRecipes[index].urlImage) { img in
                 guard let img = img else { return }
-                self.test_recipes[index].image = img
+                self.listRecipes[index].image = img
                 self.reloadTableView()
             }
         }
