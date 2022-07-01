@@ -8,13 +8,13 @@
 import Foundation
 import CoreData
 
-class RecipeService {
+final public class RecipeService {
 // MARK: - Variables
     weak var viewDelegate: SearchDelegate?
     weak var searchResultViewDelegate: SearchResultDelegate?
 
+    private var response: RecipeResponse?
     var listIngredients: [String] = ["chicken", "curry", "tomatoes"]
-    var response: RecipeResponse?
     var nextRecipes: String?
     var listRecipes: [LocalRecipe] = []
     let networkManager = NetworkManager<RecipeResponse>()
@@ -51,6 +51,9 @@ class RecipeService {
         }
     }
 
+    /**
+     This function makes the Request to the Edeman api with the ingredients stored in the " listIngredients " property.
+     */
     public func getRecipes() {
         guard !listIngredients.isEmpty else {
             warningMessage("Please enter at least one ingredient.")
@@ -68,7 +71,7 @@ class RecipeService {
                 self.nextRecipes = nextURL
             }
             self.response = recipeResponse
-            self.test_addRecipes(recipeResponse)
+            self.addRecipes(recipeResponse)
             self.goToSearchResultViewController(recipes: self.listRecipes, nextURL: self.nextRecipes)
         }
     }
@@ -78,15 +81,23 @@ class RecipeService {
      
      - parameter recipes: Response returned by the request.
      */
-//    private func addRecipes(_ recipes: RecipeResponse) {
-//        guard let hits = recipes.hits else {return}
-//        for hit in hits {
-//            guard var newRecipe = hit.recipe else {return}
-//            newRecipe.portions = Int(newRecipe.yield ?? 0)
-//            newRecipe.preparationTime = Int(newRecipe.totalTime ?? 0)
-//            listRecipes.append(newRecipe)
-//        }
-//    }
+    private func addRecipes(_ recipes: RecipeResponse) {
+
+        guard let hits = recipes.hits else { return }
+        for hit in hits {
+            guard let recipe = hit.recipe else { return }
+            let image = recipe.imageData
+            let portions = String(Int(recipe.yield ?? 0)) + " servings\t"
+            let title = recipe.label ?? ""
+            let time = String(Int(recipe.totalTime ?? 0)) + " minutes\t"
+            let ingredients = recipe.ingredientLines ?? []
+            let source = recipe.url
+            let url = recipe.image
+
+            let newRecipe = LocalRecipe(image: image, name: title, portions: portions, preparationTime: time, ingredientsDetail: ingredients, urlImage: url, sourceUrl: source)
+            listRecipes.append(newRecipe)
+            }
+    }
 
     /**
      This function trims a string using the comma " , " as a reference.
@@ -144,27 +155,9 @@ class RecipeService {
         return url
     }
 
-    
-    // MARK: - Funciones de test.
-
-    private func test_addRecipes(_ recipes: RecipeResponse) {
-
-        guard let hits = recipes.hits else { return }
-        for hit in hits {
-            guard let recipe = hit.recipe else { return }
-            let image = recipe.imageData
-            let portions = String(Int(recipe.yield ?? 0)) + " servings\t"
-            let title = recipe.label ?? ""
-            let time = String(Int(recipe.totalTime ?? 0)) + " minutes\t"
-            let ingredients = recipe.ingredientLines ?? []
-            let source = recipe.url
-            let url = recipe.image
-
-            let newRecipe = LocalRecipe(image: image, name: title, portions: portions, preparationTime: time, ingredientsDetail: ingredients, urlImage: url, sourceUrl: source)
-            listRecipes.append(newRecipe)
-            }
-    }
-
+    /**
+     This function makes a second request to obtain more results if necessary.
+     */
     public func getNextRecipes() {
         guard nextRecipes != nil else {
             //Escribir aquin lo que pasa si no recibimos respuesta.
@@ -182,11 +175,16 @@ class RecipeService {
                 self.nextRecipes = nextURL
             }
             self.response = recipeResponse
-            self.test_addRecipes(recipeResponse)
+            self.addRecipes(recipeResponse)
         }
     }
 
-    func getImage(index: Int) {
+    /**
+     This function retrieves the image of the recipe.
+    
+     - parameter index: Index of the recipe inside listRecipe
+     */
+    public func getImage(index: Int) {
         guard index < listRecipes.count else {return}
         if listRecipes[index].image == nil {
             networkManager.getImage(url: listRecipes[index].urlImage) { img in
@@ -197,6 +195,11 @@ class RecipeService {
         }
     }
 
+    /**
+     This function saves the recipe using Core Data so that it can be consulted offline.
+     
+     - parameter recipeToSave: recipe to be saved.
+     */
     func saveRecipe(_ recipeToSave: LocalRecipe?) {
         guard let recipeToSave = recipeToSave else { return }
         let recipe = FavoriteRecipe(context: CoreDataStack.shared.viewContext)
