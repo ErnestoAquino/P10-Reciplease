@@ -6,22 +6,25 @@
 //
 
 import Foundation
-import Alamofire
-import AlamofireImage
+import CoreData
 
 class RecipeService {
 // MARK: - Variables
     weak var viewDelegate: SearchDelegate?
+    weak var searchResultViewDelegate: SearchResultDelegate?
+
     var listIngredients: [String] = ["chicken", "curry", "tomatoes"]
     var listRecipes: [Recipe] = []
-
+    var response: RecipeResponse?
+    var nextRecipes: String?
     // variable de test.
     var test_recipes: [LocalRecipe] = []
+    let networkManager = NetworkManager<RecipeResponse>()
 
-    // MARK: -Singleton Test
-    static let shared = RecipeService()
-    private init() {}
-
+    init(recipes: [LocalRecipe], nextRexipes: String?) {
+        self.test_recipes = recipes
+        self.nextRecipes = nextRexipes
+    }
 
 // MARK: - Funtions
 
@@ -50,23 +53,26 @@ class RecipeService {
         }
     }
 
-    func getRecipes() {
+    public func getRecipes() {
         guard !listIngredients.isEmpty else {
             warningMessage("Please enter at least one ingredient.")
             return
         }
         let request = createRequest()
-        let networkManager = NetworkManager<RecipeResponse>()
         showActivityIndicator(true)
         networkManager.getInformation(request: request) { recipeResponse, error in
             self.showActivityIndicator(false)
-            self.goToSearchResultViewController()
             guard  error == nil,
                    let recipeResponse = recipeResponse else {
                 return
             }
+            if let nextURL = recipeResponse.links?.next?.href {
+                self.nextRecipes = nextURL
+            }
+            self.response = recipeResponse
             self.addRecipes(recipeResponse)
             self.test_addRecipes(recipeResponse)
+            self.goToSearchResultViewController(recipes: self.test_recipes, nextURL: self.nextRecipes)
         }
     }
 
@@ -160,5 +166,58 @@ class RecipeService {
             let newRecipe = LocalRecipe(image: image, name: title, portions: portions, preparationTime: time, ingredientsDetail: ingredients, urlImage: url, sourceUrl: source)
             test_recipes.append(newRecipe)
             }
+    }
+
+    public func getNextRecipes() {
+        guard nextRecipes != nil else {
+            //Escribir aquin lo que pasa si no recibimos respuesta.
+            return
+        }
+        guard let nextRecipes = nextRecipes,
+              let url = URL(string: nextRecipes) else {return}
+        let request = URLRequest(url: url)
+        networkManager.getInformation(request: request) { recipeResponse, error in
+            guard  error == nil,
+                   let recipeResponse = recipeResponse else {
+                return
+            }
+            if let nextURL = recipeResponse.links?.next?.href {
+                self.nextRecipes = nextURL
+            }
+            self.response = recipeResponse
+            self.addRecipes(recipeResponse)
+            self.test_addRecipes(recipeResponse)
+        }
+    }
+
+    func getImage(index: Int) {
+        guard index < test_recipes.count else {return}
+        if test_recipes[index].image == nil {
+            networkManager.getImage(url: test_recipes[index].urlImage) { img in
+                guard let img = img else { return }
+                self.test_recipes[index].image = img
+                self.reloadTableView()
+            }
+        }
+    }
+
+    func saveRecipe(_ recipeToSave: LocalRecipe?) {
+        guard let recipeToSave = recipeToSave else { return }
+        let recipe = FavoriteRecipe(context: CoreDataStack.shared.viewContext)
+        recipe.image = recipeToSave.image
+        recipe.name = recipeToSave.name
+        recipe.portions = recipeToSave.portions
+        recipe.preparationTime = recipeToSave.preparationTime
+        recipe.ingredientsDetail = recipeToSave.ingredientsDetail.joined(separator: "\n ")
+        recipe.urlImage = recipeToSave.urlImage
+        recipe.sourceUrl = recipeToSave.sourceUrl
+        
+        
+        do {
+            try CoreDataStack.shared.viewContext.save()
+            print("Funciono")
+        } catch  {
+            print ("Error trying to save recipe.")
+        }
     }
 }

@@ -6,3 +6,9 @@
 //
 
 import Foundation
+import CoreData
+
+public class FavoriteRecipe: NSManagedObject {
+    
+}
+
