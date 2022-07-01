@@ -13,5 +13,11 @@ protocol SearchDelegate: AnyObject {
     func clearListIngredient()
     func clearIngredientTextField()
     func showActivityIndicator(_ value: Bool)
-    func goToSearchResultViewController()
+    func goToSearchResultViewController(recipes: [LocalRecipe], nextURL: String?)
+}
+
+
+// Test
+protocol SearchResultDelegate: AnyObject {
+    func reloadTableView()
 }
