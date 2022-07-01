@@ -14,10 +14,8 @@ class RecipeService {
     weak var searchResultViewDelegate: SearchResultDelegate?
 
     var listIngredients: [String] = ["chicken", "curry", "tomatoes"]
-    var listRecipes: [Recipe] = []
     var response: RecipeResponse?
     var nextRecipes: String?
-    // variable de test.
     var test_recipes: [LocalRecipe] = []
     let networkManager = NetworkManager<RecipeResponse>()
 
@@ -70,7 +68,6 @@ class RecipeService {
                 self.nextRecipes = nextURL
             }
             self.response = recipeResponse
-            self.addRecipes(recipeResponse)
             self.test_addRecipes(recipeResponse)
             self.goToSearchResultViewController(recipes: self.test_recipes, nextURL: self.nextRecipes)
         }
@@ -81,15 +78,15 @@ class RecipeService {
      
      - parameter recipes: Response returned by the request.
      */
-    private func addRecipes(_ recipes: RecipeResponse) {
-        guard let hits = recipes.hits else {return}
-        for hit in hits {
-            guard var newRecipe = hit.recipe else {return}
-            newRecipe.portions = Int(newRecipe.yield ?? 0)
-            newRecipe.preparationTime = Int(newRecipe.totalTime ?? 0)
-            listRecipes.append(newRecipe)
-        }
-    }
+//    private func addRecipes(_ recipes: RecipeResponse) {
+//        guard let hits = recipes.hits else {return}
+//        for hit in hits {
+//            guard var newRecipe = hit.recipe else {return}
+//            newRecipe.portions = Int(newRecipe.yield ?? 0)
+//            newRecipe.preparationTime = Int(newRecipe.totalTime ?? 0)
+//            listRecipes.append(newRecipe)
+//        }
+//    }
 
     /**
      This function trims a string using the comma " , " as a reference.
@@ -185,7 +182,6 @@ class RecipeService {
                 self.nextRecipes = nextURL
             }
             self.response = recipeResponse
-            self.addRecipes(recipeResponse)
             self.test_addRecipes(recipeResponse)
         }
     }
