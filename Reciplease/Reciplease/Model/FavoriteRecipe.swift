@@ -8,6 +8,11 @@
 import Foundation
 import CoreData
 
+/**
+ * FavoriteRecipe:
+ *
+ * This class is an object (a recipe) to be managed by CoreData.
+ */
 public class FavoriteRecipe: NSManagedObject {
     
 }
