@@ -14,6 +14,8 @@ class SearchResultViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     static var cellIdentifier = "RecipeCell"
 
+    var recipeService: RecipeService?
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         tableView.reloadData()
@@ -21,6 +23,7 @@ class SearchResultViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        recipeService?.searchResultViewDelegate = self
     }
 }
 
@@ -32,72 +35,49 @@ extension SearchResultViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return RecipeService.shared.listRecipes.count
-        return RecipeService.shared.test_recipes.count
+        if let section = recipeService?.test_recipes.count {
+            return section
+        } else {
+            return 0
+        }
     }
-
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        guard let cell = tableView.dequeueReusableCell(withIdentifier: SearchResultViewController.cellIdentifier, for: indexPath) as? RecipesTableViewCell else {
-//            return UITableViewCell()
-//        }
-//        let recipe = RecipeService.shared.listRecipes[indexPath.row]
-//
-//        // Zona de tests
-//            if let imageUrl = recipe.image {
-//                AF.request(imageUrl).responseImage { response in
-//                    if case .success(let image) = response.result {
-//                        DispatchQueue.main.async {
-//                            cell.imageRecipe.image = image
-//                            cell.imageRecipe.isHidden = false
-//                            cell.imageRecipe.contentMode = .scaleToFill
-//                            cell.imageRecipe.makeRounded()
-//                        }
-//                    }
-//                }
-//            }
-//
-//        cell.configure(image: recipe.imageData, nameRecipe: recipe.label, ingredients: recipe.ingredientLines?.joined(separator: ","), yield: recipe.portions, time: recipe.preparationTime)
-//        return cell
-//    }
-
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: SearchResultViewController.cellIdentifier, for: indexPath) as? RecipesTableViewCell else {
             return UITableViewCell()
         }
 
-        let recipe = RecipeService.shared.test_recipes[indexPath.row]
-
-        if let imageURL = recipe.urlImage {
-            AF.request(imageURL).responseImage { response in
-                if case .success (let image) = response.result {
-                    DispatchQueue.main.async {
-                        cell.imageRecipe.image = image
-                        cell.imageRecipe.makeRounded()
-                        RecipeService.shared.test_recipes[indexPath.row].image = response.data
-                    }
-                }
+        if let recipe = recipeService?.test_recipes[indexPath.row] {
+            if recipe.image == nil {
+                    self.recipeService?.getImage(index: indexPath.row)
             }
+            cell.configure(image: recipe.image, nameRecipe: recipe.name, ingredients: recipe.ingredientsDetail.joined(separator: ","), yield: recipe.portions, time: recipe.preparationTime)
         }
-
-        cell.configure(image: recipe.image, nameRecipe: recipe.name, ingredients: recipe.ingredientsDetail.joined(separator: ","), yield: recipe.portions, time: recipe.preparationTime)
         return cell
     }
 
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        guard let last = recipeService?.test_recipes.count else {return}
+        let lastRecipe = last - 1
+        if indexPath.row == lastRecipe {
+            recipeService?.getNextRecipes()
+            tableView.reloadData()
+        }
+    }
 }
 
 extension SearchResultViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "RecipeDetailViewController") as? RecipeDetailViewController {
-            vc.img = RecipeService.shared.test_recipes[indexPath.row].image
-            vc.titleRecipe = RecipeService.shared.test_recipes[indexPath.row].name
-            vc.portions = RecipeService.shared.test_recipes[indexPath.row].portions
-            vc.time = RecipeService.shared.test_recipes[indexPath.row].preparationTime
-            vc.details = RecipeService.shared.test_recipes[indexPath.row].ingredientsDetail
-            vc.urlSource = RecipeService.shared.test_recipes[indexPath.row].sourceUrl
-
+            vc.recipe = recipeService?.test_recipes[indexPath.row]
             self.navigationController?.pushViewController(vc, animated: true)
         }
+    }
+}
+
+extension SearchResultViewController: SearchResultDelegate {
+    func reloadTableView() {
+        tableView.reloadData()
     }
 }

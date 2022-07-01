@@ -9,21 +9,57 @@ import UIKit
 
 class FavoriteRecipesListViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+    @IBOutlet weak var tableView: UITableView!
+    var localRecipeService = LocalRecipeService()
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.reloadData()
+        localRecipeService.loadRecipes()
+        tableView.dataSource = self
+        tableView.delegate = self
     }
-    */
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        localRecipeService.loadRecipes()
+        tableView.reloadData()
+    }
+}
 
+//MARK: - Extesion
+
+extension FavoriteRecipesListViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let numberRows = localRecipeService.favoriteRecipes.count
+        return numberRows
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: SearchResultViewController.cellIdentifier, for: indexPath) as? RecipesTableViewCell else {
+            return UITableViewCell()
+        }
+
+        let recipe =  localRecipeService.favoriteRecipes[indexPath.row]
+        cell.configure(image: recipe.image,
+                       nameRecipe: recipe.name,
+                       ingredients: recipe.ingredientsDetail,
+                       yield: recipe.portions,
+                       time: recipe.preparationTime)
+        return cell
+    }
+}
+
+extension FavoriteRecipesListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "FavoriteDetailRecipeViewController") as? FavoriteDetailRecipeViewController {
+            vc.recipe = localRecipeService.favoriteRecipes[indexPath.row]
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
 }

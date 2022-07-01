@@ -16,44 +16,44 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
-//    let recipeService = RecipeService()
+    let recipeService = RecipeService()
     
     @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
         ingrentTextField.resignFirstResponder()
     }
 
     @IBAction func addButtonTapped() {
-        RecipeService.shared.addIngredients(ingrentTextField.text)
-        
+        recipeService.addIngredients(ingrentTextField.text)
     }
 
     @IBAction func clearButtonTapped() {
-        RecipeService.shared.clearListIngredient()
+        recipeService.clearListIngredient()
     }
     
     @IBAction func searchButtonTaped() {
-        RecipeService.shared.getRecipes()
+        recipeService.getRecipes()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        RecipeService.shared.viewDelegate = self
+        recipeService.viewDelegate = self
+        
         addButton.round()
         clearButton.round()
         searchButton.round()
         activityIndicator.isHidden = true
     }
-
 }
 
 // MARK: -Extension
 extension SearchViewController: SearchDelegate {
-    /**
+
+        /**
      This function displays an alert to user.
      
      - parameter message: String with the message to be display in the alert.
      */
-    func warningMessage(_ message: String) {
+     func warningMessage(_ message: String) {
         let alert: UIAlertController = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .cancel)
         alert.addAction(action)
@@ -93,10 +93,12 @@ extension SearchViewController: SearchDelegate {
         activityIndicator.isHidden = !value
     }
 
-    /**
-     This function allows you to follow the segue :segueToResult.
-     */
-    func goToSearchResultViewController() {
-        performSegue(withIdentifier: "segueToResult", sender: nil)
+
+    func goToSearchResultViewController(recipes: [LocalRecipe], nextURL: String?) {
+        if let destinationVC = storyboard?.instantiateViewController(withIdentifier: "SearchResultViewController") as? SearchResultViewController {
+            let  recipeService = RecipeService(recipes: recipeService.test_recipes, nextRexipes: recipeService.nextRecipes)
+            destinationVC.recipeService = recipeService
+            self.navigationController?.pushViewController(destinationVC, animated: true)
+        }
     }
 }

@@ -15,25 +15,22 @@ class RecipeDetailViewController: UIViewController {
     @IBOutlet weak var portionsRecipeLabel: UILabel!
     @IBOutlet weak var detailRecipeText: UITextView!
     @IBOutlet weak var getDirectionsButton: UIButton!
-
+    @IBOutlet weak var favoriteButton: UIBarButtonItem!
+    
     let defaultImage = UIImage(named: "defaultImage")
-
-    var img: Data?
-    var titleRecipe: String?
-    var time: String?
-    var portions: String?
-    var details: [String]?
-    var urlSource: String?
+    var recipe: LocalRecipe?
+    var recipeService = RecipeService()
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        favoriteButton.image = UIImage(systemName: "suit.heart")
 
-        titleRecipeLabel.text = titleRecipe
-        preparationTimeLabel.text = time
-        portionsRecipeLabel.text = portions
-        detailRecipeText.text = details?.joined(separator: "\n")
-        if let dataImage = img {
+        titleRecipeLabel.text = recipe?.name
+        preparationTimeLabel.text = recipe?.preparationTime
+        portionsRecipeLabel.text = recipe?.portions
+        detailRecipeText.text = recipe?.ingredientsDetail.joined(separator: "\n")
+        if let dataImage = recipe?.image {
             imageRecipe.image = UIImage(data: dataImage)
         } else {
             imageRecipe.image = defaultImage
@@ -43,22 +40,20 @@ class RecipeDetailViewController: UIViewController {
     }
     
     @IBAction func getDirectionButtonTaped() {
-        guard let urlSource = urlSource,
+        guard let urlSource = recipe?.sourceUrl,
               let url = URL(string: urlSource) else {
                   return
               }
         UIApplication.shared.open(url)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func favoriteButtonTapped(_ sender: UIBarButtonItem) {
+        if favoriteButton.image == UIImage(systemName: "suit.heart") {
+            favoriteButton.image = UIImage(systemName: "heart.fill")
+            recipeService.saveRecipe(recipe)
+        } else {
+            favoriteButton.image = UIImage(systemName: "suit.heart")
+        }
+        
     }
-    */
-
 }
