@@ -35,8 +35,8 @@ extension SearchResultViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let section = recipeService?.listRecipes.count {
-            return section
+        if let rows = recipeService?.listRecipes.count {
+            return rows
         } else {
             return 0
         }

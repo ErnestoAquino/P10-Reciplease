@@ -16,14 +16,14 @@ class FavoriteRecipesListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.reloadData()
-        localRecipeService.loadRecipes()
+        localRecipeService.fetchRecipes()
         tableView.dataSource = self
         tableView.delegate = self
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        localRecipeService.loadRecipes()
+        localRecipeService.fetchRecipes()
         tableView.reloadData()
     }
 }
@@ -56,6 +56,7 @@ extension FavoriteRecipesListViewController: UITableViewDataSource {
 }
 
 extension FavoriteRecipesListViewController: UITableViewDelegate {
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "FavoriteDetailRecipeViewController") as? FavoriteDetailRecipeViewController {
             vc.recipe = localRecipeService.favoriteRecipes[indexPath.row]

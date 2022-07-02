@@ -94,6 +94,12 @@ extension SearchViewController: SearchDelegate {
     }
 
 
+    /**
+     This function creates a view controller of type SearchResultViewController, initializes an instance of RecipeService. It pushes SearchResultViewController on the receiver stack and updates the display.
+     
+     - parameter recipes: Table of Local Recipes with the recipes of the search.
+     - parameter nextURL: String with the url to request more results.
+     */
     func goToSearchResultViewController(recipes: [LocalRecipe], nextURL: String?) {
         if let destinationVC = storyboard?.instantiateViewController(withIdentifier: "SearchResultViewController") as? SearchResultViewController {
             let  recipeService = RecipeService(recipes: recipeService.listRecipes, nextRexipes: recipeService.nextRecipes)
