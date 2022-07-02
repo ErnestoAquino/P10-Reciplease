@@ -24,6 +24,19 @@ class RecipeDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureView()
+        getDirectionsButton.round()
+    }
+    
+    @IBAction func getDirectionButtonTaped() {
+        openURL()
+    }
+    
+    @IBAction func favoriteButtonTapped(_ sender: UIBarButtonItem) {
+        saveRecipe()
+    }
+
+    private func configureView() {
         favoriteButton.image = UIImage(systemName: "suit.heart")
 
         titleRecipeLabel.text = recipe?.name
@@ -35,25 +48,20 @@ class RecipeDetailViewController: UIViewController {
         } else {
             imageRecipe.image = defaultImage
         }
-
-        getDirectionsButton.round()
     }
-    
-    @IBAction func getDirectionButtonTaped() {
+
+    private func openURL() {
         guard let urlSource = recipe?.sourceUrl,
               let url = URL(string: urlSource) else {
                   return
               }
         UIApplication.shared.open(url)
     }
-    
-    @IBAction func favoriteButtonTapped(_ sender: UIBarButtonItem) {
+
+    private func saveRecipe() {
         if favoriteButton.image == UIImage(systemName: "suit.heart") {
             favoriteButton.image = UIImage(systemName: "heart.fill")
             recipeService.saveRecipe(recipe)
-        } else {
-            favoriteButton.image = UIImage(systemName: "suit.heart")
         }
-        
     }
 }
