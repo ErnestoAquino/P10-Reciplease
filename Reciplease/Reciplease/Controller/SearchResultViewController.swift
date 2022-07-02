@@ -51,7 +51,11 @@ extension SearchResultViewController: UITableViewDataSource {
             if recipe.image == nil {
                     self.recipeService?.getImage(index: indexPath.row)
             }
-            cell.configure(image: recipe.image, nameRecipe: recipe.name, ingredients: recipe.ingredientsDetail.joined(separator: ","), yield: recipe.portions, time: recipe.preparationTime)
+            cell.configure(image: recipe.image,
+                           nameRecipe: recipe.name,
+                           ingredients: recipe.ingredientsDetail.joined(separator: ","),
+                           yield: recipe.portions,
+                           time: recipe.preparationTime)
         }
         return cell
     }
