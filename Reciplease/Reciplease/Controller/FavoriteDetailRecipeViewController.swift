@@ -24,6 +24,32 @@ class FavoriteDetailRecipeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         getDirectionsButton.round()
+        configureView()
+    }
+    
+    @IBAction func getDirectionButtonTapped() {
+        openURL()
+    }
+    
+    @IBAction func favoriteButtonTapped(_ sender: UIBarButtonItem) {
+        removeRecipe()
+    }
+
+    /**
+     This function opens a url in safari.
+     */
+    private func openURL() {
+        guard let sourceUrl = recipe?.sourceUrl,
+              let url = URL(string: sourceUrl) else {
+            return
+        }
+        UIApplication.shared.open(url)
+    }
+
+    /**
+     This function configures the elements of the view using the information of the recipe variable.
+     */
+    private func configureView() {
         favoriteButton.image = UIImage(systemName: "heart.fill")
 
         nameRecipeLabel.text = recipe?.name
@@ -35,23 +61,13 @@ class FavoriteDetailRecipeViewController: UIViewController {
         } else {
             imageRecipe.image = defaultImage
         }
-        
-    }
-    
-    @IBAction func getDirectionButtonTapped() {
-        openURL()
-    }
-    
-    @IBAction func favoriteButtonTapped(_ sender: UIBarButtonItem) {
-        localRecipeService.removeRecipe(recipe: recipe)
-        favoriteButton.image = UIImage(systemName: "suit.heart")
     }
 
-    private func openURL() {
-        guard let sourceUrl = recipe?.sourceUrl,
-              let url = URL(string: sourceUrl) else {
-            return
-        }
-        UIApplication.shared.open(url)
+    /**
+     This function removes the recipe from the favorites.
+     */
+    private func removeRecipe() {
+        localRecipeService.removeRecipe(recipe: recipe)
+        favoriteButton.image = UIImage(systemName: "suit.heart")
     }
 }
