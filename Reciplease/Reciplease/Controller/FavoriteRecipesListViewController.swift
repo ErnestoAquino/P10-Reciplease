@@ -10,6 +10,7 @@ import UIKit
 class FavoriteRecipesListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var noRecipesView: UIView!
     var localRecipeService = LocalRecipeService()
     
 
@@ -17,6 +18,7 @@ class FavoriteRecipesListViewController: UIViewController {
         super.viewDidLoad()
         tableView.reloadData()
         localRecipeService.fetchRecipes()
+        checkIfDisplayMessage()
         tableView.dataSource = self
         tableView.delegate = self
     }
@@ -24,7 +26,20 @@ class FavoriteRecipesListViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         localRecipeService.fetchRecipes()
+        checkIfDisplayMessage()
         tableView.reloadData()
+    }
+
+    /**
+     This function checks if the list of favorite recipes is empty. If it is empty, it displays a help message to the user.
+     */
+    private func checkIfDisplayMessage() {
+        if localRecipeService.favoriteRecipes.isEmpty {
+            noRecipesView?.isHidden = false
+            tableView?.backgroundView = noRecipesView
+        } else {
+            noRecipesView?.isHidden = true
+        }
     }
 }
 
