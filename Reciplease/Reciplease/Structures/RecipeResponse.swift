@@ -53,9 +53,7 @@ struct Ingredient: Decodable {
     var text: String?
     var quantity: Double?
     var measure: String?
-//    var food: String?
     var weight: Double?
-//    var fodID: String?
 }
 
 struct Links: Decodable {
@@ -73,8 +71,6 @@ struct Link: Decodable {
     let title: String?
 }
 
-// MARK: -Test for recipe local.
-
 struct LocalRecipe {
     var image: Data?
     var name: String
@@ -84,5 +80,3 @@ struct LocalRecipe {
     var urlImage: String?
     var sourceUrl: String?
 }
-
-//rdny!e9C/m9evZn
