@@ -13,7 +13,6 @@ final public class RecipeService {
     weak var viewDelegate: SearchDelegate?
     weak var searchResultViewDelegate: SearchResultDelegate?
 
-    private var response: RecipeResponse?
     var listIngredients: [String] = ["chicken", "curry", "tomatoes"]
     var nextRecipes: String?
     var listRecipes: [LocalRecipe] = []
@@ -70,7 +69,6 @@ final public class RecipeService {
             if let nextURL = recipeResponse.links?.next?.href {
                 self.nextRecipes = nextURL
             }
-            self.response = recipeResponse
             self.addRecipes(recipeResponse)
             self.goToSearchResultViewController(recipes: self.listRecipes, nextURL: self.nextRecipes)
         }
@@ -160,7 +158,7 @@ final public class RecipeService {
      */
     public func getNextRecipes() {
         guard nextRecipes != nil else {
-            //Escribir aquin lo que pasa si no recibimos respuesta.
+            warningMessage("Sorry, but there are no more results.")
             return
         }
         guard let nextRecipes = nextRecipes,
@@ -174,7 +172,6 @@ final public class RecipeService {
             if let nextURL = recipeResponse.links?.next?.href {
                 self.nextRecipes = nextURL
             }
-            self.response = recipeResponse
             self.addRecipes(recipeResponse)
         }
     }
@@ -207,16 +204,14 @@ final public class RecipeService {
         recipe.name = recipeToSave.name
         recipe.portions = recipeToSave.portions
         recipe.preparationTime = recipeToSave.preparationTime
-        recipe.ingredientsDetail = recipeToSave.ingredientsDetail.joined(separator: "\n ")
+        recipe.ingredientsDetail = recipeToSave.ingredientsDetail.joined(separator: "\n")
         recipe.urlImage = recipeToSave.urlImage
         recipe.sourceUrl = recipeToSave.sourceUrl
-        
-        
+
         do {
             try CoreDataStack.shared.viewContext.save()
-            print("Funciono")
         } catch  {
-            print ("Error trying to save recipe.")
+            warningMessage("Sorry, we have encountered an error saving the recipe.")
         }
     }
 }

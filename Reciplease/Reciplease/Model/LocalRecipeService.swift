@@ -8,11 +8,20 @@
 import Foundation
 import CoreData
 
-class LocalRecipeService {
+/**
+ * LocalRecipeService
+ *
+ * This class manages the stored recipes.
+ */
+
+final public class LocalRecipeService {
 
     var favoriteRecipes: [FavoriteRecipe] = []
 
-    func loadRecipes(){
+    /**
+     This function fetches the recipes stored in CoreData.
+     */
+    func fetchRecipes(){
         favoriteRecipes = []
         let request: NSFetchRequest<FavoriteRecipe> = FavoriteRecipe.fetchRequest()
         guard let recipes =  try? CoreDataStack.shared.viewContext.fetch(request) else {
@@ -23,6 +32,11 @@ class LocalRecipeService {
         }
     }
 
+    /**
+     This function deletes a FavoriteRecipe from CoreData
+     
+     - parameter recipe: Recipe to be deleted.
+     */
     func removeRecipe(recipe: FavoriteRecipe?) {
         guard let recipeToRemove = recipe else {return}
         CoreDataStack.shared.viewContext.delete(recipeToRemove)
@@ -32,7 +46,7 @@ class LocalRecipeService {
         } catch  {
             // TODO: Print messa error for user.
         }
-        loadRecipes()
+        fetchRecipes()
     }
 
     

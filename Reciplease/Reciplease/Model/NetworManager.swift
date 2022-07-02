@@ -62,14 +62,12 @@ public final class NetworkManager <T: Decodable>{
             return
         }
         AF.request(url).responseImage { response in
-            DispatchQueue.main.async {
                 guard response.error == nil,
                       let data = response.data else {
                     completionHandler(nil)
                     return
                 }
                 completionHandler(data)
-            }
         }
     }
 }

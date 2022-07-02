@@ -11,7 +11,7 @@ import CoreData
 /**
  * FavoriteRecipe:
  *
- * This class is an object (a recipe) to be managed by CoreData.
+ * This class is an object (favorite recipe) to be managed by CoreData.
  */
 public class FavoriteRecipe: NSManagedObject {
     
