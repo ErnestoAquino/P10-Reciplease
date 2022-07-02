@@ -576,6 +576,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qDq-op-T1u">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="574"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ciO-3N-QIu">
+                                        <rect key="frame" x="57.5" y="265.5" width="260.5" height="43"/>
+                                        <string key="text">No recipes favorite  is select yet!
+Click «  ♥ » to add un recipe.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.2117646933" green="0.20000001789999999" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="ciO-3N-QIu" firstAttribute="centerX" secondItem="qDq-op-T1u" secondAttribute="centerX" id="HAW-F5-Erz"/>
+                                    <constraint firstItem="ciO-3N-QIu" firstAttribute="centerY" secondItem="qDq-op-T1u" secondAttribute="centerY" id="Qje-wP-oip"/>
+                                </constraints>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="e6M-PL-wvY">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="574"/>
                                 <color key="backgroundColor" red="0.2117646933" green="0.20000001789999999" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -681,13 +699,18 @@
                         <color key="backgroundColor" red="0.2117646933" green="0.20000001789999999" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="e6M-PL-wvY" firstAttribute="leading" secondItem="Diz-Jb-uYU" secondAttribute="leading" id="5NA-0F-jqy"/>
+                            <constraint firstItem="Diz-Jb-uYU" firstAttribute="bottom" secondItem="qDq-op-T1u" secondAttribute="bottom" id="EpE-Pj-UzD"/>
                             <constraint firstItem="Diz-Jb-uYU" firstAttribute="trailing" secondItem="e6M-PL-wvY" secondAttribute="trailing" id="VNi-Cf-rEH"/>
                             <constraint firstItem="e6M-PL-wvY" firstAttribute="top" secondItem="Diz-Jb-uYU" secondAttribute="top" id="WSt-R2-Hkb"/>
+                            <constraint firstItem="qDq-op-T1u" firstAttribute="top" secondItem="Diz-Jb-uYU" secondAttribute="top" id="YwU-j8-7dG"/>
                             <constraint firstItem="Diz-Jb-uYU" firstAttribute="bottom" secondItem="e6M-PL-wvY" secondAttribute="bottom" id="gLz-Vh-0EX"/>
+                            <constraint firstItem="qDq-op-T1u" firstAttribute="leading" secondItem="Diz-Jb-uYU" secondAttribute="leading" id="nuL-jr-9QY"/>
+                            <constraint firstItem="Diz-Jb-uYU" firstAttribute="trailing" secondItem="qDq-op-T1u" secondAttribute="trailing" id="olq-E2-RDY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Reciplease" id="hiZ-Fd-BsX"/>
                     <connections>
+                        <outlet property="noRecipesView" destination="qDq-op-T1u" id="hXD-dh-t7p"/>
                         <outlet property="tableView" destination="e6M-PL-wvY" id="jBH-EX-3tT"/>
                     </connections>
                 </viewController>
