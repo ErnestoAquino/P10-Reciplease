@@ -21,13 +21,10 @@ class RecipesTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
     func configure(image: Data?, nameRecipe: String?, ingredients: String?, yield: String?, time: String?) {
