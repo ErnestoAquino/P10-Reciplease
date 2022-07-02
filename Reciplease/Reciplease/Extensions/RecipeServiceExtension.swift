@@ -8,6 +8,14 @@
 import Foundation
 
 extension RecipeService: SearchDelegate {
+
+    
+    /**
+     This function navigates to SearchResutlViewcontroller.
+     
+     - parameter recipes: Table with the recipes to pass to the view controller.
+     - parameter nextURL: String containing the following elements of the search result.
+     */
     func goToSearchResultViewController(recipes: [LocalRecipe], nextURL: String?) {
         viewDelegate?.goToSearchResultViewController(recipes: listRecipes, nextURL: nextURL)
     }
@@ -62,7 +70,6 @@ extension RecipeService {
     }
 }
 
-// Test
 extension RecipeService: SearchResultDelegate {
     func reloadTableView() {
         searchResultViewDelegate?.reloadTableView()
