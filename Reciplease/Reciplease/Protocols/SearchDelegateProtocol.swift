@@ -16,8 +16,6 @@ protocol SearchDelegate: AnyObject {
     func goToSearchResultViewController(recipes: [LocalRecipe], nextURL: String?)
 }
 
-
-// Test
 protocol SearchResultDelegate: AnyObject {
     func reloadTableView()
 }
