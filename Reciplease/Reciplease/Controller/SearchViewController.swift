@@ -31,7 +31,8 @@ class SearchViewController: UIViewController {
     }
     
     @IBAction func searchButtonTaped() {
-        recipeService.getRecipes()
+//        recipeService.getRecipes()
+        recipeService.test_get_recipes()
     }
     
     override func viewDidLoad() {
