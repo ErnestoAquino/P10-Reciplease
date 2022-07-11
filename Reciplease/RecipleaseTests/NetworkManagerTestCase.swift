@@ -1,14 +1,13 @@
 //
-//  RecipleaseTests.swift
+//  NetworkManagerTestCase.swift
 //  RecipleaseTests
 //
-//  Created by Ernesto Elias on 05/06/2022.
+//  Created by Ernesto Elias Aquino Cifuentes on 07/07/2022.
 //
 
 import XCTest
-@testable import Reciplease
 
-class RecipleaseTests: XCTestCase {
+class NetworkManagerTestCase: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
