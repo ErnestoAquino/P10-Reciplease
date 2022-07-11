@@ -71,4 +71,61 @@ public final class NetworkManager <T: Decodable>{
         }
     }
 }
+//MARK: -Test for tests
+
+
+class test_network_manager {
+
+    
+    var sessionManager: SessionProtocol
+
+    init(session: SessionProtocol = Alamofire.AF) {
+        self.sessionManager = session
+    }
+
+    public func test_get_information(request: URLRequest?, completionHandler: @escaping (RecipeResponse?, Error?) -> Void) {
+        guard let request = request else {
+            completionHandler(nil, nil)
+            return
+        }
+        sessionManager.withRequest(request).withResponse { response in
+            DispatchQueue.main.async {
+                guard response.error == nil else {
+                    completionHandler(nil, response.error)
+                    return
+                }
+                guard let data = response.data,
+                      response.response?.statusCode == 200 else {
+                    completionHandler(nil, nil)
+                    return
+                }
+                let decoder = JSONDecoder()
+                decoder.keyDecodingStrategy = .useDefaultKeys
+                decoder.dateDecodingStrategy = .secondsSince1970
+                guard let recipeResponse = try? decoder.decode(RecipeResponse.self, from: data) else {
+                    completionHandler(nil, nil)
+                    return
+                }
+                completionHandler(recipeResponse, nil)
+            }
+        }
+    }
+
+    public func getImage(url: String?, completionHandler: @escaping (Data?) -> Void) {
+        guard let url = url else {
+            completionHandler(nil)
+            return
+        }
+        AF.request(url).withResponseImage { response in
+            DispatchQueue.main.async {
+                guard response.error == nil,
+                      let data = response.data else {
+                    completionHandler(nil)
+                    return
+                }
+                completionHandler(data)
+            }
+        }
+    }
+}
 
