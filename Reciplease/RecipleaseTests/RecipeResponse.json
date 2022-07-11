@@ -1,0 +1,2092 @@
+{
+    "from": 1,
+    "to": 20,
+    "count": 28,
+    "_links": {
+        "next": {
+            "href": "https://api.edamam.com/api/recipes/v2?q=tomate%2C%20chicken&app_key=cfa430402075604d56fc1e8c94096b51&field=ingredientLines&field=ingredients&field=totalTime&field=label&field=image&field=url&_cont=CHcWQT1OcV9xBB8VADQWVhFCPwoxXVZEITQeVDcBaR4-SQ%3D%3D&type=public&app_id=f3afe7be",
+            "title": "Next page"
+        }
+    },
+    "hits": [
+                {
+                    "recipe": {
+                        "label": "Creamy Chicken &amp;amp; Sundried Tomates",
+                        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/6a6/6a65aab2a71dd7abde90a771f8f1ad86.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjECUaCXVzLWVhc3QtMSJHMEUCIAp76RBJb3%2FGqQ2EqxGtCiZLJnM%2FaAElEsMYJzW%2FSpI%2FAiEAivb7i9wjsGCz%2BQfPLaC%2F%2F609Yu43Vrhy87x%2FVa%2BlxFsq0gQILRAAGgwxODcwMTcxNTA5ODYiDICJtuToDe2Zp1PfciqvBAyz3bEw5sg4CFEzO0cdPIQyI2Y6p9giVxLrF5UueLXxFaKCeEbfHwfaQ%2Fzuhl0FdvVg6guH6UCHZra9ncs43mJX4r8fgQURhNLYKh3SoRzupXzqjAsp5ujC5vFzVxP%2BJBKS3zvyhzhgT%2Fvq3ZWZgUl8xfp86Yv07rkf6qrBzVz4JmSmHL9mwZrGSyTd6l6GLAO9ISmmdlRHqZwJs323F9TCr3udsMEPljrEGvw2SqtIpgpJAYmc6%2F8m3eX6SicsjG1bIbVjonu1T74W4eBqEFwxp55VIyZrAqybvHrsfMsJYNIf02IXU4IE87aCGXswgwm5r9D9JoVoT9EY8c1s9qz5a2qydT1YmxddXQqclgtIkAlRwF8WIP4MkzwIoxfU0syFdCc5JikEttEU7bzqUjYdSG67dyc%2FtdXZ2fpHATlVRHvAJE8tYVajCGa5L0fMQ301%2BqXxEEblvNWkla%2Bs1yFVLQ1Al5hcdzBahpLN9eMTlStt2tI5M4D2garQoYjsfETUqfyEJf7X9dYUVosWMqxpIQjbcuCzw%2BXazIXg98tuUotInFmL6wwaGKG%2FqhlNu1zpo8Z50XVFI6M3EtZD0WBaxuxc8slose1XY1LzshB4u6MRdNM1dR6CM8Au24hLwfBI3QqdcaFH2w7P64v%2B%2BHD2ci5uEKynjNkU3qLcgJtokbVD4mhc8uk4rfFA5b%2B8T9pX8jfDO9ijNRvD87%2Fjj6tMAMTg1dzVnvY68UNttOMwx%2BqMlQY6qQGjGCPiHs66PLnaBpjkX%2FvOW370xi8lhs5xjyMxKel8%2FwIhgSPY5xe%2B3ZTw%2B3tvgou5q4EBn%2FCe9TuoOhUSAKhskfPRz6KMRmWWudeavtaDOIw0dMquvFlTvDbFkjY1X1fA54T5xB%2FiZKny1pCKu8aTZtq0SRiKiYDEvpJlErNBwmX6irrALUYwCQKNHWmSG2L9DG3GGWpqliFdQkCfmOS3DPyAv2jv9N7H&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220610T125448Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFANBTJK4H%2F20220610%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=ce6253d2b6b0b4225363b5dbddb36240dc5f96d755965ef32610cc8710c27e20",
+                        "url": "https://food52.com/recipes/80504-creamy-chicken-sundried-tomates",
+                        "ingredientLines": [
+                            "4 chicken breasts, cut in bigger pieces",
+                            "2 cups organic chicken broth",
+                            "1/2 cup organic heavy cream",
+                            "3 tablespoons butter",
+                            "1/4 cup Parmesan cheese",
+                            "1/3 cup sundried tomatoes, julienne cut packed in oil",
+                            "1/4 teaspoon black pepper",
+                            "1 1/2 teaspoons salt",
+                            "1/2 teaspoon oregano",
+                            "2 garlic cloves, minced",
+                            "10 basil leaves, finely chopped"
+                        ],
+                        "ingredients": [
+                            {
+                                "text": "4 chicken breasts, cut in bigger pieces",
+                                "quantity": 4.0,
+                                "measure": "<unit>",
+                                "food": "chicken breasts",
+                                "weight": 696.0,
+                                "foodCategory": "Poultry",
+                                "foodId": "food_a9hdg97b1sqqs5aj1al75bbo5iyt",
+                                "image": "https://www.edamam.com/food-img/093/093749f4c93e448119fc81976d2c3067.jpg"
+                            },
+                            {
+                                "text": "2 cups organic chicken broth",
+                                "quantity": 2.0,
+                                "measure": "cup",
+                                "food": "chicken broth",
+                                "weight": 480.0,
+                                "foodCategory": "canned soup",
+                                "foodId": "food_bptblvzambd16nbhewqmhaw1rnh5",
+                                "image": "https://www.edamam.com/food-img/26a/26a10c4cb4e07bab54d8a687ef5ac7d8.jpg"
+                            },
+                            {
+                                "text": "1/2 cup organic heavy cream",
+                                "quantity": 0.5,
+                                "measure": "cup",
+                                "food": "heavy cream",
+                                "weight": 119.0,
+                                "foodCategory": "Dairy",
+                                "foodId": "food_bgtkr21b5v16mca246x9ebnaswyo",
+                                "image": "https://www.edamam.com/food-img/484/4848d71f6a14dd5076083f5e17925420.jpg"
+                            },
+                            {
+                                "text": "3 tablespoons butter",
+                                "quantity": 3.0,
+                                "measure": "tablespoon",
+                                "food": "butter",
+                                "weight": 42.599999999999994,
+                                "foodCategory": "Dairy",
+                                "foodId": "food_awz3iefajbk1fwahq9logahmgltj",
+                                "image": "https://www.edamam.com/food-img/713/71397239b670d88c04faa8d05035cab4.jpg"
+                            },
+                            {
+                                "text": "1/4 cup Parmesan cheese",
+                                "quantity": 0.25,
+                                "measure": "cup",
+                                "food": "Parmesan cheese",
+                                "weight": 37.1765625,
+                                "foodCategory": "Cheese",
+                                "foodId": "food_a104ppxa06d3emb272fkcab3cugd",
+                                "image": "https://www.edamam.com/food-img/f58/f588658627c59d5041e4664119829aa9.jpg"
+                            },
+                            {
+                                "text": "1/3 cup sundried tomatoes, julienne cut packed in oil",
+                                "quantity": 0.3333333333333333,
+                                "measure": "cup",
+                                "food": "sundried tomatoes",
+                                "weight": 18.0,
+                                "foodCategory": "vegetables",
+                                "foodId": "food_aq6acefaz2zqp1anqb7iiatc27q6",
+                                "image": "https://www.edamam.com/food-img/023/0231ec1c0873483bd9747d71d57e6215.jpeg"
+                            },
+                            {
+                                "text": "1/4 teaspoon black pepper",
+                                "quantity": 0.25,
+                                "measure": "teaspoon",
+                                "food": "black pepper",
+                                "weight": 0.725,
+                                "foodCategory": "Condiments and sauces",
+                                "foodId": "food_b6ywzluaaxv02wad7s1r9ag4py89",
+                                "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+                            },
+                            {
+                                "text": "1 1/2 teaspoons salt",
+                                "quantity": 1.5,
+                                "measure": "teaspoon",
+                                "food": "salt",
+                                "weight": 9.0,
+                                "foodCategory": "Condiments and sauces",
+                                "foodId": "food_btxz81db72hwbra2pncvebzzzum9",
+                                "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+                            },
+                            {
+                                "text": "1/2 teaspoon oregano",
+                                "quantity": 0.5,
+                                "measure": "teaspoon",
+                                "food": "oregano",
+                                "weight": 0.5,
+                                "foodCategory": "Condiments and sauces",
+                                "foodId": "food_bkkw6v3bdf0sqiazmzyuiax7i8jr",
+                                "image": "https://www.edamam.com/food-img/1b0/1b0eaffb1c261606e0d82fed8e9747a7.jpg"
+                            },
+                            {
+                                "text": "2 garlic cloves, minced",
+                                "quantity": 2.0,
+                                "measure": "clove",
+                                "food": "garlic",
+                                "weight": 6.0,
+                                "foodCategory": "vegetables",
+                                "foodId": "food_avtcmx6bgjv1jvay6s6stan8dnyp",
+                                "image": "https://www.edamam.com/food-img/6ee/6ee142951f48aaf94f4312409f8d133d.jpg"
+                            },
+                            {
+                                "text": "10 basil leaves, finely chopped",
+                                "quantity": 10.0,
+                                "measure": "leaf",
+                                "food": "basil",
+                                "weight": 5.0,
+                                "foodCategory": "Condiments and sauces",
+                                "foodId": "food_bfeht3obd58c3gak5ehpibxgbbs6",
+                                "image": "https://www.edamam.com/food-img/5f1/5f1b05685ac2b404236a5d1c1f3c8c10.jpg"
+                            }
+                        ],
+                        "totalTime": 15.0
+                    },
+                    "_links": {
+                        "self": {
+                            "href": "https://api.edamam.com/api/recipes/v2/37d29bd069bba3b4e01a037c76c75e50?type=public&app_id=f3afe7be&app_key=cfa430402075604d56fc1e8c94096b51",
+                            "title": "Self"
+                        }
+                    }
+                },
+                {
+                            "recipe": {
+                                "label": "Mofongo Con Salsa De Tomate (Mashed Plantains With Tomato Sauce)",
+                                "image": "https://edamam-product-images.s3.amazonaws.com/web-img/3c2/3c279fb0378bc9142eb783398a8ad777.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjECUaCXVzLWVhc3QtMSJHMEUCIAp76RBJb3%2FGqQ2EqxGtCiZLJnM%2FaAElEsMYJzW%2FSpI%2FAiEAivb7i9wjsGCz%2BQfPLaC%2F%2F609Yu43Vrhy87x%2FVa%2BlxFsq0gQILRAAGgwxODcwMTcxNTA5ODYiDICJtuToDe2Zp1PfciqvBAyz3bEw5sg4CFEzO0cdPIQyI2Y6p9giVxLrF5UueLXxFaKCeEbfHwfaQ%2Fzuhl0FdvVg6guH6UCHZra9ncs43mJX4r8fgQURhNLYKh3SoRzupXzqjAsp5ujC5vFzVxP%2BJBKS3zvyhzhgT%2Fvq3ZWZgUl8xfp86Yv07rkf6qrBzVz4JmSmHL9mwZrGSyTd6l6GLAO9ISmmdlRHqZwJs323F9TCr3udsMEPljrEGvw2SqtIpgpJAYmc6%2F8m3eX6SicsjG1bIbVjonu1T74W4eBqEFwxp55VIyZrAqybvHrsfMsJYNIf02IXU4IE87aCGXswgwm5r9D9JoVoT9EY8c1s9qz5a2qydT1YmxddXQqclgtIkAlRwF8WIP4MkzwIoxfU0syFdCc5JikEttEU7bzqUjYdSG67dyc%2FtdXZ2fpHATlVRHvAJE8tYVajCGa5L0fMQ301%2BqXxEEblvNWkla%2Bs1yFVLQ1Al5hcdzBahpLN9eMTlStt2tI5M4D2garQoYjsfETUqfyEJf7X9dYUVosWMqxpIQjbcuCzw%2BXazIXg98tuUotInFmL6wwaGKG%2FqhlNu1zpo8Z50XVFI6M3EtZD0WBaxuxc8slose1XY1LzshB4u6MRdNM1dR6CM8Au24hLwfBI3QqdcaFH2w7P64v%2B%2BHD2ci5uEKynjNkU3qLcgJtokbVD4mhc8uk4rfFA5b%2B8T9pX8jfDO9ijNRvD87%2Fjj6tMAMTg1dzVnvY68UNttOMwx%2BqMlQY6qQGjGCPiHs66PLnaBpjkX%2FvOW370xi8lhs5xjyMxKel8%2FwIhgSPY5xe%2B3ZTw%2B3tvgou5q4EBn%2FCe9TuoOhUSAKhskfPRz6KMRmWWudeavtaDOIw0dMquvFlTvDbFkjY1X1fA54T5xB%2FiZKny1pCKu8aTZtq0SRiKiYDEvpJlErNBwmX6irrALUYwCQKNHWmSG2L9DG3GGWpqliFdQkCfmOS3DPyAv2jv9N7H&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220610T125448Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFANBTJK4H%2F20220610%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=2f7ce492731479aaebdb09e0780d18df51fcb9f5fb2775c43e5300568d13f713",
+                                "url": "http://www.saveur.com/article/Recipes/Mofongo-con-Salsa-de-Tomate-Mashed-Plantains-with-Tomato-Salsa",
+                                "ingredientLines": [
+                                    "Canola oil, for frying",
+                                    "5 plantains, peeled, cut into 1â³ chunks, soaked in hot water",
+                                    "Â¾ cup chicken stock",
+                                    "8 oz. bacon, cut into Â¼â³ cubes",
+                                    "7 cloves garlic, minced",
+                                    "Â½ cup olive oil",
+                                    "Kosher salt and freshly ground black pepper, to taste",
+                                    "1 small yellow onion, minced",
+                                    "1 28-oz. can whole, peeled tomatoes, drained and crushed Shredded iceberg lettuce and tomato wedges, to serve"
+                                ],
+                                "ingredients": [
+                                    {
+                                        "text": "Canola oil, for frying",
+                                        "quantity": 0.0,
+                                        "measure": null,
+                                        "food": "Canola oil",
+                                        "weight": 52.797323334000005,
+                                        "foodCategory": "Oils",
+                                        "foodId": "food_bk9p9aaavhvoq4bqsnprobpsiuxs",
+                                        "image": "https://www.edamam.com/food-img/07e/07e106ab3536d57428e5c46d009038f8.jpg"
+                                    },
+                                    {
+                                        "text": "5 plantains, peeled, cut into 1â³ chunks, soaked in hot water",
+                                        "quantity": 5.0,
+                                        "measure": "<unit>",
+                                        "food": "plantains",
+                                        "weight": 895.0,
+                                        "foodCategory": "fruit",
+                                        "foodId": "food_b5390qwao5mc3yanbn3a1afp6vs8",
+                                        "image": "https://www.edamam.com/food-img/a89/a895e325e16d684d8df7786aa7898f73.jpg"
+                                    },
+                                    {
+                                        "text": "Â¾ cup chicken stock",
+                                        "quantity": 0.75,
+                                        "measure": "cup",
+                                        "food": "chicken stock",
+                                        "weight": 180.0,
+                                        "foodCategory": "canned soup",
+                                        "foodId": "food_bptblvzambd16nbhewqmhaw1rnh5",
+                                        "image": "https://www.edamam.com/food-img/26a/26a10c4cb4e07bab54d8a687ef5ac7d8.jpg"
+                                    },
+                                    {
+                                        "text": "8 oz. bacon, cut into Â¼â³ cubes",
+                                        "quantity": 8.0,
+                                        "measure": "ounce",
+                                        "food": "bacon",
+                                        "weight": 226.796185,
+                                        "foodCategory": "cured meats",
+                                        "foodId": "food_av0awb0bgs18qub01sd9kbx44b61",
+                                        "image": "https://www.edamam.com/food-img/d42/d426884a125fa39a70d5a5d7217864ec.jpg"
+                                    },
+                                    {
+                                        "text": "7 cloves garlic, minced",
+                                        "quantity": 7.0,
+                                        "measure": "clove",
+                                        "food": "garlic",
+                                        "weight": 21.0,
+                                        "foodCategory": "vegetables",
+                                        "foodId": "food_avtcmx6bgjv1jvay6s6stan8dnyp",
+                                        "image": "https://www.edamam.com/food-img/6ee/6ee142951f48aaf94f4312409f8d133d.jpg"
+                                    },
+                                    {
+                                        "text": "Â½ cup olive oil",
+                                        "quantity": 0.5,
+                                        "measure": "cup",
+                                        "food": "olive oil",
+                                        "weight": 108.0,
+                                        "foodCategory": "Oils",
+                                        "foodId": "food_b1d1icuad3iktrbqby0hiagafaz7",
+                                        "image": "https://www.edamam.com/food-img/4d6/4d651eaa8a353647746290c7a9b29d84.jpg"
+                                    },
+                                    {
+                                        "text": "Kosher salt and freshly ground black pepper, to taste",
+                                        "quantity": 0.0,
+                                        "measure": null,
+                                        "food": "Kosher salt",
+                                        "weight": 23.292936765000004,
+                                        "foodCategory": "Condiments and sauces",
+                                        "foodId": "food_a1vgrj1bs8rd1majvmd9ubz8ttkg",
+                                        "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+                                    },
+                                    {
+                                        "text": "Kosher salt and freshly ground black pepper, to taste",
+                                        "quantity": 0.0,
+                                        "measure": null,
+                                        "food": "black pepper",
+                                        "weight": 11.646468382500002,
+                                        "foodCategory": "Condiments and sauces",
+                                        "foodId": "food_b6ywzluaaxv02wad7s1r9ag4py89",
+                                        "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+                                    },
+                                    {
+                                        "text": "1 small yellow onion, minced",
+                                        "quantity": 1.0,
+                                        "measure": "<unit>",
+                                        "food": "yellow onion",
+                                        "weight": 70.0,
+                                        "foodCategory": "vegetables",
+                                        "foodId": "food_bmrvi4ob4binw9a5m7l07amlfcoy",
+                                        "image": "https://www.edamam.com/food-img/205/205e6bf2399b85d34741892ef91cc603.jpg"
+                                    },
+                                    {
+                                        "text": "1 28-oz. can whole, peeled tomatoes, drained and crushed Shredded iceberg lettuce and tomato wedges, to serve",
+                                        "quantity": 28.0,
+                                        "measure": "ounce",
+                                        "food": "tomatoes",
+                                        "weight": 793.7866475000001,
+                                        "foodCategory": "canned vegetables",
+                                        "foodId": "food_bnmkkwqa9h2p87bz171eoby0bsey",
+                                        "image": "https://www.edamam.com/food-img/d4e/d4e8110d51db4311bc894167a8f77816.jpg"
+                                    },
+                                    {
+                                        "text": "1 28-oz. can whole, peeled tomatoes, drained and crushed Shredded iceberg lettuce and tomato wedges, to serve",
+                                        "quantity": 28.0,
+                                        "measure": "ounce",
+                                        "food": "iceberg lettuce",
+                                        "weight": 793.7866475000001,
+                                        "foodCategory": "vegetables",
+                                        "foodId": "food_advhqk1a09o2noblosrg6a4z10xv",
+                                        "image": "https://www.edamam.com/food-img/3c0/3c00c5ba27678b2f8e1c58b342bd98c7.jpg"
+                                    },
+                                    {
+                                        "text": "1 28-oz. can whole, peeled tomatoes, drained and crushed Shredded iceberg lettuce and tomato wedges, to serve",
+                                        "quantity": 28.0,
+                                        "measure": "ounce",
+                                        "food": "tomato",
+                                        "weight": 793.7866475000001,
+                                        "foodCategory": "vegetables",
+                                        "foodId": "food_a6k79rrahp8fe2b26zussa3wtkqh",
+                                        "image": "https://www.edamam.com/food-img/23e/23e727a14f1035bdc2733bb0477efbd2.jpg"
+                                    }
+                                ],
+                                "totalTime": 0.0
+                            },
+                            "_links": {
+                                "self": {
+                                    "href": "https://api.edamam.com/api/recipes/v2/cd3cd059bf244efa85ef3b01da1b50fa?type=public&app_id=f3afe7be&app_key=cfa430402075604d56fc1e8c94096b51",
+                                    "title": "Self"
+                                }
+                            }
+                        },
+            {
+                        "recipe": {
+                            "label": "Mofongo Con Salsa De Tomate (Mashed Plantains With Tomato Sauce)",
+                            "image": "https://edamam-product-images.s3.amazonaws.com/web-img/3c2/3c279fb0378bc9142eb783398a8ad777.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjECUaCXVzLWVhc3QtMSJHMEUCIAp76RBJb3%2FGqQ2EqxGtCiZLJnM%2FaAElEsMYJzW%2FSpI%2FAiEAivb7i9wjsGCz%2BQfPLaC%2F%2F609Yu43Vrhy87x%2FVa%2BlxFsq0gQILRAAGgwxODcwMTcxNTA5ODYiDICJtuToDe2Zp1PfciqvBAyz3bEw5sg4CFEzO0cdPIQyI2Y6p9giVxLrF5UueLXxFaKCeEbfHwfaQ%2Fzuhl0FdvVg6guH6UCHZra9ncs43mJX4r8fgQURhNLYKh3SoRzupXzqjAsp5ujC5vFzVxP%2BJBKS3zvyhzhgT%2Fvq3ZWZgUl8xfp86Yv07rkf6qrBzVz4JmSmHL9mwZrGSyTd6l6GLAO9ISmmdlRHqZwJs323F9TCr3udsMEPljrEGvw2SqtIpgpJAYmc6%2F8m3eX6SicsjG1bIbVjonu1T74W4eBqEFwxp55VIyZrAqybvHrsfMsJYNIf02IXU4IE87aCGXswgwm5r9D9JoVoT9EY8c1s9qz5a2qydT1YmxddXQqclgtIkAlRwF8WIP4MkzwIoxfU0syFdCc5JikEttEU7bzqUjYdSG67dyc%2FtdXZ2fpHATlVRHvAJE8tYVajCGa5L0fMQ301%2BqXxEEblvNWkla%2Bs1yFVLQ1Al5hcdzBahpLN9eMTlStt2tI5M4D2garQoYjsfETUqfyEJf7X9dYUVosWMqxpIQjbcuCzw%2BXazIXg98tuUotInFmL6wwaGKG%2FqhlNu1zpo8Z50XVFI6M3EtZD0WBaxuxc8slose1XY1LzshB4u6MRdNM1dR6CM8Au24hLwfBI3QqdcaFH2w7P64v%2B%2BHD2ci5uEKynjNkU3qLcgJtokbVD4mhc8uk4rfFA5b%2B8T9pX8jfDO9ijNRvD87%2Fjj6tMAMTg1dzVnvY68UNttOMwx%2BqMlQY6qQGjGCPiHs66PLnaBpjkX%2FvOW370xi8lhs5xjyMxKel8%2FwIhgSPY5xe%2B3ZTw%2B3tvgou5q4EBn%2FCe9TuoOhUSAKhskfPRz6KMRmWWudeavtaDOIw0dMquvFlTvDbFkjY1X1fA54T5xB%2FiZKny1pCKu8aTZtq0SRiKiYDEvpJlErNBwmX6irrALUYwCQKNHWmSG2L9DG3GGWpqliFdQkCfmOS3DPyAv2jv9N7H&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220610T125448Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFANBTJK4H%2F20220610%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=2f7ce492731479aaebdb09e0780d18df51fcb9f5fb2775c43e5300568d13f713",
+                            "url": "http://www.saveur.com/article/Recipes/Mofongo-con-Salsa-de-Tomate-Mashed-Plantains-with-Tomato-Salsa",
+                            "ingredientLines": [
+                                "Canola oil, for frying",
+                                "5 plantains, peeled, cut into 1â³ chunks, soaked in hot water",
+                                "Â¾ cup chicken stock",
+                                "8 oz. bacon, cut into Â¼â³ cubes",
+                                "7 cloves garlic, minced",
+                                "Â½ cup olive oil",
+                                "Kosher salt and freshly ground black pepper, to taste",
+                                "1 small yellow onion, minced",
+                                "1 28-oz. can whole, peeled tomatoes, drained and crushed Shredded iceberg lettuce and tomato wedges, to serve"
+                            ],
+                            "ingredients": [
+                                {
+                                    "text": "Canola oil, for frying",
+                                    "quantity": 0.0,
+                                    "measure": null,
+                                    "food": "Canola oil",
+                                    "weight": 52.797323334000005,
+                                    "foodCategory": "Oils",
+                                    "foodId": "food_bk9p9aaavhvoq4bqsnprobpsiuxs",
+                                    "image": "https://www.edamam.com/food-img/07e/07e106ab3536d57428e5c46d009038f8.jpg"
+                                },
+                                {
+                                    "text": "5 plantains, peeled, cut into 1â³ chunks, soaked in hot water",
+                                    "quantity": 5.0,
+                                    "measure": "<unit>",
+                                    "food": "plantains",
+                                    "weight": 895.0,
+                                    "foodCategory": "fruit",
+                                    "foodId": "food_b5390qwao5mc3yanbn3a1afp6vs8",
+                                    "image": "https://www.edamam.com/food-img/a89/a895e325e16d684d8df7786aa7898f73.jpg"
+                                },
+                                {
+                                    "text": "Â¾ cup chicken stock",
+                                    "quantity": 0.75,
+                                    "measure": "cup",
+                                    "food": "chicken stock",
+                                    "weight": 180.0,
+                                    "foodCategory": "canned soup",
+                                    "foodId": "food_bptblvzambd16nbhewqmhaw1rnh5",
+                                    "image": "https://www.edamam.com/food-img/26a/26a10c4cb4e07bab54d8a687ef5ac7d8.jpg"
+                                },
+                                {
+                                    "text": "8 oz. bacon, cut into Â¼â³ cubes",
+                                    "quantity": 8.0,
+                                    "measure": "ounce",
+                                    "food": "bacon",
+                                    "weight": 226.796185,
+                                    "foodCategory": "cured meats",
+                                    "foodId": "food_av0awb0bgs18qub01sd9kbx44b61",
+                                    "image": "https://www.edamam.com/food-img/d42/d426884a125fa39a70d5a5d7217864ec.jpg"
+                                },
+                                {
+                                    "text": "7 cloves garlic, minced",
+                                    "quantity": 7.0,
+                                    "measure": "clove",
+                                    "food": "garlic",
+                                    "weight": 21.0,
+                                    "foodCategory": "vegetables",
+                                    "foodId": "food_avtcmx6bgjv1jvay6s6stan8dnyp",
+                                    "image": "https://www.edamam.com/food-img/6ee/6ee142951f48aaf94f4312409f8d133d.jpg"
+                                },
+                                {
+                                    "text": "Â½ cup olive oil",
+                                    "quantity": 0.5,
+                                    "measure": "cup",
+                                    "food": "olive oil",
+                                    "weight": 108.0,
+                                    "foodCategory": "Oils",
+                                    "foodId": "food_b1d1icuad3iktrbqby0hiagafaz7",
+                                    "image": "https://www.edamam.com/food-img/4d6/4d651eaa8a353647746290c7a9b29d84.jpg"
+                                },
+                                {
+                                    "text": "Kosher salt and freshly ground black pepper, to taste",
+                                    "quantity": 0.0,
+                                    "measure": null,
+                                    "food": "Kosher salt",
+                                    "weight": 23.292936765000004,
+                                    "foodCategory": "Condiments and sauces",
+                                    "foodId": "food_a1vgrj1bs8rd1majvmd9ubz8ttkg",
+                                    "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+                                },
+                                {
+                                    "text": "Kosher salt and freshly ground black pepper, to taste",
+                                    "quantity": 0.0,
+                                    "measure": null,
+                                    "food": "black pepper",
+                                    "weight": 11.646468382500002,
+                                    "foodCategory": "Condiments and sauces",
+                                    "foodId": "food_b6ywzluaaxv02wad7s1r9ag4py89",
+                                    "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+                                },
+                                {
+                                    "text": "1 small yellow onion, minced",
+                                    "quantity": 1.0,
+                                    "measure": "<unit>",
+                                    "food": "yellow onion",
+                                    "weight": 70.0,
+                                    "foodCategory": "vegetables",
+                                    "foodId": "food_bmrvi4ob4binw9a5m7l07amlfcoy",
+                                    "image": "https://www.edamam.com/food-img/205/205e6bf2399b85d34741892ef91cc603.jpg"
+                                },
+                                {
+                                    "text": "1 28-oz. can whole, peeled tomatoes, drained and crushed Shredded iceberg lettuce and tomato wedges, to serve",
+                                    "quantity": 28.0,
+                                    "measure": "ounce",
+                                    "food": "tomatoes",
+                                    "weight": 793.7866475000001,
+                                    "foodCategory": "canned vegetables",
+                                    "foodId": "food_bnmkkwqa9h2p87bz171eoby0bsey",
+                                    "image": "https://www.edamam.com/food-img/d4e/d4e8110d51db4311bc894167a8f77816.jpg"
+                                },
+                                {
+                                    "text": "1 28-oz. can whole, peeled tomatoes, drained and crushed Shredded iceberg lettuce and tomato wedges, to serve",
+                                    "quantity": 28.0,
+                                    "measure": "ounce",
+                                    "food": "iceberg lettuce",
+                                    "weight": 793.7866475000001,
+                                    "foodCategory": "vegetables",
+                                    "foodId": "food_advhqk1a09o2noblosrg6a4z10xv",
+                                    "image": "https://www.edamam.com/food-img/3c0/3c00c5ba27678b2f8e1c58b342bd98c7.jpg"
+                                },
+                                {
+                                    "text": "1 28-oz. can whole, peeled tomatoes, drained and crushed Shredded iceberg lettuce and tomato wedges, to serve",
+                                    "quantity": 28.0,
+                                    "measure": "ounce",
+                                    "food": "tomato",
+                                    "weight": 793.7866475000001,
+                                    "foodCategory": "vegetables",
+                                    "foodId": "food_a6k79rrahp8fe2b26zussa3wtkqh",
+                                    "image": "https://www.edamam.com/food-img/23e/23e727a14f1035bdc2733bb0477efbd2.jpg"
+                                }
+                            ],
+                            "totalTime": 0.0
+                        },
+                        "_links": {
+                            "self": {
+                                "href": "https://api.edamam.com/api/recipes/v2/cd3cd059bf244efa85ef3b01da1b50fa?type=public&app_id=f3afe7be&app_key=cfa430402075604d56fc1e8c94096b51",
+                                "title": "Self"
+                            }
+                        }
+                    },
+            {
+                        "recipe": {
+                            "label": "Roasted Tomato and Garlic Soup",
+                            "image": "https://edamam-product-images.s3.amazonaws.com/web-img/fed/fed393ab51d874f728e5e98d695aa832.JPG?X-Amz-Security-Token=IQoJb3JpZ2luX2VjECUaCXVzLWVhc3QtMSJHMEUCIAp76RBJb3%2FGqQ2EqxGtCiZLJnM%2FaAElEsMYJzW%2FSpI%2FAiEAivb7i9wjsGCz%2BQfPLaC%2F%2F609Yu43Vrhy87x%2FVa%2BlxFsq0gQILRAAGgwxODcwMTcxNTA5ODYiDICJtuToDe2Zp1PfciqvBAyz3bEw5sg4CFEzO0cdPIQyI2Y6p9giVxLrF5UueLXxFaKCeEbfHwfaQ%2Fzuhl0FdvVg6guH6UCHZra9ncs43mJX4r8fgQURhNLYKh3SoRzupXzqjAsp5ujC5vFzVxP%2BJBKS3zvyhzhgT%2Fvq3ZWZgUl8xfp86Yv07rkf6qrBzVz4JmSmHL9mwZrGSyTd6l6GLAO9ISmmdlRHqZwJs323F9TCr3udsMEPljrEGvw2SqtIpgpJAYmc6%2F8m3eX6SicsjG1bIbVjonu1T74W4eBqEFwxp55VIyZrAqybvHrsfMsJYNIf02IXU4IE87aCGXswgwm5r9D9JoVoT9EY8c1s9qz5a2qydT1YmxddXQqclgtIkAlRwF8WIP4MkzwIoxfU0syFdCc5JikEttEU7bzqUjYdSG67dyc%2FtdXZ2fpHATlVRHvAJE8tYVajCGa5L0fMQ301%2BqXxEEblvNWkla%2Bs1yFVLQ1Al5hcdzBahpLN9eMTlStt2tI5M4D2garQoYjsfETUqfyEJf7X9dYUVosWMqxpIQjbcuCzw%2BXazIXg98tuUotInFmL6wwaGKG%2FqhlNu1zpo8Z50XVFI6M3EtZD0WBaxuxc8slose1XY1LzshB4u6MRdNM1dR6CM8Au24hLwfBI3QqdcaFH2w7P64v%2B%2BHD2ci5uEKynjNkU3qLcgJtokbVD4mhc8uk4rfFA5b%2B8T9pX8jfDO9ijNRvD87%2Fjj6tMAMTg1dzVnvY68UNttOMwx%2BqMlQY6qQGjGCPiHs66PLnaBpjkX%2FvOW370xi8lhs5xjyMxKel8%2FwIhgSPY5xe%2B3ZTw%2B3tvgou5q4EBn%2FCe9TuoOhUSAKhskfPRz6KMRmWWudeavtaDOIw0dMquvFlTvDbFkjY1X1fA54T5xB%2FiZKny1pCKu8aTZtq0SRiKiYDEvpJlErNBwmX6irrALUYwCQKNHWmSG2L9DG3GGWpqliFdQkCfmOS3DPyAv2jv9N7H&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220610T125448Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFANBTJK4H%2F20220610%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=4ca3aecaa52dd13b536628dbf38f0ddfefb62c5c78471f25ab9092ca7e18df30",
+                            "url": "https://food52.com/recipes/15404-roasted-tomato-and-garlic-soup",
+                            "ingredientLines": [
+                                "2 1/2 pounds vine ripened tomates (or any nice looking variety)",
+                                "1 28 oz. can san marzano whole tomatoes",
+                                "2 tablespoons tomato paste",
+                                "1/2 pound carrots (leaves removed)",
+                                "1 garlic head (1/4 inch of the head removed and excess paper removed)",
+                                "1 shallots (diced)",
+                                "1 medium yellow onion (diced)",
+                                "1 quart low sodium chicken broth",
+                                "1/2 cup cream",
+                                "2 tablespoons basil (rough chop)",
+                                "1/2 teaspoon crushed red pepper flakes",
+                                "4 tablespoons unsalted butter",
+                                "2 tablespoons olive oil",
+                                "Salt and pepper"
+                            ],
+                            "ingredients": [
+                                {
+                                    "text": "1 28 oz. can san marzano whole tomatoes",
+                                    "quantity": 28.0,
+                                    "measure": "ounce",
+                                    "food": "whole tomatoes",
+                                    "weight": 793.7866475000001,
+                                    "foodCategory": "canned vegetables",
+                                    "foodId": "food_bnmkkwqa9h2p87bz171eoby0bsey",
+                                    "image": "https://www.edamam.com/food-img/d4e/d4e8110d51db4311bc894167a8f77816.jpg"
+                                },
+                                {
+                                    "text": "2 tablespoons tomato paste",
+                                    "quantity": 2.0,
+                                    "measure": "tablespoon",
+                                    "food": "tomato paste",
+                                    "weight": 32.0,
+                                    "foodCategory": "canned vegetables",
+                                    "foodId": "food_auu2atfal07b6gbd1a5wsawy7u0s",
+                                    "image": "https://www.edamam.com/food-img/aef/aef4e029118da71388e526086506053a.jpg"
+                                },
+                                {
+                                    "text": "1/2 pound carrots (leaves removed)",
+                                    "quantity": 0.5,
+                                    "measure": "pound",
+                                    "food": "carrots",
+                                    "weight": 226.796185,
+                                    "foodCategory": "vegetables",
+                                    "foodId": "food_ai215e5b85pdh5ajd4aafa3w2zm8",
+                                    "image": "https://www.edamam.com/food-img/121/121e33fce0bb9546ed7d060b6c114e29.jpg"
+                                },
+                                {
+                                    "text": "1 garlic head (1/4 inch of the head removed and excess paper removed)",
+                                    "quantity": 1.0,
+                                    "measure": "head",
+                                    "food": "garlic",
+                                    "weight": 50.0,
+                                    "foodCategory": "vegetables",
+                                    "foodId": "food_avtcmx6bgjv1jvay6s6stan8dnyp",
+                                    "image": "https://www.edamam.com/food-img/6ee/6ee142951f48aaf94f4312409f8d133d.jpg"
+                                },
+                                {
+                                    "text": "1 shallots (diced)",
+                                    "quantity": 1.0,
+                                    "measure": "<unit>",
+                                    "food": "shallots",
+                                    "weight": 59.111111111111114,
+                                    "foodCategory": "vegetables",
+                                    "foodId": "food_bu2ver7a5f52dfap8q9f0bn085qb",
+                                    "image": "https://www.edamam.com/food-img/d23/d23e3be21df05e9e16c05eadb12341e7.jpeg"
+                                },
+                                {
+                                    "text": "1 medium yellow onion (diced)",
+                                    "quantity": 1.0,
+                                    "measure": "<unit>",
+                                    "food": "yellow onion",
+                                    "weight": 110.0,
+                                    "foodCategory": "vegetables",
+                                    "foodId": "food_bmrvi4ob4binw9a5m7l07amlfcoy",
+                                    "image": "https://www.edamam.com/food-img/205/205e6bf2399b85d34741892ef91cc603.jpg"
+                                },
+                                {
+                                    "text": "1 quart low sodium chicken broth",
+                                    "quantity": 1.0,
+                                    "measure": "quart",
+                                    "food": "low sodium chicken broth",
+                                    "weight": 960.0000000000001,
+                                    "foodCategory": "canned soup",
+                                    "foodId": "food_axg87lea13vni7a0lc9adauqgcs9",
+                                    "image": "https://www.edamam.com/food-img/2eb/2eb3c708f58f5fa1543022650ff0ae8d.png"
+                                },
+                                {
+                                    "text": "1/2 cup cream",
+                                    "quantity": 0.5,
+                                    "measure": "cup",
+                                    "food": "cream",
+                                    "weight": 119.0,
+                                    "foodCategory": "Dairy",
+                                    "foodId": "food_bvhbvd7bwy6a7wamfrmvmbmen1sz",
+                                    "image": "https://www.edamam.com/food-img/484/4848d71f6a14dd5076083f5e17925420.jpg"
+                                },
+                                {
+                                    "text": "2 tablespoons basil (rough chop)",
+                                    "quantity": 2.0,
+                                    "measure": "tablespoon",
+                                    "food": "basil",
+                                    "weight": 5.3,
+                                    "foodCategory": "Condiments and sauces",
+                                    "foodId": "food_bfeht3obd58c3gak5ehpibxgbbs6",
+                                    "image": "https://www.edamam.com/food-img/5f1/5f1b05685ac2b404236a5d1c1f3c8c10.jpg"
+                                },
+                                {
+                                    "text": "1/2 teaspoon crushed red pepper flakes",
+                                    "quantity": 0.5,
+                                    "measure": "teaspoon",
+                                    "food": "red pepper flakes",
+                                    "weight": 0.38541666668621544,
+                                    "foodCategory": "vegetables",
+                                    "foodId": "food_bispmxiaijcuxcagex14mbhk2o48",
+                                    "image": "https://www.edamam.com/food-img/6cb/6cb8e4510251a322178f6e191b3a7b1b.jpeg"
+                                },
+                                {
+                                    "text": "4 tablespoons unsalted butter",
+                                    "quantity": 4.0,
+                                    "measure": "tablespoon",
+                                    "food": "unsalted butter",
+                                    "weight": 56.8,
+                                    "foodCategory": "Dairy",
+                                    "foodId": "food_awz3iefajbk1fwahq9logahmgltj",
+                                    "image": "https://www.edamam.com/food-img/713/71397239b670d88c04faa8d05035cab4.jpg"
+                                },
+                                {
+                                    "text": "2 tablespoons olive oil",
+                                    "quantity": 2.0,
+                                    "measure": "tablespoon",
+                                    "food": "olive oil",
+                                    "weight": 27.0,
+                                    "foodCategory": "Oils",
+                                    "foodId": "food_b1d1icuad3iktrbqby0hiagafaz7",
+                                    "image": "https://www.edamam.com/food-img/4d6/4d651eaa8a353647746290c7a9b29d84.jpg"
+                                },
+                                {
+                                    "text": "Salt and pepper",
+                                    "quantity": 0.0,
+                                    "measure": null,
+                                    "food": "Salt",
+                                    "weight": 14.641076161666785,
+                                    "foodCategory": "Condiments and sauces",
+                                    "foodId": "food_btxz81db72hwbra2pncvebzzzum9",
+                                    "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+                                },
+                                {
+                                    "text": "Salt and pepper",
+                                    "quantity": 0.0,
+                                    "measure": null,
+                                    "food": "pepper",
+                                    "weight": 7.320538080833392,
+                                    "foodCategory": "Condiments and sauces",
+                                    "foodId": "food_b6ywzluaaxv02wad7s1r9ag4py89",
+                                    "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+                                }
+                            ],
+                            "totalTime": 457.0
+                        },
+                        "_links": {
+                            "self": {
+                                "href": "https://api.edamam.com/api/recipes/v2/c82f5f8b848f6b53ba4244b2bcbf8c1f?type=public&app_id=f3afe7be&app_key=cfa430402075604d56fc1e8c94096b51",
+                                "title": "Self"
+                            }
+                        }
+                    },
+            {
+                        "recipe": {
+                            "label": "Chicken Chile Verde Baked Eggs",
+                            "image": "https://edamam-product-images.s3.amazonaws.com/web-img/42e/42e37bdafa551d67476176a5f2ed71ae.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjECUaCXVzLWVhc3QtMSJHMEUCIAp76RBJb3%2FGqQ2EqxGtCiZLJnM%2FaAElEsMYJzW%2FSpI%2FAiEAivb7i9wjsGCz%2BQfPLaC%2F%2F609Yu43Vrhy87x%2FVa%2BlxFsq0gQILRAAGgwxODcwMTcxNTA5ODYiDICJtuToDe2Zp1PfciqvBAyz3bEw5sg4CFEzO0cdPIQyI2Y6p9giVxLrF5UueLXxFaKCeEbfHwfaQ%2Fzuhl0FdvVg6guH6UCHZra9ncs43mJX4r8fgQURhNLYKh3SoRzupXzqjAsp5ujC5vFzVxP%2BJBKS3zvyhzhgT%2Fvq3ZWZgUl8xfp86Yv07rkf6qrBzVz4JmSmHL9mwZrGSyTd6l6GLAO9ISmmdlRHqZwJs323F9TCr3udsMEPljrEGvw2SqtIpgpJAYmc6%2F8m3eX6SicsjG1bIbVjonu1T74W4eBqEFwxp55VIyZrAqybvHrsfMsJYNIf02IXU4IE87aCGXswgwm5r9D9JoVoT9EY8c1s9qz5a2qydT1YmxddXQqclgtIkAlRwF8WIP4MkzwIoxfU0syFdCc5JikEttEU7bzqUjYdSG67dyc%2FtdXZ2fpHATlVRHvAJE8tYVajCGa5L0fMQ301%2BqXxEEblvNWkla%2Bs1yFVLQ1Al5hcdzBahpLN9eMTlStt2tI5M4D2garQoYjsfETUqfyEJf7X9dYUVosWMqxpIQjbcuCzw%2BXazIXg98tuUotInFmL6wwaGKG%2FqhlNu1zpo8Z50XVFI6M3EtZD0WBaxuxc8slose1XY1LzshB4u6MRdNM1dR6CM8Au24hLwfBI3QqdcaFH2w7P64v%2B%2BHD2ci5uEKynjNkU3qLcgJtokbVD4mhc8uk4rfFA5b%2B8T9pX8jfDO9ijNRvD87%2Fjj6tMAMTg1dzVnvY68UNttOMwx%2BqMlQY6qQGjGCPiHs66PLnaBpjkX%2FvOW370xi8lhs5xjyMxKel8%2FwIhgSPY5xe%2B3ZTw%2B3tvgou5q4EBn%2FCe9TuoOhUSAKhskfPRz6KMRmWWudeavtaDOIw0dMquvFlTvDbFkjY1X1fA54T5xB%2FiZKny1pCKu8aTZtq0SRiKiYDEvpJlErNBwmX6irrALUYwCQKNHWmSG2L9DG3GGWpqliFdQkCfmOS3DPyAv2jv9N7H&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220610T125448Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFANBTJK4H%2F20220610%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=ecbce65334eb3bf5b9d969fabdd6352d9ba6ee5780d3b7061fae1485ae411c25",
+                            "url": "http://www.sumptuousspoonfuls.com/chicken-chile-verde-baked-eggs/",
+                            "ingredientLines": [
+                                "about 1/4 – 1/3 cup Tomate Chile Verde Sauce (recipe here)",
+                                "1 egg",
+                                "Red Robin seasoning (or salt) and fresh ground pepper",
+                                "1 – 2 Tablespoons chopped cooked chicken (I used Garlic Greek yogurt chicken-recipe here)",
+                                "1 – 2 Tablespoons chopped roasted vegies (from the Garlic Greek Yogurt chicken, if you like), chopped",
+                                "About 2 Tablespoons shredded Mexican blend of cheeses"
+                            ],
+                            "ingredients": [
+                                {
+                                    "text": "about 1/4 – 1/3 cup Tomate Chile Verde Sauce (recipe here)",
+                                    "quantity": 0.29166666666666663,
+                                    "measure": "cup",
+                                    "food": "Chile",
+                                    "weight": 43.74999999999999,
+                                    "foodCategory": "vegetables",
+                                    "foodId": "food_a6g98mqatzj7vca6ms3bnbzqxf3s",
+                                    "image": "https://www.edamam.com/food-img/469/469213672957a242638e20c27e3e8acd.jpeg"
+                                },
+                                {
+                                    "text": "1 egg",
+                                    "quantity": 1.0,
+                                    "measure": "<unit>",
+                                    "food": "egg",
+                                    "weight": 43.0,
+                                    "foodCategory": "Eggs",
+                                    "foodId": "food_bhpradua77pk16aipcvzeayg732r",
+                                    "image": "https://www.edamam.com/food-img/a7e/a7ec7c337cb47c6550b3b118e357f077.jpg"
+                                },
+                                {
+                                    "text": "Red Robin seasoning (or salt) and fresh ground pepper",
+                                    "quantity": 0.0,
+                                    "measure": null,
+                                    "food": "seasoning",
+                                    "weight": 1.436796874990375,
+                                    "foodCategory": "Condiments and sauces",
+                                    "foodId": "food_aj7w3xab0epj7cbgkbkpwadysovd",
+                                    "image": "https://www.edamam.com/food-img/c23/c23e20823b442067307aa436969358f1.jpg"
+                                },
+                                {
+                                    "text": "Red Robin seasoning (or salt) and fresh ground pepper",
+                                    "quantity": 0.0,
+                                    "measure": null,
+                                    "food": "ground pepper",
+                                    "weight": 0.4310390624971125,
+                                    "foodCategory": "Condiments and sauces",
+                                    "foodId": "food_b6ywzluaaxv02wad7s1r9ag4py89",
+                                    "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+                                },
+                                {
+                                    "text": "1 – 2 Tablespoons chopped cooked chicken (I used Garlic Greek yogurt chicken-recipe here)",
+                                    "quantity": 1.5,
+                                    "measure": "tablespoon",
+                                    "food": "cooked chicken",
+                                    "weight": 13.124999999778098,
+                                    "foodCategory": "Poultry",
+                                    "foodId": "food_a59p480aae04fubjz0yo7a5auh4m",
+                                    "image": "https://www.edamam.com/food-img/c81/c81b9affb7c9c29a861e8566bd2d0829.jpg"
+                                },
+                                {
+                                    "text": "1 – 2 Tablespoons chopped roasted vegies (from the Garlic Greek Yogurt chicken, if you like), chopped",
+                                    "quantity": 1.5,
+                                    "measure": "tablespoon",
+                                    "food": "chicken",
+                                    "weight": 13.124999999778098,
+                                    "foodCategory": "Poultry",
+                                    "foodId": "food_bmyxrshbfao9s1amjrvhoauob6mo",
+                                    "image": "https://www.edamam.com/food-img/d33/d338229d774a743f7858f6764e095878.jpg"
+                                },
+                                {
+                                    "text": "About 2 Tablespoons shredded Mexican blend of cheeses",
+                                    "quantity": 2.0,
+                                    "measure": "tablespoon",
+                                    "food": "cheeses",
+                                    "weight": 30.6796874994813,
+                                    "foodCategory": "Cheese",
+                                    "foodId": "food_bhppgmha1u27voagb8eptbp9g376",
+                                    "image": "https://www.edamam.com/food-img/bcd/bcd94dde1fcde1475b5bf0540f821c5d.jpg"
+                                }
+                            ],
+                            "totalTime": 0.0
+                        },
+                        "_links": {
+                            "self": {
+                                "href": "https://api.edamam.com/api/recipes/v2/73a40043fb46e404a79e327d4457e62b?type=public&app_id=f3afe7be&app_key=cfa430402075604d56fc1e8c94096b51",
+                                "title": "Self"
+                            }
+                        }
+                    },
+            {
+                        "recipe": {
+                            "label": "Huevos Divorciados with Homemade Ranchero Sauce Recipe with Knorr",
+                            "image": "https://edamam-product-images.s3.amazonaws.com/web-img/a47/a4757e23c0ce8abe0c73fe4909a4cf44.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjECUaCXVzLWVhc3QtMSJHMEUCIAp76RBJb3%2FGqQ2EqxGtCiZLJnM%2FaAElEsMYJzW%2FSpI%2FAiEAivb7i9wjsGCz%2BQfPLaC%2F%2F609Yu43Vrhy87x%2FVa%2BlxFsq0gQILRAAGgwxODcwMTcxNTA5ODYiDICJtuToDe2Zp1PfciqvBAyz3bEw5sg4CFEzO0cdPIQyI2Y6p9giVxLrF5UueLXxFaKCeEbfHwfaQ%2Fzuhl0FdvVg6guH6UCHZra9ncs43mJX4r8fgQURhNLYKh3SoRzupXzqjAsp5ujC5vFzVxP%2BJBKS3zvyhzhgT%2Fvq3ZWZgUl8xfp86Yv07rkf6qrBzVz4JmSmHL9mwZrGSyTd6l6GLAO9ISmmdlRHqZwJs323F9TCr3udsMEPljrEGvw2SqtIpgpJAYmc6%2F8m3eX6SicsjG1bIbVjonu1T74W4eBqEFwxp55VIyZrAqybvHrsfMsJYNIf02IXU4IE87aCGXswgwm5r9D9JoVoT9EY8c1s9qz5a2qydT1YmxddXQqclgtIkAlRwF8WIP4MkzwIoxfU0syFdCc5JikEttEU7bzqUjYdSG67dyc%2FtdXZ2fpHATlVRHvAJE8tYVajCGa5L0fMQ301%2BqXxEEblvNWkla%2Bs1yFVLQ1Al5hcdzBahpLN9eMTlStt2tI5M4D2garQoYjsfETUqfyEJf7X9dYUVosWMqxpIQjbcuCzw%2BXazIXg98tuUotInFmL6wwaGKG%2FqhlNu1zpo8Z50XVFI6M3EtZD0WBaxuxc8slose1XY1LzshB4u6MRdNM1dR6CM8Au24hLwfBI3QqdcaFH2w7P64v%2B%2BHD2ci5uEKynjNkU3qLcgJtokbVD4mhc8uk4rfFA5b%2B8T9pX8jfDO9ijNRvD87%2Fjj6tMAMTg1dzVnvY68UNttOMwx%2BqMlQY6qQGjGCPiHs66PLnaBpjkX%2FvOW370xi8lhs5xjyMxKel8%2FwIhgSPY5xe%2B3ZTw%2B3tvgou5q4EBn%2FCe9TuoOhUSAKhskfPRz6KMRmWWudeavtaDOIw0dMquvFlTvDbFkjY1X1fA54T5xB%2FiZKny1pCKu8aTZtq0SRiKiYDEvpJlErNBwmX6irrALUYwCQKNHWmSG2L9DG3GGWpqliFdQkCfmOS3DPyAv2jv9N7H&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220610T125448Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFANBTJK4H%2F20220610%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=f5dff431df6c1112c5d8345021af0d6e7318fa214ce4a66f58dde196555f99f9",
+                            "url": "https://www.smartfundiy.com/huevos-divorciados-homemade-ranchero-sauce-recipe/",
+                            "ingredientLines": [
+                                "1 cube Knorr Caldo de Tomate Bouillon (Tomato Bouillon w/ Chicken Flavor",
+                                "2 cups water",
+                                "1 TBSP butter",
+                                "1/2 red onion, diced",
+                                "1 jalapeno, diced",
+                                "1 bell pepper, diced",
+                                "1 TBSP garlic",
+                                "1 tsp chili powder",
+                                "1/2 TBSP cumin",
+                                "2 cups tomato sauce"
+                            ],
+                            "ingredients": [
+                                {
+                                    "text": "1 cube Knorr Caldo de Tomate Bouillon (Tomato Bouillon w/ Chicken Flavor",
+                                    "quantity": 1.0,
+                                    "measure": "cube",
+                                    "food": "Bouillon",
+                                    "weight": 5.0,
+                                    "foodCategory": "canned soup",
+                                    "foodId": "food_a4blma9bmbzb9aa6dt0qmbzeb1o1",
+                                    "image": "https://www.edamam.com/food-img/6f7/6f71425571cb38887c2287f9860d33bd.jpg"
+                                },
+                                {
+                                    "text": "2 cups water",
+                                    "quantity": 2.0,
+                                    "measure": "cup",
+                                    "food": "water",
+                                    "weight": 474.0,
+                                    "foodCategory": "water",
+                                    "foodId": "food_a99vzubbk1ayrsad318rvbzr3dh0",
+                                    "image": "https://www.edamam.com/food-img/5dd/5dd9d1361847b2ca53c4b19a8f92627e.jpg"
+                                },
+                                {
+                                    "text": "1 TBSP butter",
+                                    "quantity": 1.0,
+                                    "measure": "tablespoon",
+                                    "food": "butter",
+                                    "weight": 14.2,
+                                    "foodCategory": "Dairy",
+                                    "foodId": "food_awz3iefajbk1fwahq9logahmgltj",
+                                    "image": "https://www.edamam.com/food-img/713/71397239b670d88c04faa8d05035cab4.jpg"
+                                },
+                                {
+                                    "text": "1/2 red onion, diced",
+                                    "quantity": 0.5,
+                                    "measure": "<unit>",
+                                    "food": "red onion",
+                                    "weight": 62.5,
+                                    "foodCategory": "vegetables",
+                                    "foodId": "food_bmrvi4ob4binw9a5m7l07amlfcoy",
+                                    "image": "https://www.edamam.com/food-img/205/205e6bf2399b85d34741892ef91cc603.jpg"
+                                },
+                                {
+                                    "text": "1 jalapeno, diced",
+                                    "quantity": 1.0,
+                                    "measure": "<unit>",
+                                    "food": "jalapeno",
+                                    "weight": 14.0,
+                                    "foodCategory": "vegetables",
+                                    "foodId": "food_b7txsnbadj6plsbq27zvwah80r6y",
+                                    "image": "https://www.edamam.com/food-img/0df/0df9aa459870a6d477b0925c1fdb6d4c.jpg"
+                                },
+                                {
+                                    "text": "1 bell pepper, diced",
+                                    "quantity": 1.0,
+                                    "measure": "<unit>",
+                                    "food": "bell pepper",
+                                    "weight": 119.0,
+                                    "foodCategory": "vegetables",
+                                    "foodId": "food_a8g63g7ak6bnmvbu7agxibp4a0dy",
+                                    "image": "https://www.edamam.com/food-img/4dc/4dc48b1a506d334b4ab6671b9d56a18f.jpeg"
+                                },
+                                {
+                                    "text": "1 TBSP garlic",
+                                    "quantity": 1.0,
+                                    "measure": "tablespoon",
+                                    "food": "garlic",
+                                    "weight": 8.499999999856291,
+                                    "foodCategory": "vegetables",
+                                    "foodId": "food_avtcmx6bgjv1jvay6s6stan8dnyp",
+                                    "image": "https://www.edamam.com/food-img/6ee/6ee142951f48aaf94f4312409f8d133d.jpg"
+                                },
+                                {
+                                    "text": "1 tsp chili powder",
+                                    "quantity": 1.0,
+                                    "measure": "teaspoon",
+                                    "food": "chili powder",
+                                    "weight": 2.7,
+                                    "foodCategory": "Condiments and sauces",
+                                    "foodId": "food_aii2sclb4r123rbfr2ybjasrl3nc",
+                                    "image": "https://www.edamam.com/food-img/e6f/e6f19043caefc23b5feda5520076617e.jpg"
+                                },
+                                {
+                                    "text": "1/2 TBSP cumin",
+                                    "quantity": 0.5,
+                                    "measure": "tablespoon",
+                                    "food": "cumin",
+                                    "weight": 3.0,
+                                    "foodCategory": "Condiments and sauces",
+                                    "foodId": "food_a8jjbx4biqndasapojdb5by3e92e",
+                                    "image": "https://www.edamam.com/food-img/07e/07e2a4eb77ce46591033846504817d35.jpg"
+                                },
+                                {
+                                    "text": "2 cups tomato sauce",
+                                    "quantity": 2.0,
+                                    "measure": "cup",
+                                    "food": "tomato sauce",
+                                    "weight": 490.0,
+                                    "foodCategory": "canned vegetables",
+                                    "foodId": "food_altklniaqmdz3eb1rlf1ybjv8ihn",
+                                    "image": null
+                                }
+                            ],
+                            "totalTime": 0.0
+                        },
+                        "_links": {
+                            "self": {
+                                "href": "https://api.edamam.com/api/recipes/v2/a11d2e8d58b16d6190e838826573c56a?type=public&app_id=f3afe7be&app_key=cfa430402075604d56fc1e8c94096b51",
+                                "title": "Self"
+                            }
+                        }
+                    },
+            {
+                        "recipe": {
+                            "label": "Classic Tomate Sauce recipes",
+                            "image": "https://edamam-product-images.s3.amazonaws.com/web-img/ed3/ed31ab806b9de20e894bf9afc620aad2?X-Amz-Security-Token=IQoJb3JpZ2luX2VjECUaCXVzLWVhc3QtMSJHMEUCIAp76RBJb3%2FGqQ2EqxGtCiZLJnM%2FaAElEsMYJzW%2FSpI%2FAiEAivb7i9wjsGCz%2BQfPLaC%2F%2F609Yu43Vrhy87x%2FVa%2BlxFsq0gQILRAAGgwxODcwMTcxNTA5ODYiDICJtuToDe2Zp1PfciqvBAyz3bEw5sg4CFEzO0cdPIQyI2Y6p9giVxLrF5UueLXxFaKCeEbfHwfaQ%2Fzuhl0FdvVg6guH6UCHZra9ncs43mJX4r8fgQURhNLYKh3SoRzupXzqjAsp5ujC5vFzVxP%2BJBKS3zvyhzhgT%2Fvq3ZWZgUl8xfp86Yv07rkf6qrBzVz4JmSmHL9mwZrGSyTd6l6GLAO9ISmmdlRHqZwJs323F9TCr3udsMEPljrEGvw2SqtIpgpJAYmc6%2F8m3eX6SicsjG1bIbVjonu1T74W4eBqEFwxp55VIyZrAqybvHrsfMsJYNIf02IXU4IE87aCGXswgwm5r9D9JoVoT9EY8c1s9qz5a2qydT1YmxddXQqclgtIkAlRwF8WIP4MkzwIoxfU0syFdCc5JikEttEU7bzqUjYdSG67dyc%2FtdXZ2fpHATlVRHvAJE8tYVajCGa5L0fMQ301%2BqXxEEblvNWkla%2Bs1yFVLQ1Al5hcdzBahpLN9eMTlStt2tI5M4D2garQoYjsfETUqfyEJf7X9dYUVosWMqxpIQjbcuCzw%2BXazIXg98tuUotInFmL6wwaGKG%2FqhlNu1zpo8Z50XVFI6M3EtZD0WBaxuxc8slose1XY1LzshB4u6MRdNM1dR6CM8Au24hLwfBI3QqdcaFH2w7P64v%2B%2BHD2ci5uEKynjNkU3qLcgJtokbVD4mhc8uk4rfFA5b%2B8T9pX8jfDO9ijNRvD87%2Fjj6tMAMTg1dzVnvY68UNttOMwx%2BqMlQY6qQGjGCPiHs66PLnaBpjkX%2FvOW370xi8lhs5xjyMxKel8%2FwIhgSPY5xe%2B3ZTw%2B3tvgou5q4EBn%2FCe9TuoOhUSAKhskfPRz6KMRmWWudeavtaDOIw0dMquvFlTvDbFkjY1X1fA54T5xB%2FiZKny1pCKu8aTZtq0SRiKiYDEvpJlErNBwmX6irrALUYwCQKNHWmSG2L9DG3GGWpqliFdQkCfmOS3DPyAv2jv9N7H&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220610T125448Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFANBTJK4H%2F20220610%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=e3c1accc4433bd0d2b542886e7faa25d9fd48d0eeddf7518c14ba8aa5c75deef",
+                            "url": "http://culinaryarts.about.com/od/sauces/r/classictomato.htm",
+                            "ingredientLines": [
+                                "2 oz. salt pork, diced",
+                                "2 cups onions, diced",
+                                "1 cup carrots, diced",
+                                "1 cup celery, diced",
+                                "1 clove garlic, minced",
+                                "2 28-oz. cans crushed tomatoes",
+                                "1 quart veal or chicken stock",
+                                "1 ham bone",
+                                "kosher salt",
+                                "sugar",
+                                "1 bay leaf",
+                                "½ tsp dried thyme",
+                                "3-4 fresh parsley stems",
+                                "8-10 black peppercorns, crushed"
+                            ],
+                            "ingredients": [
+                                {
+                                    "text": "2 oz. salt pork, diced",
+                                    "quantity": 2.0,
+                                    "measure": "ounce",
+                                    "food": "salt pork",
+                                    "weight": 56.69904625,
+                                    "foodCategory": "cured meats",
+                                    "foodId": "food_bhk66flbafmq93arzc83qae8nm3s",
+                                    "image": "https://www.edamam.com/food-img/da7/da70f32f7b8f256edd1eb2b1ae12893a.png"
+                                },
+                                {
+                                    "text": "2 cups onions, diced",
+                                    "quantity": 2.0,
+                                    "measure": "cup",
+                                    "food": "onions",
+                                    "weight": 320.0,
+                                    "foodCategory": "vegetables",
+                                    "foodId": "food_bmrvi4ob4binw9a5m7l07amlfcoy",
+                                    "image": "https://www.edamam.com/food-img/205/205e6bf2399b85d34741892ef91cc603.jpg"
+                                },
+                                {
+                                    "text": "1 cup carrots, diced",
+                                    "quantity": 1.0,
+                                    "measure": "cup",
+                                    "food": "carrots",
+                                    "weight": 122.0,
+                                    "foodCategory": "vegetables",
+                                    "foodId": "food_ai215e5b85pdh5ajd4aafa3w2zm8",
+                                    "image": "https://www.edamam.com/food-img/121/121e33fce0bb9546ed7d060b6c114e29.jpg"
+                                },
+                                {
+                                    "text": "1 cup celery, diced",
+                                    "quantity": 1.0,
+                                    "measure": "cup",
+                                    "food": "celery",
+                                    "weight": 101.0,
+                                    "foodCategory": "vegetables",
+                                    "foodId": "food_bffeoksbyyur8ja4da73ub2xs57g",
+                                    "image": "https://www.edamam.com/food-img/d91/d91d2aed1c36d8fad54c4d7dc58f5a18.jpg"
+                                },
+                                {
+                                    "text": "1 clove garlic, minced",
+                                    "quantity": 1.0,
+                                    "measure": "clove",
+                                    "food": "garlic",
+                                    "weight": 3.0,
+                                    "foodCategory": "vegetables",
+                                    "foodId": "food_avtcmx6bgjv1jvay6s6stan8dnyp",
+                                    "image": "https://www.edamam.com/food-img/6ee/6ee142951f48aaf94f4312409f8d133d.jpg"
+                                },
+                                {
+                                    "text": "2 28-oz. cans crushed tomatoes",
+                                    "quantity": 56.0,
+                                    "measure": "ounce",
+                                    "food": "crushed tomatoes",
+                                    "weight": 1587.5732950000001,
+                                    "foodCategory": "canned vegetables",
+                                    "foodId": "food_aqqtb83adjyq8ybf51yo8bsjetdh",
+                                    "image": null
+                                },
+                                {
+                                    "text": "1 quart veal or chicken stock",
+                                    "quantity": 1.0,
+                                    "measure": "quart",
+                                    "food": "chicken stock",
+                                    "weight": 960.0,
+                                    "foodCategory": "canned soup",
+                                    "foodId": "food_bptblvzambd16nbhewqmhaw1rnh5",
+                                    "image": "https://www.edamam.com/food-img/26a/26a10c4cb4e07bab54d8a687ef5ac7d8.jpg"
+                                },
+                                {
+                                    "text": "1 ham bone",
+                                    "quantity": 1.0,
+                                    "measure": "<unit>",
+                                    "food": "ham bone",
+                                    "weight": 453.0,
+                                    "foodCategory": "cured meats",
+                                    "foodId": "food_agdclu3bv6vzopakaktw8anfkaii",
+                                    "image": "https://www.edamam.com/food-img/fdc/fdce288404b64b24573af38baaed1b24.jpg"
+                                },
+                                {
+                                    "text": "kosher salt",
+                                    "quantity": 0.0,
+                                    "measure": null,
+                                    "food": "kosher salt",
+                                    "weight": 21.684434047499998,
+                                    "foodCategory": "Condiments and sauces",
+                                    "foodId": "food_a1vgrj1bs8rd1majvmd9ubz8ttkg",
+                                    "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+                                },
+                                {
+                                    "text": "sugar",
+                                    "quantity": 0.0,
+                                    "measure": null,
+                                    "food": "sugar",
+                                    "weight": 43.368868094999996,
+                                    "foodCategory": "sugars",
+                                    "foodId": "food_axi2ijobrk819yb0adceobnhm1c2",
+                                    "image": "https://www.edamam.com/food-img/ecb/ecb3f5aaed96d0188c21b8369be07765.jpg"
+                                },
+                                {
+                                    "text": "1 bay leaf",
+                                    "quantity": 1.0,
+                                    "measure": "<unit>",
+                                    "food": "bay leaf",
+                                    "weight": 0.6,
+                                    "foodCategory": "Condiments and sauces",
+                                    "foodId": "food_asx39x4ayja4jab6ivj6zayvkblo",
+                                    "image": "https://www.edamam.com/food-img/0f9/0f9f5f95df173e9ffaaff2977bef88f3.jpg"
+                                },
+                                {
+                                    "text": "½ tsp dried thyme",
+                                    "quantity": 0.5,
+                                    "measure": "teaspoon",
+                                    "food": "dried thyme",
+                                    "weight": 0.5,
+                                    "foodCategory": "Condiments and sauces",
+                                    "foodId": "food_avsq22zadwyb5cb5sl1byaa4mbo8",
+                                    "image": "https://www.edamam.com/food-img/89b/89b37a04e46e052671d73addcb84aa51.jpg"
+                                },
+                                {
+                                    "text": "3-4 fresh parsley stems",
+                                    "quantity": 3.5,
+                                    "measure": "stem",
+                                    "food": "parsley",
+                                    "weight": 7.0,
+                                    "foodCategory": "vegetables",
+                                    "foodId": "food_b244pqdazw24zobr5vqu2bf0uid8",
+                                    "image": "https://www.edamam.com/food-img/46a/46a132e96626d7989b4d6ed8c91f4da0.jpg"
+                                },
+                                {
+                                    "text": "8-10 black peppercorns, crushed",
+                                    "quantity": 9.0,
+                                    "measure": "<unit>",
+                                    "food": "black peppercorns",
+                                    "weight": 2.6999999999999997,
+                                    "foodCategory": "Condiments and sauces",
+                                    "foodId": "food_b6ywzluaaxv02wad7s1r9ag4py89",
+                                    "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+                                }
+                            ],
+                            "totalTime": 135.0
+                        },
+                        "_links": {
+                            "self": {
+                                "href": "https://api.edamam.com/api/recipes/v2/7851f81b17d7e46dbd3670e9ecb93a3b?type=public&app_id=f3afe7be&app_key=cfa430402075604d56fc1e8c94096b51",
+                                "title": "Self"
+                            }
+                        }
+                    },
+            {
+                        "recipe": {
+                            "label": "Italian Chicken And Sausage Casserole",
+                            "image": "https://edamam-product-images.s3.amazonaws.com/web-img/86e/86ed5819cbf06dc9e82039fd8e92154c.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjECUaCXVzLWVhc3QtMSJHMEUCIAp76RBJb3%2FGqQ2EqxGtCiZLJnM%2FaAElEsMYJzW%2FSpI%2FAiEAivb7i9wjsGCz%2BQfPLaC%2F%2F609Yu43Vrhy87x%2FVa%2BlxFsq0gQILRAAGgwxODcwMTcxNTA5ODYiDICJtuToDe2Zp1PfciqvBAyz3bEw5sg4CFEzO0cdPIQyI2Y6p9giVxLrF5UueLXxFaKCeEbfHwfaQ%2Fzuhl0FdvVg6guH6UCHZra9ncs43mJX4r8fgQURhNLYKh3SoRzupXzqjAsp5ujC5vFzVxP%2BJBKS3zvyhzhgT%2Fvq3ZWZgUl8xfp86Yv07rkf6qrBzVz4JmSmHL9mwZrGSyTd6l6GLAO9ISmmdlRHqZwJs323F9TCr3udsMEPljrEGvw2SqtIpgpJAYmc6%2F8m3eX6SicsjG1bIbVjonu1T74W4eBqEFwxp55VIyZrAqybvHrsfMsJYNIf02IXU4IE87aCGXswgwm5r9D9JoVoT9EY8c1s9qz5a2qydT1YmxddXQqclgtIkAlRwF8WIP4MkzwIoxfU0syFdCc5JikEttEU7bzqUjYdSG67dyc%2FtdXZ2fpHATlVRHvAJE8tYVajCGa5L0fMQ301%2BqXxEEblvNWkla%2Bs1yFVLQ1Al5hcdzBahpLN9eMTlStt2tI5M4D2garQoYjsfETUqfyEJf7X9dYUVosWMqxpIQjbcuCzw%2BXazIXg98tuUotInFmL6wwaGKG%2FqhlNu1zpo8Z50XVFI6M3EtZD0WBaxuxc8slose1XY1LzshB4u6MRdNM1dR6CM8Au24hLwfBI3QqdcaFH2w7P64v%2B%2BHD2ci5uEKynjNkU3qLcgJtokbVD4mhc8uk4rfFA5b%2B8T9pX8jfDO9ijNRvD87%2Fjj6tMAMTg1dzVnvY68UNttOMwx%2BqMlQY6qQGjGCPiHs66PLnaBpjkX%2FvOW370xi8lhs5xjyMxKel8%2FwIhgSPY5xe%2B3ZTw%2B3tvgou5q4EBn%2FCe9TuoOhUSAKhskfPRz6KMRmWWudeavtaDOIw0dMquvFlTvDbFkjY1X1fA54T5xB%2FiZKny1pCKu8aTZtq0SRiKiYDEvpJlErNBwmX6irrALUYwCQKNHWmSG2L9DG3GGWpqliFdQkCfmOS3DPyAv2jv9N7H&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220610T125448Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3599&X-Amz-Credential=ASIASXCYXIIFANBTJK4H%2F20220610%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=80f78b34ad5c6ffd8d2cf7b7185ae1dda71f19bde83c449036f28aa5f2604754",
+                            "url": "https://www.beatthetreats.com/recipe/italian-chicken-sausage-casserole/",
+                            "ingredientLines": [
+                                "* 2 tablespoons olive oil or ghee",
+                                "* 4 - 6 pieces chicken legs or thighs with skin and bone",
+                                "* 4 uncooked sausages casing removed and chopped",
+                                "* 1 onion diced",
+                                "* 3 garlic cloves minced",
+                                "* 2 celery stalks chopped",
+                                "* 1 teaspoon dried basil",
+                                "* 1/2 teaspoon dried oregano and dried thyme",
+                                "* 1/2 teaspoon sea salt and black pepper",
+                                "* 4 fresh tomatoes diced or 1 can diced tomatoes",
+                                "* 4 tablespoons tomate paste",
+                                "* 1 cup chicken stock preferably homemade",
+                                "* 1/2 teaspoon raw sugar optional",
+                                "* 1 green capsicum seeded and chopped",
+                                "* 10-12 black or kalmata olives pitted"
+                            ],
+                            "ingredients": [
+                                {
+                                    "text": "* 2 tablespoons olive oil or ghee",
+                                    "quantity": 2.0,
+                                    "measure": "tablespoon",
+                                    "food": "olive oil",
+                                    "weight": 27.0,
+                                    "foodCategory": "Oils",
+                                    "foodId": "food_b1d1icuad3iktrbqby0hiagafaz7",
+                                    "image": "https://www.edamam.com/food-img/4d6/4d651eaa8a353647746290c7a9b29d84.jpg"
+                                },
+                                {
+                                    "text": "* 4 - 6 pieces chicken legs or thighs with skin and bone",
+                                    "quantity": 5.0,
+                                    "measure": "<unit>",
+                                    "food": "chicken legs",
+                                    "weight": 1720.0,
+                                    "foodCategory": "Poultry",
+                                    "foodId": "food_ane1uw5amh8okda3qqu88bow58ul",
+                                    "image": "https://www.edamam.com/food-img/f53/f53de7dd1054370cdfd98e18ccf77dbe.jpg"
+                                },
+                                {
+                                    "text": "* 4 uncooked sausages casing removed and chopped",
+                                    "quantity": 4.0,
+                                    "measure": "<unit>",
+                                    "food": "sausages",
+                                    "weight": 100.0,
+                                    "foodCategory": "Cured meats",
+                                    "foodId": "food_aidvlr4a5hvqixbbd5rbhbb3wiri",
+                                    "image": "https://www.edamam.com/food-img/2c7/2c73a127447b754a803e3804898a1afd.jpg"
+                                },
+                                {
+                                    "text": "* 1 onion diced",
+                                    "quantity": 1.0,
+                                    "measure": "<unit>",
+                                    "food": "onion",
+                                    "weight": 125.0,
+                                    "foodCategory": "vegetables",
+                                    "foodId": "food_bmrvi4ob4binw9a5m7l07amlfcoy",
+                                    "image": "https://www.edamam.com/food-img/205/205e6bf2399b85d34741892ef91cc603.jpg"
+                                },
+                                {
+                                    "text": "* 3 garlic cloves minced",
+                                    "quantity": 3.0,
+                                    "measure": "clove",
+                                    "food": "garlic",
+                                    "weight": 9.0,
+                                    "foodCategory": "vegetables",
+                                    "foodId": "food_avtcmx6bgjv1jvay6s6stan8dnyp",
+                                    "image": "https://www.edamam.com/food-img/6ee/6ee142951f48aaf94f4312409f8d133d.jpg"
+                                },
+                                {
+                                    "text": "* 2 celery stalks chopped",
+                                    "quantity": 2.0,
+                                    "measure": "stalk",
+                                    "food": "celery",
+                                    "weight": 80.0,
+                                    "foodCategory": "vegetables",
+                                    "foodId": "food_bffeoksbyyur8ja4da73ub2xs57g",
+                                    "image": "https://www.edamam.com/food-img/d91/d91d2aed1c36d8fad54c4d7dc58f5a18.jpg"
+                                },
+                                {
+                                    "text": "* 1 teaspoon dried basil",
+                                    "quantity": 1.0,
+                                    "measure": "teaspoon",
+                                    "food": "dried basil",
+                                    "weight": 0.7,
+                                    "foodCategory": "Condiments and sauces",
+                                    "foodId": "food_abrithza96sev8ae5za0paqf42o0",
+                                    "image": "https://www.edamam.com/food-img/49a/49a878702f9b654e1a965f2f2618a341.jpg"
+                                },
+                                {
+                                    "text": "* 1/2 teaspoon dried oregano and dried thyme",
+                                    "quantity": 0.5,
+                                    "measure": "teaspoon",
+                                    "food": "dried oregano",
+                                    "weight": 0.5,
+                                    "foodCategory": "Condiments and sauces",
+                                    "foodId": "food_bkkw6v3bdf0sqiazmzyuiax7i8jr",
+                                    "image": "https://www.edamam.com/food-img/1b0/1b0eaffb1c261606e0d82fed8e9747a7.jpg"
+                                },
+                                {
+                                    "text": "* 1/2 teaspoon dried oregano and dried thyme",
+                                    "quantity": 0.5,
+                                    "measure": "teaspoon",
+                                    "food": "dried thyme",
+                                    "weight": 0.5,
+                                    "foodCategory": "Condiments and sauces",
+                                    "foodId": "food_avsq22zadwyb5cb5sl1byaa4mbo8",
+                                    "image": "https://www.edamam.com/food-img/89b/89b37a04e46e052671d73addcb84aa51.jpg"
+                                },
+                                {
+                                    "text": "* 1/2 teaspoon sea salt and black pepper",
+                                    "quantity": 0.5,
+                                    "measure": "teaspoon",
+                                    "food": "sea salt",
+                                    "weight": 2.4270833334564377,
+                                    "foodCategory": "Condiments and sauces",
+                                    "foodId": "food_a1vgrj1bs8rd1majvmd9ubz8ttkg",
+                                    "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+                                },
+                                {
+                                    "text": "* 1/2 teaspoon sea salt and black pepper",
+                                    "quantity": 0.5,
+                                    "measure": "teaspoon",
+                                    "food": "black pepper",
+                                    "weight": 1.45,
+                                    "foodCategory": "Condiments and sauces",
+                                    "foodId": "food_b6ywzluaaxv02wad7s1r9ag4py89",
+                                    "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+                                },
+                                {
+                                    "text": "* 4 fresh tomatoes diced or 1 can diced tomatoes",
+                                    "quantity": 4.0,
+                                    "measure": "<unit>",
+                                    "food": "can diced tomatoes",
+                                    "weight": 760.0,
+                                    "foodCategory": "canned vegetables",
+                                    "foodId": "food_a0edr25b8gjzxdbxcvus4blkd8b8",
+                                    "image": "https://www.edamam.com/food-img/645/6455f54947348b60ec6557fcc0ef5121.jpeg"
+                                },
+                                {
+                                    "text": "* 1 cup chicken stock preferably homemade",
+                                    "quantity": 1.0,
+                                    "measure": "cup",
+                                    "food": "chicken stock",
+                                    "weight": 240.0,
+                                    "foodCategory": "canned soup",
+                                    "foodId": "food_bptblvzambd16nbhewqmhaw1rnh5",
+                                    "image": "https://www.edamam.com/food-img/26a/26a10c4cb4e07bab54d8a687ef5ac7d8.jpg"
+                                },
+                                {
+                                    "text": "* 1/2 teaspoon raw sugar optional",
+                                    "quantity": 0.5,
+                                    "measure": "teaspoon",
+                                    "food": "raw sugar",
+                                    "weight": 1.5,
+                                    "foodCategory": "sugars",
+                                    "foodId": "food_aodgtqwbmeu5f6bxeffn0art3bga",
+                                    "image": "https://www.edamam.com/food-img/8c6/8c6662bd73900645c6385b51a95d9b03.jpg"
+                                },
+                                {
+                                    "text": "* 1 green capsicum seeded and chopped",
+                                    "quantity": 1.0,
+                                    "measure": "<unit>",
+                                    "food": "capsicum",
+                                    "weight": 119.0,
+                                    "foodCategory": "vegetables",
+                                    "foodId": "food_a8g63g7ak6bnmvbu7agxibp4a0dy",
+                                    "image": "https://www.edamam.com/food-img/4dc/4dc48b1a506d334b4ab6671b9d56a18f.jpeg"
+                                },
+                                {
+                                    "text": "* 10-12 black or kalmata olives pitted",
+                                    "quantity": 11.0,
+                                    "measure": "<unit>",
+                                    "food": "olives",
+                                    "weight": 35.2,
+                                    "foodCategory": "canned fruit",
+                                    "foodId": "food_bt7u5w5a064gusa46msxfb38ag06",
+                                    "image": "https://www.edamam.com/food-img/822/8221f2141e8dafd469414b20777735ca.jpg"
+                                }
+                            ],
+                            "totalTime": 0.0
+                        },
+                        "_links": {
+                            "self": {
+                                "href": "https://api.edamam.com/api/recipes/v2/5468c90461906a23c8780eb197c7246f?type=public&app_id=f3afe7be&app_key=cfa430402075604d56fc1e8c94096b51",
+                                "title": "Self"
+                            }
+                        }
+                    },
+        {
+                    "recipe": {
+                        "label": "Baked Chicken Thigh with Kecap Manis",
+                        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/d3a/d3a3b943ada585de17412013abd16924.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjECUaCXVzLWVhc3QtMSJHMEUCIAp76RBJb3%2FGqQ2EqxGtCiZLJnM%2FaAElEsMYJzW%2FSpI%2FAiEAivb7i9wjsGCz%2BQfPLaC%2F%2F609Yu43Vrhy87x%2FVa%2BlxFsq0gQILRAAGgwxODcwMTcxNTA5ODYiDICJtuToDe2Zp1PfciqvBAyz3bEw5sg4CFEzO0cdPIQyI2Y6p9giVxLrF5UueLXxFaKCeEbfHwfaQ%2Fzuhl0FdvVg6guH6UCHZra9ncs43mJX4r8fgQURhNLYKh3SoRzupXzqjAsp5ujC5vFzVxP%2BJBKS3zvyhzhgT%2Fvq3ZWZgUl8xfp86Yv07rkf6qrBzVz4JmSmHL9mwZrGSyTd6l6GLAO9ISmmdlRHqZwJs323F9TCr3udsMEPljrEGvw2SqtIpgpJAYmc6%2F8m3eX6SicsjG1bIbVjonu1T74W4eBqEFwxp55VIyZrAqybvHrsfMsJYNIf02IXU4IE87aCGXswgwm5r9D9JoVoT9EY8c1s9qz5a2qydT1YmxddXQqclgtIkAlRwF8WIP4MkzwIoxfU0syFdCc5JikEttEU7bzqUjYdSG67dyc%2FtdXZ2fpHATlVRHvAJE8tYVajCGa5L0fMQ301%2BqXxEEblvNWkla%2Bs1yFVLQ1Al5hcdzBahpLN9eMTlStt2tI5M4D2garQoYjsfETUqfyEJf7X9dYUVosWMqxpIQjbcuCzw%2BXazIXg98tuUotInFmL6wwaGKG%2FqhlNu1zpo8Z50XVFI6M3EtZD0WBaxuxc8slose1XY1LzshB4u6MRdNM1dR6CM8Au24hLwfBI3QqdcaFH2w7P64v%2B%2BHD2ci5uEKynjNkU3qLcgJtokbVD4mhc8uk4rfFA5b%2B8T9pX8jfDO9ijNRvD87%2Fjj6tMAMTg1dzVnvY68UNttOMwx%2BqMlQY6qQGjGCPiHs66PLnaBpjkX%2FvOW370xi8lhs5xjyMxKel8%2FwIhgSPY5xe%2B3ZTw%2B3tvgou5q4EBn%2FCe9TuoOhUSAKhskfPRz6KMRmWWudeavtaDOIw0dMquvFlTvDbFkjY1X1fA54T5xB%2FiZKny1pCKu8aTZtq0SRiKiYDEvpJlErNBwmX6irrALUYwCQKNHWmSG2L9DG3GGWpqliFdQkCfmOS3DPyAv2jv9N7H&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220610T125448Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFANBTJK4H%2F20220610%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=d40906a5ca7c402efc72033243fffaae4cd6d5085327a5576b3e9cd01d6fb87e",
+                        "url": "http://dailycookingquest.com/by-cuisine/indonesian/baked-chicken-thigh-with-kecap-manis",
+                        "ingredientLines": [
+                            "* 500 gram chicken thigh fillet",
+                            "* 2 tablespoon kecap mani (indonesian sweet soy sauce)",
+                            "* 2 tablespoon tomato ketchup (indonesian: sau tomat)",
+                            "* 1 tablespoon sesame oil",
+                            "* 2 tablespoon sesame seed"
+                        ],
+                        "ingredients": [
+                            {
+                                "text": "* 500 gram chicken thigh fillet",
+                                "quantity": 500.0,
+                                "measure": "gram",
+                                "food": "chicken thigh",
+                                "weight": 500.0,
+                                "foodCategory": "Poultry",
+                                "foodId": "food_bsarl08be0gwarb34bpviafna9d4",
+                                "image": "https://www.edamam.com/food-img/007/00792642367e1f55de680762f85cfb3b.jpg"
+                            },
+                            {
+                                "text": "* 2 tablespoon kecap mani (indonesian sweet soy sauce)",
+                                "quantity": 2.0,
+                                "measure": "tablespoon",
+                                "food": "soy sauce",
+                                "weight": 32.0,
+                                "foodCategory": "plant-based protein",
+                                "foodId": "food_a5g9yevb1iactoaiimbvjbkrxueh",
+                                "image": "https://www.edamam.com/food-img/f56/f562e461eb0618f367f538b836c17b82.jpg"
+                            },
+                            {
+                                "text": "* 2 tablespoon tomato ketchup (indonesian: sau tomat)",
+                                "quantity": 2.0,
+                                "measure": "tablespoon",
+                                "food": "tomato ketchup",
+                                "weight": 34.0,
+                                "foodCategory": "condiments and sauces",
+                                "foodId": "food_au7jthtab0n3era9uue8pauakroe",
+                                "image": "https://www.edamam.com/food-img/257/257207c446011b849001ae596390341c.jpeg"
+                            },
+                            {
+                                "text": "* 1 tablespoon sesame oil",
+                                "quantity": 1.0,
+                                "measure": "tablespoon",
+                                "food": "sesame oil",
+                                "weight": 13.6,
+                                "foodCategory": "Oils",
+                                "foodId": "food_b2id9opa0l5afvbw2do5xa1fnz4q",
+                                "image": "https://www.edamam.com/food-img/b87/b874ddcfb6770adc7a155355a902ffb8.jpg"
+                            },
+                            {
+                                "text": "* 2 tablespoon sesame seed",
+                                "quantity": 2.0,
+                                "measure": "tablespoon",
+                                "food": "sesame seed",
+                                "weight": 18.0,
+                                "foodCategory": "plant-based protein",
+                                "foodId": "food_bvxfnx8bwz2q3abs04kd6bbuf9w8",
+                                "image": "https://www.edamam.com/food-img/291/291b355a7a0948716243164427697279.jpg"
+                            }
+                        ],
+                        "totalTime": 0.0
+                    },
+                    "_links": {
+                        "self": {
+                            "href": "https://api.edamam.com/api/recipes/v2/14204eb0b2e6e963743d2e171e56452c?type=public&app_id=f3afe7be&app_key=cfa430402075604d56fc1e8c94096b51",
+                            "title": "Self"
+                        }
+                    }
+                },
+        {
+                    "recipe": {
+                        "label": "Portuguese Tomato Rice (Arroz de Tomate)",
+                        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/619/619e8e59d0352d6c97f2067f743ba0a5?X-Amz-Security-Token=IQoJb3JpZ2luX2VjECUaCXVzLWVhc3QtMSJHMEUCIAp76RBJb3%2FGqQ2EqxGtCiZLJnM%2FaAElEsMYJzW%2FSpI%2FAiEAivb7i9wjsGCz%2BQfPLaC%2F%2F609Yu43Vrhy87x%2FVa%2BlxFsq0gQILRAAGgwxODcwMTcxNTA5ODYiDICJtuToDe2Zp1PfciqvBAyz3bEw5sg4CFEzO0cdPIQyI2Y6p9giVxLrF5UueLXxFaKCeEbfHwfaQ%2Fzuhl0FdvVg6guH6UCHZra9ncs43mJX4r8fgQURhNLYKh3SoRzupXzqjAsp5ujC5vFzVxP%2BJBKS3zvyhzhgT%2Fvq3ZWZgUl8xfp86Yv07rkf6qrBzVz4JmSmHL9mwZrGSyTd6l6GLAO9ISmmdlRHqZwJs323F9TCr3udsMEPljrEGvw2SqtIpgpJAYmc6%2F8m3eX6SicsjG1bIbVjonu1T74W4eBqEFwxp55VIyZrAqybvHrsfMsJYNIf02IXU4IE87aCGXswgwm5r9D9JoVoT9EY8c1s9qz5a2qydT1YmxddXQqclgtIkAlRwF8WIP4MkzwIoxfU0syFdCc5JikEttEU7bzqUjYdSG67dyc%2FtdXZ2fpHATlVRHvAJE8tYVajCGa5L0fMQ301%2BqXxEEblvNWkla%2Bs1yFVLQ1Al5hcdzBahpLN9eMTlStt2tI5M4D2garQoYjsfETUqfyEJf7X9dYUVosWMqxpIQjbcuCzw%2BXazIXg98tuUotInFmL6wwaGKG%2FqhlNu1zpo8Z50XVFI6M3EtZD0WBaxuxc8slose1XY1LzshB4u6MRdNM1dR6CM8Au24hLwfBI3QqdcaFH2w7P64v%2B%2BHD2ci5uEKynjNkU3qLcgJtokbVD4mhc8uk4rfFA5b%2B8T9pX8jfDO9ijNRvD87%2Fjj6tMAMTg1dzVnvY68UNttOMwx%2BqMlQY6qQGjGCPiHs66PLnaBpjkX%2FvOW370xi8lhs5xjyMxKel8%2FwIhgSPY5xe%2B3ZTw%2B3tvgou5q4EBn%2FCe9TuoOhUSAKhskfPRz6KMRmWWudeavtaDOIw0dMquvFlTvDbFkjY1X1fA54T5xB%2FiZKny1pCKu8aTZtq0SRiKiYDEvpJlErNBwmX6irrALUYwCQKNHWmSG2L9DG3GGWpqliFdQkCfmOS3DPyAv2jv9N7H&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220610T125448Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFANBTJK4H%2F20220610%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=7a93e1f1a2c401589036eff5e2328587a9c1564aad4978db9be1b175a2b16e7a",
+                        "url": "https://www.justapinch.com/recipes/side/rice-side/portuguese-tomato-rice-arroz-de-tomate.html",
+                        "ingredientLines": [
+                            "1/4 c olive oil",
+                            "2 Tbsp butter, unsalted",
+                            "1 large yellow onion, peeled and chopped",
+                            "2 clove garlic, peeled and chopped",
+                            "2 large tomatoes, peeled, seeded, and chopped",
+                            "3 c chicken broth (or beef)",
+                            "2 c long grain rice, uncooked",
+                            "· salt and pepper, to taste",
+                            "· chopped fresh cilantro, for garnish (optional)"
+                        ],
+                        "ingredients": [
+                            {
+                                "text": "1/4 c olive oil",
+                                "quantity": 0.25,
+                                "measure": "cup",
+                                "food": "olive oil",
+                                "weight": 54.0,
+                                "foodCategory": "Oils",
+                                "foodId": "food_b1d1icuad3iktrbqby0hiagafaz7",
+                                "image": "https://www.edamam.com/food-img/4d6/4d651eaa8a353647746290c7a9b29d84.jpg"
+                            },
+                            {
+                                "text": "2 Tbsp butter, unsalted",
+                                "quantity": 2.0,
+                                "measure": "tablespoon",
+                                "food": "butter",
+                                "weight": 28.4,
+                                "foodCategory": "Dairy",
+                                "foodId": "food_awz3iefajbk1fwahq9logahmgltj",
+                                "image": "https://www.edamam.com/food-img/713/71397239b670d88c04faa8d05035cab4.jpg"
+                            },
+                            {
+                                "text": "1 large yellow onion, peeled and chopped",
+                                "quantity": 1.0,
+                                "measure": "<unit>",
+                                "food": "yellow onion",
+                                "weight": 150.0,
+                                "foodCategory": "vegetables",
+                                "foodId": "food_bmrvi4ob4binw9a5m7l07amlfcoy",
+                                "image": "https://www.edamam.com/food-img/205/205e6bf2399b85d34741892ef91cc603.jpg"
+                            },
+                            {
+                                "text": "2 clove garlic, peeled and chopped",
+                                "quantity": 2.0,
+                                "measure": "clove",
+                                "food": "garlic",
+                                "weight": 6.0,
+                                "foodCategory": "vegetables",
+                                "foodId": "food_avtcmx6bgjv1jvay6s6stan8dnyp",
+                                "image": "https://www.edamam.com/food-img/6ee/6ee142951f48aaf94f4312409f8d133d.jpg"
+                            },
+                            {
+                                "text": "2 large tomatoes, peeled, seeded, and chopped",
+                                "quantity": 2.0,
+                                "measure": "<unit>",
+                                "food": "tomatoes",
+                                "weight": 307.5,
+                                "foodCategory": "vegetables",
+                                "foodId": "food_a6k79rrahp8fe2b26zussa3wtkqh",
+                                "image": "https://www.edamam.com/food-img/23e/23e727a14f1035bdc2733bb0477efbd2.jpg"
+                            },
+                            {
+                                "text": "3 c chicken broth (or beef)",
+                                "quantity": 3.0,
+                                "measure": "cup",
+                                "food": "chicken broth",
+                                "weight": 720.0,
+                                "foodCategory": "canned soup",
+                                "foodId": "food_bptblvzambd16nbhewqmhaw1rnh5",
+                                "image": "https://www.edamam.com/food-img/26a/26a10c4cb4e07bab54d8a687ef5ac7d8.jpg"
+                            },
+                            {
+                                "text": "2 c long grain rice, uncooked",
+                                "quantity": 2.0,
+                                "measure": "cup",
+                                "food": "long grain rice",
+                                "weight": 370.0,
+                                "foodCategory": "grains",
+                                "foodId": "food_aoretmhabmvwy5be2cqeva2lxi7k",
+                                "image": "https://www.edamam.com/food-img/e49/e4946f328d36095b279369b7bf47850a.jpg"
+                            },
+                            {
+                                "text": "· salt and pepper, to taste",
+                                "quantity": 0.0,
+                                "measure": null,
+                                "food": "salt",
+                                "weight": 9.8154,
+                                "foodCategory": "Condiments and sauces",
+                                "foodId": "food_btxz81db72hwbra2pncvebzzzum9",
+                                "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+                            },
+                            {
+                                "text": "· salt and pepper, to taste",
+                                "quantity": 0.0,
+                                "measure": null,
+                                "food": "pepper",
+                                "weight": 4.9077,
+                                "foodCategory": "Condiments and sauces",
+                                "foodId": "food_b6ywzluaaxv02wad7s1r9ag4py89",
+                                "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+                            },
+                            {
+                                "text": "· chopped fresh cilantro, for garnish (optional)",
+                                "quantity": 0.0,
+                                "measure": null,
+                                "food": "cilantro",
+                                "weight": 16.359,
+                                "foodCategory": "vegetables",
+                                "foodId": "food_alhzhuwb4lc7jnb5s6f02by60bzp",
+                                "image": "https://www.edamam.com/food-img/d57/d57e375b6ff99a90c7ee2b1990a1af36.jpg"
+                            }
+                        ],
+                        "totalTime": 50.0
+                    },
+                    "_links": {
+                        "self": {
+                            "href": "https://api.edamam.com/api/recipes/v2/0cb0487125321444ae66eba5d87c672d?type=public&app_id=f3afe7be&app_key=cfa430402075604d56fc1e8c94096b51",
+                            "title": "Self"
+                        }
+                    }
+                },
+        {
+                    "recipe": {
+                        "label": "Better Know a Mother Sauce: Tomate",
+                        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/1bf/1bf45e62f247d176058f9f845956d1ea.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjECUaCXVzLWVhc3QtMSJHMEUCIAp76RBJb3%2FGqQ2EqxGtCiZLJnM%2FaAElEsMYJzW%2FSpI%2FAiEAivb7i9wjsGCz%2BQfPLaC%2F%2F609Yu43Vrhy87x%2FVa%2BlxFsq0gQILRAAGgwxODcwMTcxNTA5ODYiDICJtuToDe2Zp1PfciqvBAyz3bEw5sg4CFEzO0cdPIQyI2Y6p9giVxLrF5UueLXxFaKCeEbfHwfaQ%2Fzuhl0FdvVg6guH6UCHZra9ncs43mJX4r8fgQURhNLYKh3SoRzupXzqjAsp5ujC5vFzVxP%2BJBKS3zvyhzhgT%2Fvq3ZWZgUl8xfp86Yv07rkf6qrBzVz4JmSmHL9mwZrGSyTd6l6GLAO9ISmmdlRHqZwJs323F9TCr3udsMEPljrEGvw2SqtIpgpJAYmc6%2F8m3eX6SicsjG1bIbVjonu1T74W4eBqEFwxp55VIyZrAqybvHrsfMsJYNIf02IXU4IE87aCGXswgwm5r9D9JoVoT9EY8c1s9qz5a2qydT1YmxddXQqclgtIkAlRwF8WIP4MkzwIoxfU0syFdCc5JikEttEU7bzqUjYdSG67dyc%2FtdXZ2fpHATlVRHvAJE8tYVajCGa5L0fMQ301%2BqXxEEblvNWkla%2Bs1yFVLQ1Al5hcdzBahpLN9eMTlStt2tI5M4D2garQoYjsfETUqfyEJf7X9dYUVosWMqxpIQjbcuCzw%2BXazIXg98tuUotInFmL6wwaGKG%2FqhlNu1zpo8Z50XVFI6M3EtZD0WBaxuxc8slose1XY1LzshB4u6MRdNM1dR6CM8Au24hLwfBI3QqdcaFH2w7P64v%2B%2BHD2ci5uEKynjNkU3qLcgJtokbVD4mhc8uk4rfFA5b%2B8T9pX8jfDO9ijNRvD87%2Fjj6tMAMTg1dzVnvY68UNttOMwx%2BqMlQY6qQGjGCPiHs66PLnaBpjkX%2FvOW370xi8lhs5xjyMxKel8%2FwIhgSPY5xe%2B3ZTw%2B3tvgou5q4EBn%2FCe9TuoOhUSAKhskfPRz6KMRmWWudeavtaDOIw0dMquvFlTvDbFkjY1X1fA54T5xB%2FiZKny1pCKu8aTZtq0SRiKiYDEvpJlErNBwmX6irrALUYwCQKNHWmSG2L9DG3GGWpqliFdQkCfmOS3DPyAv2jv9N7H&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220610T125448Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFANBTJK4H%2F20220610%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=e29dfb30c6598d4edf5afa9b63859fdbe1316c1502dee5d5cc7b3f43efae0ffe",
+                        "url": "http://www.girlgonegourmet.com/2015/04/better-know-a-mother-sauce-tomate.html",
+                        "ingredientLines": [
+                            "* 1 ounce salt pork, chopped",
+                            "* 1 white or yellow onion, diced",
+                            "* 1 garlic clove, chopped",
+                            "* 1/2 cup carrot diced",
+                            "* 1/2 cup celery, diced",
+                            "* 1 (28 ounce) can crushed tomato (i used san marzano)",
+                            "* 1/2 quart chicken stock",
+                            "* 1 teaspoon dried thyme",
+                            "* 3-4 sprig fresh parsley",
+                            "* 1 bay leaf",
+                            "* 5 crushed black peppercorn (see note)",
+                            "* salt"
+                        ],
+                        "ingredients": [
+                            {
+                                "text": "* 1 ounce salt pork, chopped",
+                                "quantity": 1.0,
+                                "measure": "ounce",
+                                "food": "salt pork",
+                                "weight": 28.349523125,
+                                "foodCategory": "cured meats",
+                                "foodId": "food_bhk66flbafmq93arzc83qae8nm3s",
+                                "image": "https://www.edamam.com/food-img/da7/da70f32f7b8f256edd1eb2b1ae12893a.png"
+                            },
+                            {
+                                "text": "* 1 white or yellow onion, diced",
+                                "quantity": 1.0,
+                                "measure": "<unit>",
+                                "food": "yellow onion",
+                                "weight": 125.0,
+                                "foodCategory": "vegetables",
+                                "foodId": "food_bmrvi4ob4binw9a5m7l07amlfcoy",
+                                "image": "https://www.edamam.com/food-img/205/205e6bf2399b85d34741892ef91cc603.jpg"
+                            },
+                            {
+                                "text": "* 1 garlic clove, chopped",
+                                "quantity": 1.0,
+                                "measure": "clove",
+                                "food": "garlic",
+                                "weight": 3.0,
+                                "foodCategory": "vegetables",
+                                "foodId": "food_avtcmx6bgjv1jvay6s6stan8dnyp",
+                                "image": "https://www.edamam.com/food-img/6ee/6ee142951f48aaf94f4312409f8d133d.jpg"
+                            },
+                            {
+                                "text": "* 1/2 cup carrot diced",
+                                "quantity": 0.5,
+                                "measure": "cup",
+                                "food": "carrot",
+                                "weight": 61.0,
+                                "foodCategory": "vegetables",
+                                "foodId": "food_ai215e5b85pdh5ajd4aafa3w2zm8",
+                                "image": "https://www.edamam.com/food-img/121/121e33fce0bb9546ed7d060b6c114e29.jpg"
+                            },
+                            {
+                                "text": "* 1/2 cup celery, diced",
+                                "quantity": 0.5,
+                                "measure": "cup",
+                                "food": "celery",
+                                "weight": 50.5,
+                                "foodCategory": "vegetables",
+                                "foodId": "food_bffeoksbyyur8ja4da73ub2xs57g",
+                                "image": "https://www.edamam.com/food-img/d91/d91d2aed1c36d8fad54c4d7dc58f5a18.jpg"
+                            },
+                            {
+                                "text": "* 1 (28 ounce) can crushed tomato (i used san marzano)",
+                                "quantity": 28.0,
+                                "measure": "ounce",
+                                "food": "crushed tomato",
+                                "weight": 793.7866475000001,
+                                "foodCategory": "canned vegetables",
+                                "foodId": "food_aqqtb83adjyq8ybf51yo8bsjetdh",
+                                "image": null
+                            },
+                            {
+                                "text": "* 1/2 quart chicken stock",
+                                "quantity": 0.5,
+                                "measure": "quart",
+                                "food": "chicken stock",
+                                "weight": 480.0,
+                                "foodCategory": "canned soup",
+                                "foodId": "food_bptblvzambd16nbhewqmhaw1rnh5",
+                                "image": "https://www.edamam.com/food-img/26a/26a10c4cb4e07bab54d8a687ef5ac7d8.jpg"
+                            },
+                            {
+                                "text": "* 1 teaspoon dried thyme",
+                                "quantity": 1.0,
+                                "measure": "teaspoon",
+                                "food": "dried thyme",
+                                "weight": 1.0,
+                                "foodCategory": "Condiments and sauces",
+                                "foodId": "food_avsq22zadwyb5cb5sl1byaa4mbo8",
+                                "image": "https://www.edamam.com/food-img/89b/89b37a04e46e052671d73addcb84aa51.jpg"
+                            },
+                            {
+                                "text": "* 3-4 sprig fresh parsley",
+                                "quantity": 3.5,
+                                "measure": "sprig",
+                                "food": "parsley",
+                                "weight": 3.5,
+                                "foodCategory": "vegetables",
+                                "foodId": "food_b244pqdazw24zobr5vqu2bf0uid8",
+                                "image": "https://www.edamam.com/food-img/46a/46a132e96626d7989b4d6ed8c91f4da0.jpg"
+                            },
+                            {
+                                "text": "* 1 bay leaf",
+                                "quantity": 1.0,
+                                "measure": "<unit>",
+                                "food": "bay leaf",
+                                "weight": 0.6,
+                                "foodCategory": "Condiments and sauces",
+                                "foodId": "food_asx39x4ayja4jab6ivj6zayvkblo",
+                                "image": "https://www.edamam.com/food-img/0f9/0f9f5f95df173e9ffaaff2977bef88f3.jpg"
+                            },
+                            {
+                                "text": "* 5 crushed black peppercorn (see note)",
+                                "quantity": 5.0,
+                                "measure": "<unit>",
+                                "food": "black peppercorn",
+                                "weight": 1.5,
+                                "foodCategory": "Condiments and sauces",
+                                "foodId": "food_b6ywzluaaxv02wad7s1r9ag4py89",
+                                "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+                            },
+                            {
+                                "text": "* salt",
+                                "quantity": 0.0,
+                                "measure": null,
+                                "food": "salt",
+                                "weight": 9.28941702375,
+                                "foodCategory": "Condiments and sauces",
+                                "foodId": "food_btxz81db72hwbra2pncvebzzzum9",
+                                "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+                            }
+                        ],
+                        "totalTime": 0.0
+                    },
+                    "_links": {
+                        "self": {
+                            "href": "https://api.edamam.com/api/recipes/v2/fb4f328966fdc72658c3fe270d132a61?type=public&app_id=f3afe7be&app_key=cfa430402075604d56fc1e8c94096b51",
+                            "title": "Self"
+                        }
+                    }
+                },
+        {
+                    "recipe": {
+                        "label": "Sauce Tomate A La Tante Ella (Creamy Tomat",
+                        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/b6d/b6d9e1cf7471ae50c367b4c321c7b8c3.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjECUaCXVzLWVhc3QtMSJHMEUCIAp76RBJb3%2FGqQ2EqxGtCiZLJnM%2FaAElEsMYJzW%2FSpI%2FAiEAivb7i9wjsGCz%2BQfPLaC%2F%2F609Yu43Vrhy87x%2FVa%2BlxFsq0gQILRAAGgwxODcwMTcxNTA5ODYiDICJtuToDe2Zp1PfciqvBAyz3bEw5sg4CFEzO0cdPIQyI2Y6p9giVxLrF5UueLXxFaKCeEbfHwfaQ%2Fzuhl0FdvVg6guH6UCHZra9ncs43mJX4r8fgQURhNLYKh3SoRzupXzqjAsp5ujC5vFzVxP%2BJBKS3zvyhzhgT%2Fvq3ZWZgUl8xfp86Yv07rkf6qrBzVz4JmSmHL9mwZrGSyTd6l6GLAO9ISmmdlRHqZwJs323F9TCr3udsMEPljrEGvw2SqtIpgpJAYmc6%2F8m3eX6SicsjG1bIbVjonu1T74W4eBqEFwxp55VIyZrAqybvHrsfMsJYNIf02IXU4IE87aCGXswgwm5r9D9JoVoT9EY8c1s9qz5a2qydT1YmxddXQqclgtIkAlRwF8WIP4MkzwIoxfU0syFdCc5JikEttEU7bzqUjYdSG67dyc%2FtdXZ2fpHATlVRHvAJE8tYVajCGa5L0fMQ301%2BqXxEEblvNWkla%2Bs1yFVLQ1Al5hcdzBahpLN9eMTlStt2tI5M4D2garQoYjsfETUqfyEJf7X9dYUVosWMqxpIQjbcuCzw%2BXazIXg98tuUotInFmL6wwaGKG%2FqhlNu1zpo8Z50XVFI6M3EtZD0WBaxuxc8slose1XY1LzshB4u6MRdNM1dR6CM8Au24hLwfBI3QqdcaFH2w7P64v%2B%2BHD2ci5uEKynjNkU3qLcgJtokbVD4mhc8uk4rfFA5b%2B8T9pX8jfDO9ijNRvD87%2Fjj6tMAMTg1dzVnvY68UNttOMwx%2BqMlQY6qQGjGCPiHs66PLnaBpjkX%2FvOW370xi8lhs5xjyMxKel8%2FwIhgSPY5xe%2B3ZTw%2B3tvgou5q4EBn%2FCe9TuoOhUSAKhskfPRz6KMRmWWudeavtaDOIw0dMquvFlTvDbFkjY1X1fA54T5xB%2FiZKny1pCKu8aTZtq0SRiKiYDEvpJlErNBwmX6irrALUYwCQKNHWmSG2L9DG3GGWpqliFdQkCfmOS3DPyAv2jv9N7H&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220610T125448Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFANBTJK4H%2F20220610%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=c533491c45cacd3efd13507a3cd67ad7a2e4d5234e19f4315f78f2cc492fb0fe",
+                        "url": "http://kissofswiss.com/2015/01/sauce-tomate-a-la-tante-ella/",
+                        "ingredientLines": [
+                            "* 1 teaspoon butter",
+                            "* 2 medium tomato, seeded and chopped",
+                            "* 200g black forest ham sliced, then",
+                            "* 3 clove garlic, minced",
+                            "* 1/2 teaspoon italian seasoning",
+                            "* 1/2 teaspoon oregano",
+                            "* ⅛ teaspoon curry powder",
+                            "* ⅛ teaspoon turmeric",
+                            "* ⅛ teaspoon cayenne",
+                            "* 1/4 teaspoon paprika",
+                            "* 1/2 cube of chicken bouillon",
+                            "* dash of tabasco",
+                            "* 1 can tomato puree paste, 6oz",
+                            "* 1 cup water",
+                            "* handful of grape tomato (optional)",
+                            "* 2 tablespoon fresh basil, finely chopped",
+                            "* 1 tablespoon parsley, minced",
+                            "* 1/4 - 1/2 cup heavy cream or 1/2 and 1/2",
+                            "* salt to taste",
+                            "* pepper to taste"
+                        ],
+                        "ingredients": [
+                            {
+                                "text": "* 1 teaspoon butter",
+                                "quantity": 1.0,
+                                "measure": "teaspoon",
+                                "food": "butter",
+                                "weight": 4.7291666669065355,
+                                "foodCategory": "Dairy",
+                                "foodId": "food_awz3iefajbk1fwahq9logahmgltj",
+                                "image": "https://www.edamam.com/food-img/713/71397239b670d88c04faa8d05035cab4.jpg"
+                            },
+                            {
+                                "text": "* 2 medium tomato, seeded and chopped",
+                                "quantity": 2.0,
+                                "measure": "<unit>",
+                                "food": "tomato",
+                                "weight": 246.0,
+                                "foodCategory": "vegetables",
+                                "foodId": "food_a6k79rrahp8fe2b26zussa3wtkqh",
+                                "image": "https://www.edamam.com/food-img/23e/23e727a14f1035bdc2733bb0477efbd2.jpg"
+                            },
+                            {
+                                "text": "* 200g black forest ham sliced, then",
+                                "quantity": 200.0,
+                                "measure": "gram",
+                                "food": "ham",
+                                "weight": 200.0,
+                                "foodCategory": "Cured meats",
+                                "foodId": "food_bd97wcfb5tcjnybmibiyeaqrernd",
+                                "image": "https://www.edamam.com/food-img/a4b/a4ba02f547d69f0ab89ae266903f1e49.jpg"
+                            },
+                            {
+                                "text": "* 3 clove garlic, minced",
+                                "quantity": 3.0,
+                                "measure": "clove",
+                                "food": "garlic",
+                                "weight": 9.0,
+                                "foodCategory": "vegetables",
+                                "foodId": "food_avtcmx6bgjv1jvay6s6stan8dnyp",
+                                "image": "https://www.edamam.com/food-img/6ee/6ee142951f48aaf94f4312409f8d133d.jpg"
+                            },
+                            {
+                                "text": "* 1/2 teaspoon italian seasoning",
+                                "quantity": 0.5,
+                                "measure": "teaspoon",
+                                "food": "italian seasoning",
+                                "weight": 0.5,
+                                "foodCategory": "Condiments and sauces",
+                                "foodId": "food_avsq22zadwyb5cb5sl1byaa4mbo8",
+                                "image": "https://www.edamam.com/food-img/89b/89b37a04e46e052671d73addcb84aa51.jpg"
+                            },
+                            {
+                                "text": "* 1/2 teaspoon oregano",
+                                "quantity": 0.5,
+                                "measure": "teaspoon",
+                                "food": "oregano",
+                                "weight": 0.5,
+                                "foodCategory": "Condiments and sauces",
+                                "foodId": "food_bkkw6v3bdf0sqiazmzyuiax7i8jr",
+                                "image": "https://www.edamam.com/food-img/1b0/1b0eaffb1c261606e0d82fed8e9747a7.jpg"
+                            },
+                            {
+                                "text": "* ⅛ teaspoon curry powder",
+                                "quantity": 0.125,
+                                "measure": "teaspoon",
+                                "food": "curry powder",
+                                "weight": 0.25,
+                                "foodCategory": "Condiments and sauces",
+                                "foodId": "food_ao4koeoajh7yjxaq2knzrbv55y8o",
+                                "image": "https://www.edamam.com/food-img/9ce/9ce02a2887385fd2adaec8dd8adcf9c5.jpg"
+                            },
+                            {
+                                "text": "* ⅛ teaspoon turmeric",
+                                "quantity": 0.125,
+                                "measure": "teaspoon",
+                                "food": "turmeric",
+                                "weight": 0.375,
+                                "foodCategory": "Condiments and sauces",
+                                "foodId": "food_bc3ig84amucgmwba3vixyatnyd9b",
+                                "image": "https://www.edamam.com/food-img/03e/03eb469286b3caf1ae9c13e4eba13587.jpg"
+                            },
+                            {
+                                "text": "* ⅛ teaspoon cayenne",
+                                "quantity": 0.125,
+                                "measure": "teaspoon",
+                                "food": "cayenne",
+                                "weight": 0.225,
+                                "foodCategory": "Condiments and sauces",
+                                "foodId": "food_a8iooz3aris8gba605l07brngnrx",
+                                "image": "https://www.edamam.com/food-img/374/3742b9434a0fb66a45e0dd6d227ba669.jpg"
+                            },
+                            {
+                                "text": "* 1/4 teaspoon paprika",
+                                "quantity": 0.25,
+                                "measure": "teaspoon",
+                                "food": "paprika",
+                                "weight": 0.575,
+                                "foodCategory": "Condiments and sauces",
+                                "foodId": "food_a9dpcnjb883g67b3lq82ca0421ql",
+                                "image": "https://www.edamam.com/food-img/474/474d63763b9d8b9da98c5f43a114648c.jpg"
+                            },
+                            {
+                                "text": "* 1/2 cube of chicken bouillon",
+                                "quantity": 0.5,
+                                "measure": "cube",
+                                "food": "chicken bouillon",
+                                "weight": 2.4,
+                                "foodCategory": "canned soup",
+                                "foodId": "food_a9ggmiabw9zri9bjikrxiaxewk0b",
+                                "image": null
+                            },
+                            {
+                                "text": "* dash of tabasco",
+                                "quantity": 1.0,
+                                "measure": "dash",
+                                "food": "tabasco",
+                                "weight": 0.587499999761611,
+                                "foodCategory": "canned soup",
+                                "foodId": "food_abu9ntfby2jdmxa2dhtlgbub8dlu",
+                                "image": "https://www.edamam.com/food-img/240/24061557b395943062ee4f50ef0d3c2f.jpg"
+                            },
+                            {
+                                "text": "* 1 can tomato puree paste, 6oz",
+                                "quantity": 1.0,
+                                "measure": "can",
+                                "food": "tomato puree",
+                                "weight": 453.75000000000006,
+                                "foodCategory": "canned vegetables",
+                                "foodId": "food_aqqtb83adjyq8ybf51yo8bsjetdh",
+                                "image": null
+                            },
+                            {
+                                "text": "* 1 cup water",
+                                "quantity": 1.0,
+                                "measure": "cup",
+                                "food": "water",
+                                "weight": 237.0,
+                                "foodCategory": "water",
+                                "foodId": "food_a99vzubbk1ayrsad318rvbzr3dh0",
+                                "image": "https://www.edamam.com/food-img/5dd/5dd9d1361847b2ca53c4b19a8f92627e.jpg"
+                            },
+                            {
+                                "text": "* handful of grape tomato (optional)",
+                                "quantity": 1.0,
+                                "measure": "handful",
+                                "food": "grape tomato",
+                                "weight": 21.874999999999996,
+                                "foodCategory": "vegetables",
+                                "foodId": "food_a30b0hpbvavginafe0tocbf6ymje",
+                                "image": "https://www.edamam.com/food-img/23e/23e727a14f1035bdc2733bb0477efbd2.jpg"
+                            },
+                            {
+                                "text": "* 2 tablespoon fresh basil, finely chopped",
+                                "quantity": 2.0,
+                                "measure": "tablespoon",
+                                "food": "fresh basil",
+                                "weight": 5.3,
+                                "foodCategory": "Condiments and sauces",
+                                "foodId": "food_bfeht3obd58c3gak5ehpibxgbbs6",
+                                "image": "https://www.edamam.com/food-img/5f1/5f1b05685ac2b404236a5d1c1f3c8c10.jpg"
+                            },
+                            {
+                                "text": "* 1 tablespoon parsley, minced",
+                                "quantity": 1.0,
+                                "measure": "tablespoon",
+                                "food": "parsley",
+                                "weight": 3.8,
+                                "foodCategory": "vegetables",
+                                "foodId": "food_b244pqdazw24zobr5vqu2bf0uid8",
+                                "image": "https://www.edamam.com/food-img/46a/46a132e96626d7989b4d6ed8c91f4da0.jpg"
+                            },
+                            {
+                                "text": "* 1/4 - 1/2 cup heavy cream or 1/2 and 1/2",
+                                "quantity": 0.375,
+                                "measure": "cup",
+                                "food": "heavy cream",
+                                "weight": 89.25,
+                                "foodCategory": "Dairy",
+                                "foodId": "food_bgtkr21b5v16mca246x9ebnaswyo",
+                                "image": "https://www.edamam.com/food-img/484/4848d71f6a14dd5076083f5e17925420.jpg"
+                            },
+                            {
+                                "text": "* salt to taste",
+                                "quantity": 0.0,
+                                "measure": null,
+                                "food": "salt",
+                                "weight": 7.656700000000009,
+                                "foodCategory": "Condiments and sauces",
+                                "foodId": "food_btxz81db72hwbra2pncvebzzzum9",
+                                "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+                            },
+                            {
+                                "text": "* pepper to taste",
+                                "quantity": 0.0,
+                                "measure": null,
+                                "food": "pepper",
+                                "weight": 3.8283500000000044,
+                                "foodCategory": "Condiments and sauces",
+                                "foodId": "food_b6ywzluaaxv02wad7s1r9ag4py89",
+                                "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+                            }
+                        ],
+                        "totalTime": 0.0
+                    },
+                    "_links": {
+                        "self": {
+                            "href": "https://api.edamam.com/api/recipes/v2/601b480e988a6a2203bef2c234d8db24?type=public&app_id=f3afe7be&app_key=cfa430402075604d56fc1e8c94096b51",
+                            "title": "Self"
+                        }
+                    }
+                },
+        {
+                    "recipe": {
+                        "label": "Portuguese Tomato Rice (Arroz de Tomate) recipes",
+                        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/4b4/4b452a2091ed9c83bb4a62868de94ac5?X-Amz-Security-Token=IQoJb3JpZ2luX2VjECUaCXVzLWVhc3QtMSJHMEUCIAp76RBJb3%2FGqQ2EqxGtCiZLJnM%2FaAElEsMYJzW%2FSpI%2FAiEAivb7i9wjsGCz%2BQfPLaC%2F%2F609Yu43Vrhy87x%2FVa%2BlxFsq0gQILRAAGgwxODcwMTcxNTA5ODYiDICJtuToDe2Zp1PfciqvBAyz3bEw5sg4CFEzO0cdPIQyI2Y6p9giVxLrF5UueLXxFaKCeEbfHwfaQ%2Fzuhl0FdvVg6guH6UCHZra9ncs43mJX4r8fgQURhNLYKh3SoRzupXzqjAsp5ujC5vFzVxP%2BJBKS3zvyhzhgT%2Fvq3ZWZgUl8xfp86Yv07rkf6qrBzVz4JmSmHL9mwZrGSyTd6l6GLAO9ISmmdlRHqZwJs323F9TCr3udsMEPljrEGvw2SqtIpgpJAYmc6%2F8m3eX6SicsjG1bIbVjonu1T74W4eBqEFwxp55VIyZrAqybvHrsfMsJYNIf02IXU4IE87aCGXswgwm5r9D9JoVoT9EY8c1s9qz5a2qydT1YmxddXQqclgtIkAlRwF8WIP4MkzwIoxfU0syFdCc5JikEttEU7bzqUjYdSG67dyc%2FtdXZ2fpHATlVRHvAJE8tYVajCGa5L0fMQ301%2BqXxEEblvNWkla%2Bs1yFVLQ1Al5hcdzBahpLN9eMTlStt2tI5M4D2garQoYjsfETUqfyEJf7X9dYUVosWMqxpIQjbcuCzw%2BXazIXg98tuUotInFmL6wwaGKG%2FqhlNu1zpo8Z50XVFI6M3EtZD0WBaxuxc8slose1XY1LzshB4u6MRdNM1dR6CM8Au24hLwfBI3QqdcaFH2w7P64v%2B%2BHD2ci5uEKynjNkU3qLcgJtokbVD4mhc8uk4rfFA5b%2B8T9pX8jfDO9ijNRvD87%2Fjj6tMAMTg1dzVnvY68UNttOMwx%2BqMlQY6qQGjGCPiHs66PLnaBpjkX%2FvOW370xi8lhs5xjyMxKel8%2FwIhgSPY5xe%2B3ZTw%2B3tvgou5q4EBn%2FCe9TuoOhUSAKhskfPRz6KMRmWWudeavtaDOIw0dMquvFlTvDbFkjY1X1fA54T5xB%2FiZKny1pCKu8aTZtq0SRiKiYDEvpJlErNBwmX6irrALUYwCQKNHWmSG2L9DG3GGWpqliFdQkCfmOS3DPyAv2jv9N7H&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220610T125448Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFANBTJK4H%2F20220610%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=56e2e91a71397f8948bdaf490e9d125ccd4c78e339202b8ab5cb3ed2ceecd613",
+                        "url": "http://www.afamilyfeast.com/easyrecipe-print/12152-0/",
+                        "ingredientLines": [
+                            "2 tablespoons extra virgin olive oil",
+                            "1 tablespoon bacon fat (use lard if you don’t have bacon fat, but we don't recommend using vegetable shortening since it won't add much flavor to this dish)",
+                            "1 cup diced onion",
+                            "2 teaspoons minced garlic",
+                            "2 cups fresh tomatoes cored and cut into large one inch chunks (save any juice from cutting)",
+                            "1½ cups broth (we used vegetable, but chicken or beef will also work)",
+                            "1 cup long-grain white rice",
+                            "¼ teaspoon salt",
+                            "¼ teaspoon freshly ground black pepper"
+                        ],
+                        "ingredients": [
+                            {
+                                "text": "2 tablespoons extra virgin olive oil",
+                                "quantity": 2.0,
+                                "measure": "tablespoon",
+                                "food": "extra virgin olive oil",
+                                "weight": 27.0,
+                                "foodCategory": "Oils",
+                                "foodId": "food_b1d1icuad3iktrbqby0hiagafaz7",
+                                "image": "https://www.edamam.com/food-img/4d6/4d651eaa8a353647746290c7a9b29d84.jpg"
+                            },
+                            {
+                                "text": "1 tablespoon bacon fat (use lard if you don’t have bacon fat, but we don't recommend using vegetable shortening since it won't add much flavor to this dish)",
+                                "quantity": 1.0,
+                                "measure": "tablespoon",
+                                "food": "bacon fat",
+                                "weight": 12.899999999127598,
+                                "foodCategory": "Oils",
+                                "foodId": "food_aqz5b6uacuigy2abnwfxdaaixa29",
+                                "image": "https://www.edamam.com/food-img/0c8/0c8bb3745771a7dec087d3f3b6fb6b7d.jpg"
+                            },
+                            {
+                                "text": "1 cup diced onion",
+                                "quantity": 1.0,
+                                "measure": "cup",
+                                "food": "onion",
+                                "weight": 160.0,
+                                "foodCategory": "vegetables",
+                                "foodId": "food_bmrvi4ob4binw9a5m7l07amlfcoy",
+                                "image": "https://www.edamam.com/food-img/205/205e6bf2399b85d34741892ef91cc603.jpg"
+                            },
+                            {
+                                "text": "2 teaspoons minced garlic",
+                                "quantity": 2.0,
+                                "measure": "teaspoon",
+                                "food": "garlic",
+                                "weight": 5.6,
+                                "foodCategory": "vegetables",
+                                "foodId": "food_avtcmx6bgjv1jvay6s6stan8dnyp",
+                                "image": "https://www.edamam.com/food-img/6ee/6ee142951f48aaf94f4312409f8d133d.jpg"
+                            },
+                            {
+                                "text": "2 cups fresh tomatoes cored and cut into large one inch chunks (save any juice from cutting)",
+                                "quantity": 2.0,
+                                "measure": "cup",
+                                "food": "tomatoes",
+                                "weight": 298.0,
+                                "foodCategory": "vegetables",
+                                "foodId": "food_a6k79rrahp8fe2b26zussa3wtkqh",
+                                "image": "https://www.edamam.com/food-img/23e/23e727a14f1035bdc2733bb0477efbd2.jpg"
+                            },
+                            {
+                                "text": "1½ cups broth (we used vegetable, but chicken or beef will also work)",
+                                "quantity": 1.5,
+                                "measure": "cup",
+                                "food": "broth",
+                                "weight": 340.5,
+                                "foodCategory": "Vegan products",
+                                "foodId": "food_bb2qjrjamst0vmam39stubtkmrs4",
+                                "image": "https://www.edamam.com/food-img/e61/e6184a8681b772e5198ef0ca1919e1b7.jpg"
+                            },
+                            {
+                                "text": "1 cup long-grain white rice",
+                                "quantity": 1.0,
+                                "measure": "cup",
+                                "food": "rice",
+                                "weight": 195.0,
+                                "foodCategory": "grains",
+                                "foodId": "food_bpumdjzb5rtqaeabb0kbgbcgr4t9",
+                                "image": "https://www.edamam.com/food-img/0fc/0fc9fa8a3e0276198d75b2e259068f8a.jpg"
+                            },
+                            {
+                                "text": "¼ teaspoon salt",
+                                "quantity": 0.25,
+                                "measure": "teaspoon",
+                                "food": "salt",
+                                "weight": 1.5,
+                                "foodCategory": "Condiments and sauces",
+                                "foodId": "food_btxz81db72hwbra2pncvebzzzum9",
+                                "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+                            },
+                            {
+                                "text": "¼ teaspoon freshly ground black pepper",
+                                "quantity": 0.25,
+                                "measure": "teaspoon",
+                                "food": "black pepper",
+                                "weight": 0.575,
+                                "foodCategory": "Condiments and sauces",
+                                "foodId": "food_b6ywzluaaxv02wad7s1r9ag4py89",
+                                "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+                            }
+                        ],
+                        "totalTime": 65.0
+                    },
+                    "_links": {
+                        "self": {
+                            "href": "https://api.edamam.com/api/recipes/v2/58383e93d244df2531951e1604d65688?type=public&app_id=f3afe7be&app_key=cfa430402075604d56fc1e8c94096b51",
+                            "title": "Self"
+                        }
+                    }
+                },
+        {
+                    "recipe": {
+                        "label": "Chicken Afritada (Chicken Braised in Tomat",
+                        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/0eb/0ebf424503c82267e395fdd488eef3e2.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjECUaCXVzLWVhc3QtMSJHMEUCIAp76RBJb3%2FGqQ2EqxGtCiZLJnM%2FaAElEsMYJzW%2FSpI%2FAiEAivb7i9wjsGCz%2BQfPLaC%2F%2F609Yu43Vrhy87x%2FVa%2BlxFsq0gQILRAAGgwxODcwMTcxNTA5ODYiDICJtuToDe2Zp1PfciqvBAyz3bEw5sg4CFEzO0cdPIQyI2Y6p9giVxLrF5UueLXxFaKCeEbfHwfaQ%2Fzuhl0FdvVg6guH6UCHZra9ncs43mJX4r8fgQURhNLYKh3SoRzupXzqjAsp5ujC5vFzVxP%2BJBKS3zvyhzhgT%2Fvq3ZWZgUl8xfp86Yv07rkf6qrBzVz4JmSmHL9mwZrGSyTd6l6GLAO9ISmmdlRHqZwJs323F9TCr3udsMEPljrEGvw2SqtIpgpJAYmc6%2F8m3eX6SicsjG1bIbVjonu1T74W4eBqEFwxp55VIyZrAqybvHrsfMsJYNIf02IXU4IE87aCGXswgwm5r9D9JoVoT9EY8c1s9qz5a2qydT1YmxddXQqclgtIkAlRwF8WIP4MkzwIoxfU0syFdCc5JikEttEU7bzqUjYdSG67dyc%2FtdXZ2fpHATlVRHvAJE8tYVajCGa5L0fMQ301%2BqXxEEblvNWkla%2Bs1yFVLQ1Al5hcdzBahpLN9eMTlStt2tI5M4D2garQoYjsfETUqfyEJf7X9dYUVosWMqxpIQjbcuCzw%2BXazIXg98tuUotInFmL6wwaGKG%2FqhlNu1zpo8Z50XVFI6M3EtZD0WBaxuxc8slose1XY1LzshB4u6MRdNM1dR6CM8Au24hLwfBI3QqdcaFH2w7P64v%2B%2BHD2ci5uEKynjNkU3qLcgJtokbVD4mhc8uk4rfFA5b%2B8T9pX8jfDO9ijNRvD87%2Fjj6tMAMTg1dzVnvY68UNttOMwx%2BqMlQY6qQGjGCPiHs66PLnaBpjkX%2FvOW370xi8lhs5xjyMxKel8%2FwIhgSPY5xe%2B3ZTw%2B3tvgou5q4EBn%2FCe9TuoOhUSAKhskfPRz6KMRmWWudeavtaDOIw0dMquvFlTvDbFkjY1X1fA54T5xB%2FiZKny1pCKu8aTZtq0SRiKiYDEvpJlErNBwmX6irrALUYwCQKNHWmSG2L9DG3GGWpqliFdQkCfmOS3DPyAv2jv9N7H&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220610T125448Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFANBTJK4H%2F20220610%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=123ee026f76293ffde44db137eab6158f03183c3a1005f83c76e8150b446ba0f",
+                        "url": "http://salu-salo.com/chicken-afritada/",
+                        "ingredientLines": [
+                            "* 2 lb chicken (mix of thigh and drumstick)",
+                            "* 2 tablespoon lemon juice",
+                            "* 2 tablespoon soy sauce",
+                            "* 2 tablespoon olive oil",
+                            "* 2 clove garlic, chopped",
+                            "* 1 medium onion, chopped",
+                            "* 1 medium tomato, diced",
+                            "* 2 tablespoon fish sauce",
+                            "* salt and pepper, to taste",
+                            "* 1 cup tomato sauce",
+                            "* 1 cup water",
+                            "* 1 large potato, cubed",
+                            "* 1 carrot, cubed",
+                            "* 1 red bell pepper, cubed"
+                        ],
+                        "ingredients": [
+                            {
+                                "text": "* 2 lb chicken (mix of thigh and drumstick)",
+                                "quantity": 2.0,
+                                "measure": "pound",
+                                "food": "chicken",
+                                "weight": 907.18474,
+                                "foodCategory": "Poultry",
+                                "foodId": "food_bmyxrshbfao9s1amjrvhoauob6mo",
+                                "image": "https://www.edamam.com/food-img/d33/d338229d774a743f7858f6764e095878.jpg"
+                            },
+                            {
+                                "text": "* 2 tablespoon lemon juice",
+                                "quantity": 2.0,
+                                "measure": "tablespoon",
+                                "food": "lemon juice",
+                                "weight": 30.4999999994844,
+                                "foodCategory": "100% juice",
+                                "foodId": "food_bglm6vxahuauteb0n6ynfbg9eryu",
+                                "image": "https://www.edamam.com/food-img/e31/e310952d214e78a4cb8b73f30ceeaaf2.jpg"
+                            },
+                            {
+                                "text": "* 2 tablespoon soy sauce",
+                                "quantity": 2.0,
+                                "measure": "tablespoon",
+                                "food": "soy sauce",
+                                "weight": 32.0,
+                                "foodCategory": "plant-based protein",
+                                "foodId": "food_a5g9yevb1iactoaiimbvjbkrxueh",
+                                "image": "https://www.edamam.com/food-img/f56/f562e461eb0618f367f538b836c17b82.jpg"
+                            },
+                            {
+                                "text": "* 2 tablespoon olive oil",
+                                "quantity": 2.0,
+                                "measure": "tablespoon",
+                                "food": "olive oil",
+                                "weight": 27.0,
+                                "foodCategory": "Oils",
+                                "foodId": "food_b1d1icuad3iktrbqby0hiagafaz7",
+                                "image": "https://www.edamam.com/food-img/4d6/4d651eaa8a353647746290c7a9b29d84.jpg"
+                            },
+                            {
+                                "text": "* 2 clove garlic, chopped",
+                                "quantity": 2.0,
+                                "measure": "clove",
+                                "food": "garlic",
+                                "weight": 6.0,
+                                "foodCategory": "vegetables",
+                                "foodId": "food_avtcmx6bgjv1jvay6s6stan8dnyp",
+                                "image": "https://www.edamam.com/food-img/6ee/6ee142951f48aaf94f4312409f8d133d.jpg"
+                            },
+                            {
+                                "text": "* 1 medium onion, chopped",
+                                "quantity": 1.0,
+                                "measure": "<unit>",
+                                "food": "onion",
+                                "weight": 110.0,
+                                "foodCategory": "vegetables",
+                                "foodId": "food_bmrvi4ob4binw9a5m7l07amlfcoy",
+                                "image": "https://www.edamam.com/food-img/205/205e6bf2399b85d34741892ef91cc603.jpg"
+                            },
+                            {
+                                "text": "* 1 medium tomato, diced",
+                                "quantity": 1.0,
+                                "measure": "<unit>",
+                                "food": "tomato",
+                                "weight": 123.0,
+                                "foodCategory": "vegetables",
+                                "foodId": "food_a6k79rrahp8fe2b26zussa3wtkqh",
+                                "image": "https://www.edamam.com/food-img/23e/23e727a14f1035bdc2733bb0477efbd2.jpg"
+                            },
+                            {
+                                "text": "* 2 tablespoon fish sauce",
+                                "quantity": 2.0,
+                                "measure": "tablespoon",
+                                "food": "fish sauce",
+                                "weight": 36.0,
+                                "foodCategory": "canned soup",
+                                "foodId": "food_ahlu6u3ab8bu1wap7cbqua3s1quk",
+                                "image": "https://www.edamam.com/food-img/7b5/7b58b769d8bf7b79acf12a76b79ea9bc.jpg"
+                            },
+                            {
+                                "text": "* salt and pepper, to taste",
+                                "quantity": 0.0,
+                                "measure": null,
+                                "food": "salt",
+                                "weight": 13.816108439996906,
+                                "foodCategory": "Condiments and sauces",
+                                "foodId": "food_btxz81db72hwbra2pncvebzzzum9",
+                                "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+                            },
+                            {
+                                "text": "* salt and pepper, to taste",
+                                "quantity": 0.0,
+                                "measure": null,
+                                "food": "pepper",
+                                "weight": 6.908054219998453,
+                                "foodCategory": "Condiments and sauces",
+                                "foodId": "food_b6ywzluaaxv02wad7s1r9ag4py89",
+                                "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+                            },
+                            {
+                                "text": "* 1 cup tomato sauce",
+                                "quantity": 1.0,
+                                "measure": "cup",
+                                "food": "tomato sauce",
+                                "weight": 245.0,
+                                "foodCategory": "canned vegetables",
+                                "foodId": "food_altklniaqmdz3eb1rlf1ybjv8ihn",
+                                "image": null
+                            },
+                            {
+                                "text": "* 1 cup water",
+                                "quantity": 1.0,
+                                "measure": "cup",
+                                "food": "water",
+                                "weight": 237.0,
+                                "foodCategory": "water",
+                                "foodId": "food_a99vzubbk1ayrsad318rvbzr3dh0",
+                                "image": "https://www.edamam.com/food-img/5dd/5dd9d1361847b2ca53c4b19a8f92627e.jpg"
+                            },
+                            {
+                                "text": "* 1 large potato, cubed",
+                                "quantity": 1.0,
+                                "measure": "<unit>",
+                                "food": "potato",
+                                "weight": 369.0,
+                                "foodCategory": "vegetables",
+                                "foodId": "food_abiw5baauresjmb6xpap2bg3otzu",
+                                "image": "https://www.edamam.com/food-img/651/6512e82417bce15c2899630c1a2799df.jpg"
+                            },
+                            {
+                                "text": "* 1 carrot, cubed",
+                                "quantity": 1.0,
+                                "measure": "<unit>",
+                                "food": "carrot",
+                                "weight": 61.0,
+                                "foodCategory": "vegetables",
+                                "foodId": "food_ai215e5b85pdh5ajd4aafa3w2zm8",
+                                "image": "https://www.edamam.com/food-img/121/121e33fce0bb9546ed7d060b6c114e29.jpg"
+                            },
+                            {
+                                "text": "* 1 red bell pepper, cubed",
+                                "quantity": 1.0,
+                                "measure": "<unit>",
+                                "food": "red bell pepper",
+                                "weight": 119.0,
+                                "foodCategory": "vegetables",
+                                "foodId": "food_a8g63g7ak6bnmvbu7agxibp4a0dy",
+                                "image": "https://www.edamam.com/food-img/4dc/4dc48b1a506d334b4ab6671b9d56a18f.jpeg"
+                            }
+                        ],
+                        "totalTime": 0.0
+                    },
+                    "_links": {
+                        "self": {
+                            "href": "https://api.edamam.com/api/recipes/v2/cb5063b7fc9b82fab1f673b57917d373?type=public&app_id=f3afe7be&app_key=cfa430402075604d56fc1e8c94096b51",
+                            "title": "Self"
+                        }
+                    }
+                },
+    ]
+}
