@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreData
+import Alamofire
 
 final public class RecipeService {
 // MARK: - Variables
@@ -212,6 +213,63 @@ final public class RecipeService {
             try CoreDataStack.shared.viewContext.save()
         } catch  {
             warningMessage("Sorry, we have encountered an error saving the recipe.")
+        }
+    }
+
+    //MARK: -Test for tests.
+
+    public func test_get_recipes() {
+        guard !listIngredients.isEmpty else {
+            warningMessage("Please enter at least one ingredient.")
+            return
+        }
+        let request = createRequest()
+        showActivityIndicator(true)
+        let test_network_manager = test_network_manager()
+        test_network_manager.test_get_information(request: request) { recipeResponse, error in
+            self.showActivityIndicator(false)
+            guard  error == nil,
+                   let recipeResponse = recipeResponse else {
+                return
+            }
+            if let nextURL = recipeResponse.links?.next?.href {
+                self.nextRecipes = nextURL
+            }
+            self.addRecipes(recipeResponse)
+            self.goToSearchResultViewController(recipes: self.listRecipes, nextURL: self.nextRecipes)
+        }
+    }
+    
+    public func test_get_Next_Recipes() {
+        guard nextRecipes != nil else {
+            warningMessage("Sorry, but there are no more results.")
+            return
+        }
+        guard let nextRecipes = nextRecipes,
+              let url = URL(string: nextRecipes) else {return}
+        let request = URLRequest(url: url)
+        let test_network_manager = test_network_manager()
+        test_network_manager.test_get_information(request: request) { recipeResponse, error in
+            guard  error == nil,
+                   let recipeResponse = recipeResponse else {
+                return
+            }
+            if let nextURL = recipeResponse.links?.next?.href {
+                self.nextRecipes = nextURL
+            }
+            self.addRecipes(recipeResponse)
+        }
+    }
+
+    public func test_get_Image(index: Int) {
+        guard index < listRecipes.count else {return}
+        if listRecipes[index].image == nil {
+            let test_network_manager = test_network_manager()
+            test_network_manager.getImage(url: listRecipes[index].urlImage) { img in
+                guard let img = img else {return}
+                self.listRecipes[index].image = img
+                self.reloadTableView()
+            }
         }
     }
 }
