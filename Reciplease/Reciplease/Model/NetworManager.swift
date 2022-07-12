@@ -17,7 +17,7 @@ import AlamofireImage
 public final class NetworkManager {
     var sessionManager: SessionProtocol
 
-    init(session: SessionProtocol = Alamofire.AF) {
+    init(_ session: SessionProtocol = Alamofire.AF) {
         self.sessionManager = session
     }
 
@@ -67,9 +67,10 @@ public final class NetworkManager {
             completionHandler(nil)
             return
         }
-        AF.request(url).withResponseImage { response in
+        sessionManager.withURL(url).withResponseImage { response in
             DispatchQueue.main.async {
                 guard response.error == nil,
+                      response.response?.statusCode == 200,
                       let data = response.data else {
                     completionHandler(nil)
                     return
