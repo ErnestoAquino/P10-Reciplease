@@ -9,10 +9,14 @@ import Foundation
 import Alamofire
 
 class FakeResponse {
-    static var emptyRequest: URLRequest?
+    static let emptyRequest: URLRequest? = nil
     
-    static var incorrectData = "Error".data(using: .utf8)
-    
+    static let incorrectData = "Error".data(using: .utf8)
+
+    static let imageData = "image".data(using: .utf8)
+
+    static let url: String? = "https://edamam-product-images.s3.amazonaws.com/web-img/82e/82edcb8b3ed133d96d88646fb2b749c7.jpeg"
+
     static var correctData: Data? {
         let bundle = Bundle(for: FakeResponse.self)
         guard let url = bundle.url(forResource: "RecipeResponse", withExtension: "json"),
