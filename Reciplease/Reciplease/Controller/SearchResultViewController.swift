@@ -50,7 +50,6 @@ extension SearchResultViewController: UITableViewDataSource {
         if let recipe = recipeService?.listRecipes[indexPath.row] {
             if recipe.image == nil {
                     self.recipeService?.getImage(index: indexPath.row)
-//                self.recipeService?.test_get_Image(index: indexPath.row)
             }
             cell.configure(image: recipe.image,
                            nameRecipe: recipe.name,
