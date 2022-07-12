@@ -30,11 +30,11 @@ class NetworkManagerTestCase: XCTestCase {
 
     func testGivenErrorInResponse_WhenLaunchGetInformation_ThenShouldHaveAnError() {
         //Given
-        let sessionFake = SessionFake(data: nil, response: nil, result: .failure)
-        let fakeNetworkManager = test_network_manager(session: sessionFake)
+        let session = SessionFake(data: nil, response: nil, result: .failure)
+        let networkManager = NetworkManager(session)
         let request = createRequestForTest()
         //When
-        fakeNetworkManager.test_get_information(request: request) { response, error in
+        networkManager.getInformation(request: request) { response, error in
             //Then
             XCTAssertNotNil(error)
             self.expectation.fulfill()
@@ -44,10 +44,10 @@ class NetworkManagerTestCase: XCTestCase {
 
     func testGivenEmptyRequest_WhenLaunchGetInformation_ThenCompletionHandlerShouldBeNilAndNil() {
         //Given
-        let sessionFake = SessionFake(data: FakeResponse.correctData, response:FakeResponse.responseOK , result: .success)
-        let fakeNetworkManager = test_network_manager(session: sessionFake)
+        let session = SessionFake(data: FakeResponse.correctData, response:FakeResponse.responseOK , result: .success)
+        let networkManager = NetworkManager(session)
         //When
-        fakeNetworkManager.test_get_information(request: FakeResponse.emptyRequest) { response, error in
+        networkManager.getInformation(request: FakeResponse.emptyRequest) { response, error in
             //Then
             XCTAssertNil(response)
             XCTAssertNil(error)
@@ -60,10 +60,10 @@ class NetworkManagerTestCase: XCTestCase {
     func testGivenNoDataInResponse_WhenLaunchGetInformation_ThenComplationHandlerShouldBeNilAndNil() {
         //Given
         let session = SessionFake(data: nil, response: FakeResponse.responseOK, result: .success)
-        let networkManager = test_network_manager(session: session)
+        let networkManager = NetworkManager(session)
         let request = createRequestForTest()
         // When
-        networkManager.test_get_information(request: request) { response, error in
+        networkManager.getInformation(request: request) { response, error in
             // Then
             XCTAssertNil(response)
             XCTAssertNil(error)
@@ -75,10 +75,10 @@ class NetworkManagerTestCase: XCTestCase {
     func testGivenWrongStatusCode_WhenGetInformation_ThenCompletionHandlerShouldBeNil() {
         //Given
         let session = SessionFake(data: FakeResponse.correctData, response: FakeResponse.responseFail, result: .success)
-        let networkManager = test_network_manager(session: session)
+        let networkManager = NetworkManager(session)
         let request = createRequestForTest()
         //When
-        networkManager.test_get_information(request: request) { response, error in
+        networkManager.getInformation(request: request) { response, error in
             // Then
             XCTAssertNil(response)
             XCTAssertNil(error)
@@ -90,10 +90,10 @@ class NetworkManagerTestCase: XCTestCase {
     func testGivenIncorretDataReceived_WhenGetInformation_ThenCompletionHandlerShouldBeNilAndNil() {
         //Given
         let session = SessionFake(data: FakeResponse.incorrectData, response: FakeResponse.responseOK, result: .success)
-        let networkManager = test_network_manager(session: session)
+        let networkManager = NetworkManager(session)
         let request = createRequestForTest()
         //When
-        networkManager.test_get_information(request: request) { response, error in
+        networkManager.getInformation(request: request) { response, error in
             //Then
             XCTAssertNil(response)
             XCTAssertNil(error)
@@ -105,14 +105,79 @@ class NetworkManagerTestCase: XCTestCase {
     func testGivenCorrectResponse_WhenGetInformation_ThenShouldHaveNotNilResponse() {
         //Given
         let session = SessionFake(data: FakeResponse.correctData, response: FakeResponse.responseOK, result: .success)
-        let networkManager = test_network_manager(session: session)
+        let networkManager = NetworkManager(session)
         let request = createRequestForTest()
         //When
-        networkManager.test_get_information(request: request) { response, error in
+        networkManager.getInformation(request: request) { response, error in
             //Then
             XCTAssertNotNil(response)
             self.expectation.fulfill()
         }
         wait(for: [expectation], timeout: 0.01)
+    }
+
+    func testGivenNilUrl_WhenGetImage_ThenDataImageResponseShouldBeNil() {
+        //Given
+        let session = SessionFake(data: nil, response: FakeResponse.responseOK, result: .success)
+        let networkManager = NetworkManager(session)
+        //When
+        networkManager.getImage(url: nil) { data in
+            //Then
+            XCTAssertNil(data)
+            self.expectation.fulfill()
+        }
+        wait(for: [expectation], timeout: 1)
+    }
+
+    func testGivenAnError_WhenGetImage_ThenDataImageResponseShouldBeNil() {
+        //Given
+        let session = SessionFake(data: nil, response: FakeResponse.responseOK, result: .failure)
+        let networkManager = NetworkManager(session)
+        //When
+        networkManager.getImage(url: FakeResponse.url) { dataImage in
+            //Then
+            XCTAssertNil(dataImage)
+            self.expectation.fulfill()
+        }
+        wait(for: [expectation], timeout: 1)
+    }
+
+    func testGivenWrongStatusCodeInResponse_WhenGetImage_ThenDataImageResponseShouldBeNil() {
+        //Given
+        let session = SessionFake(data: FakeResponse.imageData, response: FakeResponse.responseFail, result: .success)
+        let networkManager = NetworkManager(session)
+        //When
+        networkManager.getImage(url: FakeResponse.url) { dataImage in
+            //Then
+            XCTAssertNil(dataImage)
+            self.expectation.fulfill()
+        }
+        wait(for: [expectation], timeout: 1)
+    }
+
+    func testGivenNotData_WhenGetImage_ThenDataImageResponseShouldBeNil() {
+        //Given
+        let session = SessionFake(data: nil, response: FakeResponse.responseFail, result: .failure)
+        let networkManager = NetworkManager(session)
+        //When
+        networkManager.getImage(url: FakeResponse.url) { dataImage in
+            //Then
+            XCTAssertNil(dataImage)
+            self.expectation.fulfill()
+        }
+        wait(for: [expectation], timeout: 1)
+    }
+
+    func testGivenCorrectResponse_WhenGetImage_ThenDataImageResponseShouldBeNotNil() {
+        //Given
+        let session = SessionFake(data: FakeResponse.imageData, response: FakeResponse.responseOK, result: .success)
+        let networkManager = NetworkManager(session)
+        //When
+        networkManager.getImage(url: FakeResponse.url) { dataImage in
+            //Then
+            XCTAssertNotNil(dataImage)
+            self.expectation.fulfill()
+        }
+        wait(for: [expectation], timeout: 1)
     }
 }
