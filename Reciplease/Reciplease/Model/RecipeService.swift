@@ -17,11 +17,12 @@ final public class RecipeService {
     var listIngredients: [String] = ["chicken", "curry", "tomatoes"]
     var nextRecipes: String?
     var listRecipes: [LocalRecipe] = []
-    let networkManager = NetworkManager()
+    let session: SessionProtocol
 
-    init(recipes: [LocalRecipe], nextRexipes: String?) {
+    init(recipes: [LocalRecipe], nextRexipes: String?, session: SessionProtocol = Alamofire.AF) {
         self.listRecipes = recipes
         self.nextRecipes = nextRexipes
+        self.session = session
     }
 
 // MARK: - Funtions
@@ -60,6 +61,7 @@ final public class RecipeService {
             return
         }
         let request = createRequest()
+        let networkManager = NetworkManager(session)
         showActivityIndicator(true)
         networkManager.getInformation(request: request) { recipeResponse, error in
             self.showActivityIndicator(false)
@@ -165,6 +167,7 @@ final public class RecipeService {
         guard let nextRecipes = nextRecipes,
               let url = URL(string: nextRecipes) else {return}
         let request = URLRequest(url: url)
+        let networkManager = NetworkManager(session)
         networkManager.getInformation(request: request) { recipeResponse, error in
             guard  error == nil,
                    let recipeResponse = recipeResponse else {
@@ -185,6 +188,7 @@ final public class RecipeService {
     public func getImage(index: Int) {
         guard index < listRecipes.count else {return}
         if listRecipes[index].image == nil {
+            let networkManager = NetworkManager(session)
             networkManager.getImage(url: listRecipes[index].urlImage) { img in
                 guard let img = img else {return}
                 self.listRecipes[index].image = img
