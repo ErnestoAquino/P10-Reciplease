@@ -160,12 +160,11 @@ final public class RecipeService {
      This function makes a second request to obtain more results if necessary.
      */
     public func getNextRecipes() {
-        guard nextRecipes != nil else {
+        guard let nextRecipes = nextRecipes,
+              let url = URL(string: nextRecipes) else {
             warningMessage("Sorry, but there are no more results.")
             return
         }
-        guard let nextRecipes = nextRecipes,
-              let url = URL(string: nextRecipes) else {return}
         let request = URLRequest(url: url)
         let networkManager = NetworkManager(session)
         networkManager.getInformation(request: request) { recipeResponse, error in

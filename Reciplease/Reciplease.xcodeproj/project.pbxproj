@@ -10,6 +10,7 @@
 		9401B02C284DF797003E1630 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9401B02B284DF797003E1630 /* SearchViewController.swift */; };
 		940D6C00285C86E7002B7E6E /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 940D6BFF285C86E7002B7E6E /* AlamofireImage */; };
 		941AE450284F5354005BEBB3 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941AE44F284F5354005BEBB3 /* UIButtonExtension.swift */; };
+		9423658E287EFFCE00426F0E /* RecipeResponseWithoutHits.json in Resources */ = {isa = PBXBuildFile; fileRef = 9423658D287EFFCE00426F0E /* RecipeResponseWithoutHits.json */; };
 		944F0125285762D4006E097A /* NetworManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944F0124285762D4006E097A /* NetworManager.swift */; };
 		944F012828577575006E097A /* RecipeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944F012728577575006E097A /* RecipeResponse.swift */; };
 		944F012A285B6F8E006E097A /* RecipesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944F0129285B6F8D006E097A /* RecipesTableViewCell.swift */; };
@@ -26,6 +27,7 @@
 		94A4D4DA284D113D00A42169 /* TypoRoundThinDemo-dJyK.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94A4D4D8284D113D00A42169 /* TypoRoundThinDemo-dJyK.ttf */; };
 		94A4D4DB284D113D00A42169 /* TypoRoundLightDemo-wAg3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94A4D4D9284D113D00A42169 /* TypoRoundLightDemo-wAg3.ttf */; };
 		94C10AA428610F19005A0BEA /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C10AA328610F18005A0BEA /* RecipeDetailViewController.swift */; };
+		94C7F5D3287EBE0A00AA7BAC /* RecipeResponseMissingElements.json in Resources */ = {isa = PBXBuildFile; fileRef = 94C7F5D2287EBE0A00AA7BAC /* RecipeResponseMissingElements.json */; };
 		94D7AB31284CF0910082EE94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D7AB30284CF0910082EE94 /* AppDelegate.swift */; };
 		94D7AB33284CF0910082EE94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D7AB32284CF0910082EE94 /* SceneDelegate.swift */; };
 		94D7AB38284CF0910082EE94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94D7AB36284CF0910082EE94 /* Main.storyboard */; };
@@ -56,6 +58,7 @@
 /* Begin PBXFileReference section */
 		9401B02B284DF797003E1630 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		941AE44F284F5354005BEBB3 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		9423658D287EFFCE00426F0E /* RecipeResponseWithoutHits.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RecipeResponseWithoutHits.json; sourceTree = "<group>"; };
 		944F0124285762D4006E097A /* NetworManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworManager.swift; sourceTree = "<group>"; };
 		944F012728577575006E097A /* RecipeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeResponse.swift; sourceTree = "<group>"; };
 		944F0129285B6F8D006E097A /* RecipesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTableViewCell.swift; sourceTree = "<group>"; };
@@ -71,6 +74,7 @@
 		94A4D4D8284D113D00A42169 /* TypoRoundThinDemo-dJyK.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TypoRoundThinDemo-dJyK.ttf"; sourceTree = "<group>"; };
 		94A4D4D9284D113D00A42169 /* TypoRoundLightDemo-wAg3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TypoRoundLightDemo-wAg3.ttf"; sourceTree = "<group>"; };
 		94C10AA328610F18005A0BEA /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
+		94C7F5D2287EBE0A00AA7BAC /* RecipeResponseMissingElements.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RecipeResponseMissingElements.json; sourceTree = "<group>"; };
 		94D7AB2D284CF0910082EE94 /* Reciplease.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reciplease.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D7AB30284CF0910082EE94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94D7AB32284CF0910082EE94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -231,11 +235,13 @@
 			isa = PBXGroup;
 			children = (
 				94F875E228773EF100CDAE9A /* NetworkManagerTestCase.swift */,
+				94DE49C3287DA02B006F5F45 /* RecipeServiceTestCase.swift */,
+				94F875E42877403100CDAE9A /* RecipeServiceMockDelegate.swift */,
 				94F875DA2875AC2400CDAE9A /* SessionFake.swift */,
 				94F875DE2877255200CDAE9A /* FakeResponse.swift */,
 				94F875E028772A9500CDAE9A /* RecipeResponse.json */,
-				94F875E42877403100CDAE9A /* RecipeServiceMockDelegate.swift */,
-				94DE49C3287DA02B006F5F45 /* RecipeServiceTestCase.swift */,
+				94C7F5D2287EBE0A00AA7BAC /* RecipeResponseMissingElements.json */,
+				9423658D287EFFCE00426F0E /* RecipeResponseWithoutHits.json */,
 			);
 			path = RecipleaseTests;
 			sourceTree = "<group>";
@@ -341,7 +347,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94C7F5D3287EBE0A00AA7BAC /* RecipeResponseMissingElements.json in Resources */,
 				94F875E128772A9500CDAE9A /* RecipeResponse.json in Resources */,
+				9423658E287EFFCE00426F0E /* RecipeResponseWithoutHits.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
