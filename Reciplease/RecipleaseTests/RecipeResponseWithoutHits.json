@@ -1,0 +1,12 @@
+{
+    "from": 1,
+    "to": 20,
+    "count": 28,
+    "_links": {
+        "next": {
+            "href": "https://api.edamam.com/api/recipes/v2?q=tomate%2C%20chicken&app_key=cfa430402075604d56fc1e8c94096b51&field=ingredientLines&field=ingredients&field=totalTime&field=label&field=image&field=url&_cont=CHcWQT1OcV9xBB8VADQWVhFCPwoxXVZEITQeVDcBaR4-SQ%3D%3D&type=public&app_id=f3afe7be",
+            "title": "Next page"
+        }
+    },
+
+}
