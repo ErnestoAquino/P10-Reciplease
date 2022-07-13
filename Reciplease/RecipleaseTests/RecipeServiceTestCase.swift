@@ -77,9 +77,41 @@ class RecipeServiceTestCase: XCTestCase {
         XCTAssertEqual(recipeService.listIngredients[2], "lemon")
         XCTAssertEqual(recipeService.listIngredients[3], "sel")
     }
+
+    func testGivenCorrectResponse_WhenIUseGetRecipes_ThenShouldHaveTheExpectedRecipesNames() async {
+        let exp = expectation(description: "Wait for function")
+        let recipeNameOne = "Creamy Chicken Sundried Tomates"
+        let recipeNameTwo = "Mofongo Con Salsa De Tomate (Mashed Plantains With Tomato Sauce)"
+        let recipeNameThree = "Mofongo Con Salsa De Tomate (Mashed Plantains With Tomato Sauce)"
+        let recipeNameFour = "Roasted Tomato and Garlic Soup"
+        //Given
+        let session = SessionFake(data: FakeResponse.correctData, response: FakeResponse.responseOK, result: .success)
+        let recipeService = RecipeService(recipes: [], nextRexipes: nil, session: session)
+        //When
+        recipeService.getRecipes()
+        exp.fulfill()
+        await waitForExpectations(timeout: 1)
+        //Then
+        XCTAssertEqual(recipeService.listRecipes[0].name, recipeNameOne)
+        XCTAssertEqual(recipeService.listRecipes[1].name, recipeNameTwo)
+        XCTAssertEqual(recipeService.listRecipes[2].name, recipeNameThree)
+        XCTAssertEqual(recipeService.listRecipes[3].name, recipeNameFour)
+    }
+
+    func testGivenErrorInResponse_WhenIUseGetRecipe_ThenRecipeListShouldBeEmpty() async {
+        let exp = expectation(description: "Wait for function")
+        //Given
+        let session = SessionFake(data: FakeResponse.correctData, response: FakeResponse.responseOK, result: .failure)
+        let recipeService = RecipeService(recipes: [], nextRexipes: nil, session: session)
+        //When
+        recipeService.getRecipes()
+        exp.fulfill()
+        await waitForExpectations(timeout: 1)
+        //Then
+        XCTAssertTrue(recipeService.listRecipes.isEmpty)
+    }
+
+    
 }
 
-
-//given string with three comma separated ingredients
-//when I do addIngredient
-//then I should have three ingredients added.
+//then the recipe list should be empty.
