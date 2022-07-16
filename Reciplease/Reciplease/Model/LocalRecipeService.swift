@@ -24,7 +24,7 @@ final public class LocalRecipeService {
     func fetchRecipes(){
         favoriteRecipes = []
         let request: NSFetchRequest<FavoriteRecipe> = FavoriteRecipe.fetchRequest()
-        guard let recipes =  try? CoreDataStack.shared.viewContext.fetch(request) else {
+        guard let recipes = try? CoreDataStack.shared.mainContext.fetch(request) else {
             return
         }
         for recipe in recipes {
@@ -37,17 +37,14 @@ final public class LocalRecipeService {
      
      - parameter recipe: Recipe to be deleted.
      */
-    func removeRecipe(recipe: FavoriteRecipe?) {
-        guard let recipeToRemove = recipe else {return}
-        CoreDataStack.shared.viewContext.delete(recipeToRemove)
-
+    func deleteRecipe(recipe: FavoriteRecipe?) {
+        guard let recipeToDelete = recipe else {return}
+        CoreDataStack.shared.mainContext.delete(recipeToDelete)
         do {
-            try CoreDataStack.shared.viewContext.save()
+            try CoreDataStack.shared.mainContext.save()
         } catch  {
             // TODO: Print messa error for user.
         }
-        fetchRecipes()
+       fetchRecipes()
     }
-
-    
 }

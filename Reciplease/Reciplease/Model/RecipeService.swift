@@ -203,7 +203,7 @@ final public class RecipeService {
      */
     func saveRecipe(_ recipeToSave: LocalRecipe?) {
         guard let recipeToSave = recipeToSave else { return }
-        let recipe = FavoriteRecipe(context: CoreDataStack.shared.viewContext)
+        let recipe = FavoriteRecipe(context: CoreDataStack.shared.mainContext)
         recipe.image = recipeToSave.image
         recipe.name = recipeToSave.name
         recipe.portions = recipeToSave.portions
@@ -213,7 +213,7 @@ final public class RecipeService {
         recipe.sourceUrl = recipeToSave.sourceUrl
 
         do {
-            try CoreDataStack.shared.viewContext.save()
+            try CoreDataStack.shared.mainContext.save()
         } catch  {
             warningMessage("Sorry, we have encountered an error saving the recipe.")
         }
