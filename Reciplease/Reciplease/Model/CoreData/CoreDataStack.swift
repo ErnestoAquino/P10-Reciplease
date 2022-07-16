@@ -9,23 +9,18 @@ import Foundation
 import CoreData
 
 final class CoreDataStack {
-
-    public var viewContext: NSManagedObjectContext {
-        return CoreDataStack.shared.persistentContainer.viewContext
-    }
-
     static let shared = CoreDataStack()
-    private init () {}
+    let persistentContainer: NSPersistentContainer
+    let mainContext: NSManagedObjectContext
+    let persistentContainerName = "Reciplease"
 
-    private let persistentContainerName = "Reciplease"
-    
-    private lazy var persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: persistentContainerName)
-        container.loadPersistentStores { storeDescription, error in
-            if let error = error {
-                fatalError("Unresolved error \(error)")
+    private init () {
+        persistentContainer = NSPersistentContainer(name: persistentContainerName)
+        persistentContainer.loadPersistentStores { storeDescription, error in
+            guard error == nil else {
+                fatalError("Unresolved error \(String(describing: error?.localizedDescription))")
             }
         }
-        return container
-    } ()
+        mainContext = persistentContainer.viewContext
+    }
 }
