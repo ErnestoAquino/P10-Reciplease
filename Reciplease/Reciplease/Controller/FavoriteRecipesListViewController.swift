@@ -11,7 +11,7 @@ class FavoriteRecipesListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var noRecipesView: UIView!
-    var localRecipeService = LocalRecipeService()
+    let localRecipeService = LocalRecipeService()
     
 
     override func viewDidLoad() {

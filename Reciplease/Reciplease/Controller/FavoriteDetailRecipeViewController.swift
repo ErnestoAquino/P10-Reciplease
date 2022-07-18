@@ -67,7 +67,6 @@ class FavoriteDetailRecipeViewController: UIViewController {
      This function removes the recipe from the favorites.
      */
     private func removeRecipe() {
-//        localRecipeService.removeRecipe(recipe: recipe)
         localRecipeService.deleteRecipe(recipe: recipe)
         favoriteButton.image = UIImage(systemName: "suit.heart")
     }

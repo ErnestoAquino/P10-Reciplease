@@ -65,7 +65,6 @@ extension SearchResultViewController: UITableViewDataSource {
         let lastRecipe = last - 1
         if indexPath.row == lastRecipe {
             recipeService?.getNextRecipes()
-//            recipeService?.test_get_Next_Recipes()
             tableView.reloadData()
         }
     }
