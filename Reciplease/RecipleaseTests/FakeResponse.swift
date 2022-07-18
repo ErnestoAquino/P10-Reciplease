@@ -59,4 +59,6 @@ class FakeResponse {
         let response = HTTPURLResponse(url: url, statusCode: 500, httpVersion: nil, headerFields: nil)
         return response
     }
+
+    
 }
