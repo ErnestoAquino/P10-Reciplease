@@ -10,12 +10,15 @@ import CoreData
 
 final class CoreDataStack {
     static let shared = CoreDataStack()
+
     let persistentContainer: NSPersistentContainer
     let mainContext: NSManagedObjectContext
     let persistentContainerName = "Reciplease"
 
     private init () {
         persistentContainer = NSPersistentContainer(name: persistentContainerName)
+        let description = persistentContainer.persistentStoreDescriptions.first
+        description?.type = NSSQLiteStoreType
         persistentContainer.loadPersistentStores { storeDescription, error in
             guard error == nil else {
                 fatalError("Unresolved error \(String(describing: error?.localizedDescription))")

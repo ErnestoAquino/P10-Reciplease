@@ -11,6 +11,7 @@
 		940D6C00285C86E7002B7E6E /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 940D6BFF285C86E7002B7E6E /* AlamofireImage */; };
 		941AE450284F5354005BEBB3 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941AE44F284F5354005BEBB3 /* UIButtonExtension.swift */; };
 		9423658E287EFFCE00426F0E /* RecipeResponseWithoutHits.json in Resources */ = {isa = PBXBuildFile; fileRef = 9423658D287EFFCE00426F0E /* RecipeResponseWithoutHits.json */; };
+		9449B36E288491F1002AFF37 /* LocalRecipeServiceTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9449B36D288491F1002AFF37 /* LocalRecipeServiceTestCase.swift */; };
 		944F0125285762D4006E097A /* NetworManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944F0124285762D4006E097A /* NetworManager.swift */; };
 		944F012828577575006E097A /* RecipeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944F012728577575006E097A /* RecipeResponse.swift */; };
 		944F012A285B6F8E006E097A /* RecipesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944F0129285B6F8D006E097A /* RecipesTableViewCell.swift */; };
@@ -26,6 +27,7 @@
 		948C05C6286B1FE50012C784 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C05C5286B1FE50012C784 /* CoreDataStack.swift */; };
 		94A4D4DA284D113D00A42169 /* TypoRoundThinDemo-dJyK.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94A4D4D8284D113D00A42169 /* TypoRoundThinDemo-dJyK.ttf */; };
 		94A4D4DB284D113D00A42169 /* TypoRoundLightDemo-wAg3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94A4D4D9284D113D00A42169 /* TypoRoundLightDemo-wAg3.ttf */; };
+		94BBB75728831BBB00327A26 /* CoreDataStackFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BBB75628831BBB00327A26 /* CoreDataStackFake.swift */; };
 		94C10AA428610F19005A0BEA /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C10AA328610F18005A0BEA /* RecipeDetailViewController.swift */; };
 		94C7F5D3287EBE0A00AA7BAC /* RecipeResponseMissingElements.json in Resources */ = {isa = PBXBuildFile; fileRef = 94C7F5D2287EBE0A00AA7BAC /* RecipeResponseMissingElements.json */; };
 		94D7AB31284CF0910082EE94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D7AB30284CF0910082EE94 /* AppDelegate.swift */; };
@@ -59,6 +61,7 @@
 		9401B02B284DF797003E1630 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		941AE44F284F5354005BEBB3 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		9423658D287EFFCE00426F0E /* RecipeResponseWithoutHits.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RecipeResponseWithoutHits.json; sourceTree = "<group>"; };
+		9449B36D288491F1002AFF37 /* LocalRecipeServiceTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRecipeServiceTestCase.swift; sourceTree = "<group>"; };
 		944F0124285762D4006E097A /* NetworManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworManager.swift; sourceTree = "<group>"; };
 		944F012728577575006E097A /* RecipeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeResponse.swift; sourceTree = "<group>"; };
 		944F0129285B6F8D006E097A /* RecipesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTableViewCell.swift; sourceTree = "<group>"; };
@@ -73,6 +76,7 @@
 		948C05C5286B1FE50012C784 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		94A4D4D8284D113D00A42169 /* TypoRoundThinDemo-dJyK.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TypoRoundThinDemo-dJyK.ttf"; sourceTree = "<group>"; };
 		94A4D4D9284D113D00A42169 /* TypoRoundLightDemo-wAg3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TypoRoundLightDemo-wAg3.ttf"; sourceTree = "<group>"; };
+		94BBB75628831BBB00327A26 /* CoreDataStackFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStackFake.swift; sourceTree = "<group>"; };
 		94C10AA328610F18005A0BEA /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
 		94C7F5D2287EBE0A00AA7BAC /* RecipeResponseMissingElements.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RecipeResponseMissingElements.json; sourceTree = "<group>"; };
 		94D7AB2D284CF0910082EE94 /* Reciplease.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reciplease.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -235,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				94F875E228773EF100CDAE9A /* NetworkManagerTestCase.swift */,
+				94BBB75628831BBB00327A26 /* CoreDataStackFake.swift */,
 				94DE49C3287DA02B006F5F45 /* RecipeServiceTestCase.swift */,
 				94F875E42877403100CDAE9A /* RecipeServiceMockDelegate.swift */,
 				94F875DA2875AC2400CDAE9A /* SessionFake.swift */,
@@ -242,6 +247,7 @@
 				94F875E028772A9500CDAE9A /* RecipeResponse.json */,
 				94C7F5D2287EBE0A00AA7BAC /* RecipeResponseMissingElements.json */,
 				9423658D287EFFCE00426F0E /* RecipeResponseWithoutHits.json */,
+				9449B36D288491F1002AFF37 /* LocalRecipeServiceTestCase.swift */,
 			);
 			path = RecipleaseTests;
 			sourceTree = "<group>";
@@ -391,7 +397,9 @@
 				94F875E52877403100CDAE9A /* RecipeServiceMockDelegate.swift in Sources */,
 				94F875DF2877255200CDAE9A /* FakeResponse.swift in Sources */,
 				94DE49C4287DA02B006F5F45 /* RecipeServiceTestCase.swift in Sources */,
+				94BBB75728831BBB00327A26 /* CoreDataStackFake.swift in Sources */,
 				94F875E328773EF100CDAE9A /* NetworkManagerTestCase.swift in Sources */,
+				9449B36E288491F1002AFF37 /* LocalRecipeServiceTestCase.swift in Sources */,
 				94F875DB2875AC2400CDAE9A /* SessionFake.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
