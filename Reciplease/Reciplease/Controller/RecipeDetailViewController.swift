@@ -63,7 +63,6 @@ class RecipeDetailViewController: UIViewController {
         if favoriteButton.image == UIImage(systemName: "suit.heart") {
             favoriteButton.image = UIImage(systemName: "heart.fill")
             localRecipeService.saveRecipe(recipe)
-//            recipeService.saveRecipe(recipe)
         }
     }
 }
