@@ -239,15 +239,15 @@
 			isa = PBXGroup;
 			children = (
 				94F875E228773EF100CDAE9A /* NetworkManagerTestCase.swift */,
-				94BBB75628831BBB00327A26 /* CoreDataStackFake.swift */,
 				94DE49C3287DA02B006F5F45 /* RecipeServiceTestCase.swift */,
+				9449B36D288491F1002AFF37 /* LocalRecipeServiceTestCase.swift */,
+				94BBB75628831BBB00327A26 /* CoreDataStackFake.swift */,
 				94F875E42877403100CDAE9A /* RecipeServiceMockDelegate.swift */,
 				94F875DA2875AC2400CDAE9A /* SessionFake.swift */,
 				94F875DE2877255200CDAE9A /* FakeResponse.swift */,
 				94F875E028772A9500CDAE9A /* RecipeResponse.json */,
 				94C7F5D2287EBE0A00AA7BAC /* RecipeResponseMissingElements.json */,
 				9423658D287EFFCE00426F0E /* RecipeResponseWithoutHits.json */,
-				9449B36D288491F1002AFF37 /* LocalRecipeServiceTestCase.swift */,
 			);
 			path = RecipleaseTests;
 			sourceTree = "<group>";
