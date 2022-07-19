@@ -20,6 +20,7 @@ class RecipeDetailViewController: UIViewController {
     let defaultImage = UIImage(named: "defaultImage")
     var recipe: LocalRecipe?
     var recipeService = RecipeService()
+    var localRecipeService = LocalRecipeService()
 
 
     override func viewDidLoad() {
@@ -61,7 +62,8 @@ class RecipeDetailViewController: UIViewController {
     private func saveRecipe() {
         if favoriteButton.image == UIImage(systemName: "suit.heart") {
             favoriteButton.image = UIImage(systemName: "heart.fill")
-            recipeService.saveRecipe(recipe)
+            localRecipeService.saveRecipe(recipe)
+//            recipeService.saveRecipe(recipe)
         }
     }
 }
