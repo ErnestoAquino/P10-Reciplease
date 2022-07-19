@@ -13,8 +13,14 @@ import CoreData
  *
  * This class is an object (favorite recipe) to be managed by CoreData.
  */
-//@objc(FavoriteRecipe)
 public class FavoriteRecipe: NSManagedObject {
-    
+
 }
 
+public extension NSManagedObject {
+  convenience init(using usedContext: NSManagedObjectContext) {
+    let name = String(describing: type(of: self))
+    let entity = NSEntityDescription.entity(forEntityName: name, in: usedContext)!
+    self.init(entity: entity, insertInto: usedContext)
+  }
+}
