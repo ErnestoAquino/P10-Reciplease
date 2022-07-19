@@ -14,8 +14,8 @@ import CoreData
 class LocalRecipeServiceTestCase: XCTestCase {
 
     func testGivenLocalRecipe_WhenIUseSaveRecipe_ThenTheRecipeShouldBeSaved()  {
-        let fakeCoreDataStack = FakeCoreDataStack()
-        let testlocalRecipeService = LocalRecipeService(mainContext: fakeCoreDataStack.mainContext)
+        let coreData = FakeCoreDataStack()
+        let localRecipeService = LocalRecipeService(mainContext: coreData.mainContext)
         //Given
         let recipeForTest = LocalRecipe(image: nil,
                                  name: "recipe name",
@@ -25,27 +25,27 @@ class LocalRecipeServiceTestCase: XCTestCase {
                                  urlImage: "www.urlTest.com",
                                  sourceUrl: "www.sourceURLTest")
         //When
-        testlocalRecipeService.saveRecipe(recipeForTest)
-        testlocalRecipeService.fetchRecipes()
+        localRecipeService.saveRecipe(recipeForTest)
+        localRecipeService.fetchRecipes()
         //Then
-        XCTAssertTrue(testlocalRecipeService.favoriteRecipes.count == 1)
+        XCTAssertTrue(localRecipeService.favoriteRecipes.count == 1)
     }
 
     func testGivenLocalRecipeNil_WhenIUseSaveRecipe_ThenFavoritesRecipesShouldBeEmpty() {
-        let fakeCoreData = FakeCoreDataStack()
-        let testLocalRecipe = LocalRecipeService(mainContext: fakeCoreData.mainContext)
+        let coreData = FakeCoreDataStack()
+        let localRecipeService = LocalRecipeService(mainContext: coreData.mainContext)
         // Given
         let recipeNill: LocalRecipe? = nil
         //When
-        testLocalRecipe.saveRecipe(recipeNill)
-        testLocalRecipe.fetchRecipes()
+        localRecipeService.saveRecipe(recipeNill)
+        localRecipeService.fetchRecipes()
         //Then
-        XCTAssertTrue(testLocalRecipe.favoriteRecipes.isEmpty)
+        XCTAssertTrue(localRecipeService.favoriteRecipes.isEmpty)
     }
 
     func testGivenThreeStoredRecipes_WhenIUseFetchRecipes_ThenShouldHaveThreeRecipes() {
-        let fakeCoreData = FakeCoreDataStack()
-        let localRecipeService = LocalRecipeService(mainContext: fakeCoreData.mainContext)
+        let coreData = FakeCoreDataStack()
+        let localRecipeService = LocalRecipeService(mainContext: coreData.mainContext)
         let recipeOne = LocalRecipe(image: nil,
                                  name: "recipe name",
                                  portions: "5",
@@ -77,10 +77,9 @@ class LocalRecipeServiceTestCase: XCTestCase {
         XCTAssertTrue(localRecipeService.favoriteRecipes.count == 3)
     }
 
-    func testGivenThreeStoredRecipes_WhenIDeleteARecipe_ThenShouldHaveTwoRecipes() async {
-        let exp = expectation(description: "wait for Core Data")
-        let fakeCoreData = FakeCoreDataStack()
-        let localRecipeService = LocalRecipeService(mainContext: fakeCoreData.mainContext)
+    func testGivenThreeStoredRecipes_WhenIDeleteARecipe_ThenShouldHaveTwoRecipes()  {
+        let coreData = FakeCoreDataStack()
+        let localRecipeService = LocalRecipeService(mainContext: coreData.mainContext)
         let recipeOne = LocalRecipe(image: nil,
                                  name: "recipe name",
                                  portions: "5",
@@ -107,8 +106,6 @@ class LocalRecipeServiceTestCase: XCTestCase {
         localRecipeService.saveRecipe(recipeTwo)
         localRecipeService.saveRecipe(recipeThree)
         localRecipeService.fetchRecipes()
-        exp.fulfill()
-        await waitForExpectations(timeout: 1)
         //When
         let recipeToDelete = localRecipeService.favoriteRecipes[0]
         localRecipeService.deleteRecipe(recipe: recipeToDelete)
@@ -116,10 +113,9 @@ class LocalRecipeServiceTestCase: XCTestCase {
         XCTAssertTrue(localRecipeService.favoriteRecipes.count == 2)
     }
 
-    func testGivenThreeStoredRecipes_WhenIDeleteARecipeNil_ThenShouldHaveThreeRecipes() async {
-        let exp = expectation(description: "wait for Core Data")
-        let fakeCoreData = FakeCoreDataStack()
-        let localRecipeService = LocalRecipeService(mainContext: fakeCoreData.mainContext)
+    func testGivenThreeStoredRecipes_WhenIDeleteARecipeNil_ThenShouldHaveThreeRecipes() {
+        let coreData = FakeCoreDataStack()
+        let localRecipeService = LocalRecipeService(mainContext: coreData.mainContext)
         let recipeOne = LocalRecipe(image: nil,
                                  name: "recipe name",
                                  portions: "5",
@@ -146,12 +142,49 @@ class LocalRecipeServiceTestCase: XCTestCase {
         localRecipeService.saveRecipe(recipeTwo)
         localRecipeService.saveRecipe(recipeThree)
         localRecipeService.fetchRecipes()
-        exp.fulfill()
-        await waitForExpectations(timeout: 1)
         //When
         let recipeToDelete: FavoriteRecipe? = nil
         localRecipeService.deleteRecipe(recipe: recipeToDelete)
         //Then
         XCTAssertTrue(localRecipeService.favoriteRecipes.count == 3)
     }
+
+    func testGivenASavedRecipe_WhenIFechtTheRecipe_ThenItShouldHaveTheExpectedValues() {
+        let coreData = FakeCoreDataStack()
+        let localRecipeService = LocalRecipeService(mainContext: coreData.mainContext)
+        let imageExpected = "nil".data(using: .utf8)
+        let nameExpected = "NameTest0923kado"
+        let portionsExpected = "12"
+        let urlImageExpected = "www.iwejiqe923j.com"
+        let sourceURLExpected = "www.rweri32930sk.com"
+
+        let recipe = LocalRecipe(image: "nil".data(using: .utf8),
+                                 name: "NameTest0923kado",
+                                 portions: "12",
+                                 preparationTime: "15",
+                                 ingredientsDetail: [],
+                                 urlImage: "www.iwejiqe923j.com",
+                                 sourceUrl: "www.rweri32930sk.com")
+        //Given
+        localRecipeService.saveRecipe(recipe)
+        //When
+        localRecipeService.fetchRecipes()
+        //Then
+        XCTAssertEqual(localRecipeService.favoriteRecipes[0].image, imageExpected)
+        XCTAssertEqual(localRecipeService.favoriteRecipes[0].name, nameExpected)
+        XCTAssertEqual(localRecipeService.favoriteRecipes[0].portions, portionsExpected)
+        XCTAssertEqual(localRecipeService.favoriteRecipes[0].urlImage, urlImageExpected)
+        XCTAssertEqual(localRecipeService.favoriteRecipes[0].sourceUrl, sourceURLExpected)
+    }
+
+    func testGivenEmptyFavoriteRecipeList_WhenFechRecipes_ThenListOfFavoritesRecipesShouldBeEmpty() {
+        let coreData = FakeCoreDataStack()
+        //Given
+        let localRecipeService = LocalRecipeService(mainContext: coreData.mainContext)
+        //When
+        localRecipeService.fetchRecipes()
+        //Then
+        XCTAssertTrue(localRecipeService.favoriteRecipes.isEmpty)
+    }
 }
+
