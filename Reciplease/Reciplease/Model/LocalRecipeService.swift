@@ -13,13 +13,12 @@ import CoreData
  *
  * This class manages the stored recipes.
  */
-
 final public class LocalRecipeService {
 
     var favoriteRecipes: [FavoriteRecipe] = []
-    let mainContext: NSManagedObjectContext
+    private let mainContext: NSManagedObjectContext
 
-    init (mainContext: NSManagedObjectContext = CoreDataStack.shared.mainContext){
+    init (mainContext: NSManagedObjectContext = CoreDataStack.shared.viewContext){
         self.mainContext = mainContext
     }
 
@@ -48,7 +47,7 @@ final public class LocalRecipeService {
         do {
             try mainContext.save()
         } catch  {
-            // TODO: Print messa error for user.
+            print("Sorry, we have encountered a problem deleting a recipe")
         }
        fetchRecipes()
     }
@@ -60,7 +59,7 @@ final public class LocalRecipeService {
      */
     func saveRecipe(_ recipeToSave: LocalRecipe?) {
         guard let recipeToSave = recipeToSave else { return }
-        let recipe = FavoriteRecipe(context: mainContext)
+        let recipe = FavoriteRecipe(using: mainContext)
         recipe.image = recipeToSave.image
         recipe.name = recipeToSave.name
         recipe.portions = recipeToSave.portions
@@ -72,7 +71,7 @@ final public class LocalRecipeService {
         do {
             try mainContext.save()
         } catch  {
-//            warningMessage("Sorry, we have encountered an error saving the recipe.")
+            print ("Sorry, we have encountered an error saving the recipe.")
         }
     }
 }
