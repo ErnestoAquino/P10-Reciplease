@@ -15,7 +15,7 @@ import AlamofireImage
  * This class handles network requests using the Alamofire and AlamofireImage packets.
  */
 public final class NetworkManager {
-    var sessionManager: SessionProtocol
+    private var sessionManager: SessionProtocol
 
     init(_ session: SessionProtocol = Alamofire.AF) {
         self.sessionManager = session
