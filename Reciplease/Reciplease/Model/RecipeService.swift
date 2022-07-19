@@ -9,6 +9,7 @@ import Foundation
 import CoreData
 import Alamofire
 
+
 final public class RecipeService {
 // MARK: - Variables
     weak var viewDelegate: SearchDelegate?
@@ -193,29 +194,6 @@ final public class RecipeService {
                 self.listRecipes[index].image = img
                 self.reloadTableView()
             }
-        }
-    }
-
-    /**
-     This function saves the recipe using Core Data so that it can be consulted offline.
-     
-     - parameter recipeToSave: recipe to be saved.
-     */
-    func saveRecipe(_ recipeToSave: LocalRecipe?) {
-        guard let recipeToSave = recipeToSave else { return }
-        let recipe = FavoriteRecipe(context: CoreDataStack.shared.mainContext)
-        recipe.image = recipeToSave.image
-        recipe.name = recipeToSave.name
-        recipe.portions = recipeToSave.portions
-        recipe.preparationTime = recipeToSave.preparationTime
-        recipe.ingredientsDetail = recipeToSave.ingredientsDetail.joined(separator: "\n")
-        recipe.urlImage = recipeToSave.urlImage
-        recipe.sourceUrl = recipeToSave.sourceUrl
-
-        do {
-            try CoreDataStack.shared.mainContext.save()
-        } catch  {
-            warningMessage("Sorry, we have encountered an error saving the recipe.")
         }
     }
 }
