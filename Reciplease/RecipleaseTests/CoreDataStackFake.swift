@@ -11,12 +11,13 @@ import CoreData
 
 
 class FakeCoreDataStack {
-        
-     let persistentContainer: NSPersistentContainer
-     let  mainContext: NSManagedObjectContext
+
+    private let persistentContainer: NSPersistentContainer
+    let mainContext: NSManagedObjectContext
+    private let persistentContinerName = "Reciplease"
          
     init() {
-        persistentContainer = NSPersistentContainer(name: "Reciplease")
+        persistentContainer = NSPersistentContainer(name: persistentContinerName)
         let description = persistentContainer.persistentStoreDescriptions.first
         description?.type = NSInMemoryStoreType
 
@@ -30,7 +31,31 @@ class FakeCoreDataStack {
 }
 
 
-// Non utilisee
+// Non utilisee Test
+
+class Test_FakeCoreDataStack {
+
+    static let shared = Test_FakeCoreDataStack()
+    private let persistentContainerName = "Reciplease"
+    
+    private init () {}
+
+    var viewContext: NSManagedObjectContext {
+        return Test_FakeCoreDataStack.shared.persistentContainer.viewContext
+    }
+
+    private lazy var persistentContainer: NSPersistentContainer = {
+        let container = NSPersistentContainer(name: persistentContainerName)
+        let description = container.persistentStoreDescriptions.first
+        description?.type = NSInMemoryStoreType
+        container.loadPersistentStores { storeDescription, error in
+            if let error = error as NSError? {
+                fatalError("Unresolved error \(error.userInfo) for: \(storeDescription.description)")
+            }
+        }
+        return container
+    } ()
+}
 
 
 class PersistentContainer {
@@ -63,4 +88,25 @@ class PersistentContainer {
     }
 }
 
+//class TestCoreDataStack: CoreDataStack {
+//  override init() {
+//    super.init()
+//
+//    let persistentStoreDescription = NSPersistentStoreDescription()
+//    persistentStoreDescription.type = NSInMemoryStoreType
+//
+//    let container = NSPersistentContainer(
+//      name: CoreDataStack.modelName,
+//      managedObjectModel: CoreDataStack.model)
+//    container.persistentStoreDescriptions = [persistentStoreDescription]
+//
+//    container.loadPersistentStores { _, error in
+//      if let error = error as NSError? {
+//        fatalError("Unresolved error \(error), \(error.userInfo)")
+//      }
+//    }
+//
+//    storeContainer = container
+//  }
+//}
 
