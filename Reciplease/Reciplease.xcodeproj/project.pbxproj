@@ -176,7 +176,6 @@
 				948C05C1286B1EAC0012C784 /* CoreData */,
 				947A58802855EC8200375EA7 /* RecipeService.swift */,
 				944F0124285762D4006E097A /* NetworManager.swift */,
-				94ED550F286C44E700097DF5 /* FavoriteRecipe.swift */,
 				94ED5511286CEDA200097DF5 /* LocalRecipeService.swift */,
 			);
 			path = Model;
@@ -187,6 +186,7 @@
 			children = (
 				948C05C2286B1EF80012C784 /* Reciplease.xcdatamodeld */,
 				948C05C5286B1FE50012C784 /* CoreDataStack.swift */,
+				94ED550F286C44E700097DF5 /* FavoriteRecipe.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -238,18 +238,26 @@
 		94D7AB49284CF0980082EE94 /* RecipleaseTests */ = {
 			isa = PBXGroup;
 			children = (
+				94DA7D662887108E004305CF /* Resources */,
 				94F875E228773EF100CDAE9A /* NetworkManagerTestCase.swift */,
 				94DE49C3287DA02B006F5F45 /* RecipeServiceTestCase.swift */,
 				9449B36D288491F1002AFF37 /* LocalRecipeServiceTestCase.swift */,
-				94BBB75628831BBB00327A26 /* CoreDataStackFake.swift */,
-				94F875E42877403100CDAE9A /* RecipeServiceMockDelegate.swift */,
-				94F875DA2875AC2400CDAE9A /* SessionFake.swift */,
+			);
+			path = RecipleaseTests;
+			sourceTree = "<group>";
+		};
+		94DA7D662887108E004305CF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				94F875DE2877255200CDAE9A /* FakeResponse.swift */,
+				94F875DA2875AC2400CDAE9A /* SessionFake.swift */,
+				94F875E42877403100CDAE9A /* RecipeServiceMockDelegate.swift */,
+				94BBB75628831BBB00327A26 /* CoreDataStackFake.swift */,
 				94F875E028772A9500CDAE9A /* RecipeResponse.json */,
 				94C7F5D2287EBE0A00AA7BAC /* RecipeResponseMissingElements.json */,
 				9423658D287EFFCE00426F0E /* RecipeResponseWithoutHits.json */,
 			);
-			path = RecipleaseTests;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
