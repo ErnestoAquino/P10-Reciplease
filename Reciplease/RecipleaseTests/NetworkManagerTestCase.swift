@@ -8,6 +8,11 @@
 import XCTest
 @testable import Reciplease
 
+/**
+ * NetworkManagerTestCase:
+ *
+ * Tests created for the NetworkManager class.
+ */
 class NetworkManagerTestCase: XCTestCase {
     var expectation: XCTestExpectation!
 

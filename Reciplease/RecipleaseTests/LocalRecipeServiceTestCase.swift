@@ -11,6 +11,11 @@ import CoreData
 
 
 
+/**
+ * LocalRecipeServiceTestCase:
+ *
+ * Tests created for the LocalRecipeService class.
+ */
 class LocalRecipeServiceTestCase: XCTestCase {
 
     func testGivenLocalRecipe_WhenIUseSaveRecipe_ThenTheRecipeShouldBeSaved()  {

@@ -8,6 +8,11 @@
 import XCTest
 @testable import Reciplease
 
+/**
+ * RecipeServiceTestCase:
+ *
+ * Tests created for the RecipeService class.
+ */
 class RecipeServiceTestCase: XCTestCase {
 
     var mockDelegate: RecipeServiceMockDelegate?

@@ -8,6 +8,11 @@
 import Foundation
 @testable import Reciplease
 
+/**
+ * RecipeServiceMockDelegate:
+ *
+ * Mock delegate  to test the RecipeService class.
+ */
 class RecipeServiceMockDelegate: SearchDelegate {
     var warningMessageIsCalled = false
     var refreshListIngredientWithIsCalled = false
