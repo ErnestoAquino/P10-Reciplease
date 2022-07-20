@@ -25,7 +25,7 @@ extension Session: SessionProtocol {
     func withURL(_ convertible: URLConvertible) -> DataRequestProtocol {
         request(convertible) as DataRequestProtocol
     }
-    
+
     func withRequest(_ convertible: URLRequestConvertible) -> DataRequestProtocol {
          request(convertible) as DataRequestProtocol
     }
@@ -35,7 +35,6 @@ extension DataRequest: DataRequestProtocol {
     func withResponseImage(completionHandler: @escaping (AFDataResponse<Image>) -> Void) {
         responseImage(completionHandler: completionHandler)
     }
-    
 
     func withResponse(completionHandler: @escaping (AFDataResponse<Data?>) -> Void) {
         response(completionHandler: completionHandler)

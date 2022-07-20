@@ -116,8 +116,8 @@ final class DataRequestFake: DataRequestProtocol {
  Enumeration to define the type of result to be obtained as a response when initializing the SessionFake class.
  
  Available cases:
- - **success**: Returns a correct answer and the correct data.
- - **failure**: Returns a failed answer and an error.
+ - **success**: Returns a correct response and the correct data.
+ - **failure**: Returns a failed response and an error.
  */
 enum Resultados {
     case success

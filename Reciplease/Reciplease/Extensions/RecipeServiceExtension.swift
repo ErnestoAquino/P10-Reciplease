@@ -65,12 +65,18 @@ extension RecipeService: SearchDelegate {
 }
 
 extension RecipeService {
+    /**
+     Convenience initializer to be able to add a table of recipes and a url to get more search results.
+     */
     convenience init() {
         self.init(recipes: [], nextRexipes: nil)
     }
 }
 
 extension RecipeService: SearchResultDelegate {
+    /**
+     This function reloads the Tableview
+     */
     func reloadTableView() {
         searchResultViewDelegate?.reloadTableView()
     }

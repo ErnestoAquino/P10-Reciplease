@@ -8,6 +8,11 @@
 import Foundation
 import UIKit
 
+/**
+ * RecipeResponse:
+ *
+ * Structure to retrieve the response from the EDAMAM API.
+ */
 struct RecipeResponse: Decodable {
     let from: Int?
     let towards: Int?
