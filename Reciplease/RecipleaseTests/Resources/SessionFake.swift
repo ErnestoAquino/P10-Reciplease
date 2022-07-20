@@ -7,20 +7,19 @@
 import AlamofireImage
 import Alamofire
 import Foundation
-@testable import Reciplease
 import UIKit
-enum Resultados {
-    case success
-    case failure
-}
+@testable import Reciplease
 
-class SessionFake: SessionProtocol {
-
-    
-
-    var data: Data?
-    var response: URLResponse?
-    var result: Resultados
+/**
+ * SessionFake:
+ *
+ * This class is a fake of the Session class defined in Alamofire.
+ It is initialized with the data you want to simulate in the response.
+ */
+final class SessionFake: SessionProtocol {
+    private var data: Data?
+    private var response: URLResponse?
+    private var result: Resultados
 
     init(data: Data?, response: URLResponse?, result: Resultados) {
         self.data = data
@@ -28,26 +27,44 @@ class SessionFake: SessionProtocol {
         self.result = result
     }
 
+    /**
+     This method is a fake of the request method defined in the alamofire framework.
+     
+     - parameter convertible: Variable of type URLRequest.
+     
+     - returns: Returns an instance of DataRequestFake.
+     */
     func withRequest(_ convertible: URLRequestConvertible) -> DataRequestProtocol {
         let task = DataRequestFake(data: data, urlResponse: response, result: result)
             return task
     }
 
+    /**
+     This method is a fake of the request method defined in the alamofire framework.
+     
+     - parameter convertible: String url for request.
+     
+     - returns: Returns an instance of DataRequestFake.
+     */
     func withURL(_ convertible: URLConvertible) -> DataRequestProtocol {
-        print("He sido llamado")
         let task = DataRequestFake(data: data, urlResponse: response, result: result)
             return task
     }
 }
 
-class DataRequestFake: DataRequestProtocol {
+/**
+ * DataRequestFake:
+ *
+ * This class is a fake of the DataRequest class defined in Alamofire.
+ */
+final class DataRequestFake: DataRequestProtocol {
 
-    var data: Data?
-    var urlResponse: URLResponse?
-    var result: Resultados
-    var dataImage = "Image".data(using: .utf8)
+    private var data: Data?
+    private var urlResponse: URLResponse?
+    private var result: Resultados
+    private var dataImage = "Image".data(using: .utf8)
 
-    let defaultImage = UIImage(named: "defaultImage")
+    private let defaultImage = UIImage(named: "defaultImage")
 
     init(data: Data?, urlResponse: URLResponse?, result: Resultados) {
         self.data = data
@@ -56,6 +73,14 @@ class DataRequestFake: DataRequestProtocol {
     }
 
 
+    /**
+     This method is an fake of response deifined by Alamofire.
+     
+     - parameter completionHandler:  -> DataResponse.  Is the type of response sent by alamofire.
+     The response depends on the value of Result.
+     If it is .succes the response will be .succes CorrectData.
+     If it is .failure the response will be .failure Error.
+     */
     func withResponse(completionHandler: @escaping (AFDataResponse<Data?>) -> Void) {
         switch result {
         case .success:
@@ -68,6 +93,13 @@ class DataRequestFake: DataRequestProtocol {
         }
     }
 
+    /**
+     This method is a fake of the responseImage method defined by alamofire.
+     
+     - parameter completionHandler: -> DataResponse.  Is the type of response sent by alamofire. The response depends on the value of Result.
+     If it is .succes the response will be .succes ImageData.
+     If it is .failure the response will be .failure Error.
+     */
     func withResponseImage(completionHandler: @escaping (AFDataResponse<Image>) -> Void) {
         switch result {
         case .success:
@@ -78,4 +110,16 @@ class DataRequestFake: DataRequestProtocol {
             completionHandler(responseImageFail)
         }
     }
+}
+
+/**
+ Enumeration to define the type of result to be obtained as a response when initializing the SessionFake class.
+ 
+ Available cases:
+ - **success**: Returns a correct answer and the correct data.
+ - **failure**: Returns a failed answer and an error.
+ */
+enum Resultados {
+    case success
+    case failure
 }
