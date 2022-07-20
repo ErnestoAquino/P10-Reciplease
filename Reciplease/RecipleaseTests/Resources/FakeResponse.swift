@@ -8,13 +8,16 @@
 import Foundation
 import Alamofire
 
+/**
+ * FakeResponse
+ *
+ * This class provides the necessary information to initialize the "SessionFake" class.
+ */
 class FakeResponse {
+
     static let emptyRequest: URLRequest? = nil
-    
     static let incorrectData = "Error".data(using: .utf8)
-
     static let imageData = "image".data(using: .utf8)
-
     static let url: String? = "https://edamam-product-images.s3.amazonaws.com/web-img/82e/82edcb8b3ed133d96d88646fb2b749c7.jpeg"
 
     static var correctData: Data? {
@@ -59,6 +62,4 @@ class FakeResponse {
         let response = HTTPURLResponse(url: url, statusCode: 500, httpVersion: nil, headerFields: nil)
         return response
     }
-
-    
 }
