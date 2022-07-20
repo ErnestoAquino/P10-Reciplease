@@ -18,6 +18,11 @@ public class FavoriteRecipe: NSManagedObject {
 }
 
 public extension NSManagedObject {
+  /**
+   A new convenience init to makes the entity description specific to the passed in context.
+   
+   - parameter usedContext: an instance of NSManagedObjectContext.
+   */
   convenience init(using usedContext: NSManagedObjectContext) {
     let name = String(describing: type(of: self))
     let entity = NSEntityDescription.entity(forEntityName: name, in: usedContext)!

@@ -18,7 +18,7 @@ final public class RecipeService {
     var listIngredients: [String] = ["chicken", "curry", "tomatoes"]
     var nextRecipes: String?
     var listRecipes: [LocalRecipe] = []
-    let session: SessionProtocol
+    private let session: SessionProtocol
 
     init(recipes: [LocalRecipe], nextRexipes: String?, session: SessionProtocol = Alamofire.AF) {
         self.listRecipes = recipes

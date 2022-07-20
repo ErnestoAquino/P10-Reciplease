@@ -23,7 +23,7 @@ final public class LocalRecipeService {
     }
 
     /**
-     This function fetches the recipes stored in CoreData.
+     This method fetches the stored recipes, and saves them in favoriteRecipes.
      */
     func fetchRecipes(){
         favoriteRecipes = []
