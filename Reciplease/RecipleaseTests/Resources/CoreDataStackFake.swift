@@ -10,6 +10,11 @@ import CoreData
 @testable import Reciplease
 
 
+/**
+ * FakeCoreDataStack
+ *
+ * This class is a fake of CoreDataStack. It provides the context to perform the tests using the in-memory store type.
+ */
 class FakeCoreDataStack {
 
     private let persistentContainer: NSPersistentContainer
