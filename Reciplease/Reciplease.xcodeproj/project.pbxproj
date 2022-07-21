@@ -65,6 +65,7 @@
 		944F0124285762D4006E097A /* NetworManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworManager.swift; sourceTree = "<group>"; };
 		944F012728577575006E097A /* RecipeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeResponse.swift; sourceTree = "<group>"; };
 		944F0129285B6F8D006E097A /* RecipesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTableViewCell.swift; sourceTree = "<group>"; };
+		944F3DC128894E5500C465F4 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 		945D618F286EFD08007909F9 /* FavoriteDetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDetailProtocol.swift; sourceTree = "<group>"; };
 		94650BB7285E2E2900DB606A /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		947A58802855EC8200375EA7 /* RecipeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeService.swift; sourceTree = "<group>"; };
@@ -203,6 +204,7 @@
 		94D7AB24284CF0900082EE94 = {
 			isa = PBXGroup;
 			children = (
+				944F3DC128894E5500C465F4 /* Secrets.xcconfig */,
 				94D7AB2F284CF0910082EE94 /* Reciplease */,
 				94D7AB49284CF0980082EE94 /* RecipleaseTests */,
 				94D7AB2E284CF0910082EE94 /* Products */,
@@ -444,6 +446,7 @@
 /* Begin XCBuildConfiguration section */
 		94D7AB58284CF0980082EE94 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 944F3DC128894E5500C465F4 /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -504,6 +507,7 @@
 		};
 		94D7AB59284CF0980082EE94 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 944F3DC128894E5500C465F4 /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

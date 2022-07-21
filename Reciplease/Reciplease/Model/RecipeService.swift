@@ -6,7 +6,6 @@
 //
 
 import Foundation
-//import CoreData
 import Alamofire
 
 
@@ -147,10 +146,10 @@ final public class RecipeService {
         let type = "public"
         let ingredients = listIngredients.joined(separator: ",")
         let app_id = "f3afe7be"
-        let app_key = "cfa430402075604d56fc1e8c94096b51"
 
-        guard let escapedIngredients = ingredients.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed),
-              let url = URL(string: "\(endPoint)type=\(type)&q=\(escapedIngredients)&app_id=\(app_id)&app_key=\(app_key)")
+        guard let apiKey = Bundle.main.object(forInfoDictionaryKey: "API_KEY") as? String,
+              let escapedIngredients = ingredients.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed),
+              let url = URL(string: "\(endPoint)type=\(type)&q=\(escapedIngredients)&app_id=\(app_id)&app_key=\(apiKey)")
         else {
             return nil
         }
