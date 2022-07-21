@@ -22,7 +22,7 @@ To use the application you have to create a .xcconfig file with the following:
 > API_KEY = yourApiKeyHere
 
 And then you have to add it into the info.plist
-For more details, please consult [article](https://medium.com/swift-india/secure-secrets-in-ios-app-9f66085800b4 "article").
+For more details, please consult this [article](https://medium.com/swift-india/secure-secrets-in-ios-app-9f66085800b4 "article").
 
 
 ![Simulator Screen Shot - iPhone 13 Pro Max - 2022-07-21 at 15 24 07](https://user-images.githubusercontent.com/88657406/180226681-8d365139-0abb-4da4-961f-3126bdf857ad.png)
