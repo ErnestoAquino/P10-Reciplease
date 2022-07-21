@@ -4,7 +4,7 @@
  ##  Simple recipe application.
  Project number 10 of the formation: [iOS Application Developer.](https://openclassrooms.com/fr/paths/69-developpeur-dapplication-ios#path-tabs "iOS Application Developer.")
  
-This application allows the search of recipes using the api provided by [EDAMAM](https://www.edamam.com "EDAMAM").
+This application allows the search of recipes using the API provided by [EDAMAM](https://www.edamam.com "EDAMAM").
 
 ## How Use:
 In the search page you can add the ingredients one by one or separated by a comma like this: apple, lemon, sugar.
@@ -18,11 +18,11 @@ The "get directions" button allows you to open the browser and access the full d
 The " ♡ " button allows you to add the recipe to be saved as a favorite recipe.
 
 ## Configuration
-To use the application you have to create an .xcconfig file with the following:
+To use the application you have to create a .xcconfig file with the following:
 > API_KEY = yourApiKeyHere
 
-And then you have to add  it to the info.plist
-If you want a more extensive explanation you can consult this [article](https://medium.com/swift-india/secure-secrets-in-ios-app-9f66085800b4 "article").
+And then you have to add it into the info.plist
+For more details, please consult [article](https://medium.com/swift-india/secure-secrets-in-ios-app-9f66085800b4 "article").
 
 
 ![Simulator Screen Shot - iPhone 13 Pro Max - 2022-07-21 at 15 24 07](https://user-images.githubusercontent.com/88657406/180226681-8d365139-0abb-4da4-961f-3126bdf857ad.png)
