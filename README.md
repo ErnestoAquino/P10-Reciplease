@@ -23,3 +23,9 @@ To use the application you have to create an .xcconfig file with the following:
 
 And then you have to add  it to the info.plist
 If you want a more extensive explanation you can consult this [article](https://medium.com/swift-india/secure-secrets-in-ios-app-9f66085800b4 "article").
+
+
+![Simulator Screen Shot - iPhone 13 Pro Max - 2022-07-21 at 15 24 07](https://user-images.githubusercontent.com/88657406/180226681-8d365139-0abb-4da4-961f-3126bdf857ad.png)
+![Simulator Screen Shot - iPhone 13 Pro Max - 2022-07-21 at 15 24 15](https://user-images.githubusercontent.com/88657406/180226712-f1d5f837-ef06-4211-b3d3-298c23ab8ac6.png)
+![Simulator Screen Shot - iPhone 13 Pro Max - 2022-07-21 at 15 24 22](https://user-images.githubusercontent.com/88657406/180226726-d2d0fc29-6fcb-4254-9cb0-40748fa0e70e.png)
+![Simulator Screen Shot - iPhone 13 Pro Max - 2022-07-21 at 15 24 30](https://user-images.githubusercontent.com/88657406/180226739-f650147e-b20c-446f-8cf2-9ca4847a4b80.png)
