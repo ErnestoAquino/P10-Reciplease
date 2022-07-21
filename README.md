@@ -1,8 +1,9 @@
-[![forthebadge](https://forthebadge.com/images/badges/made-with-swift.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-swift.svg)](https://forthebadge.com)[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 ### Author: *Ernesto Elias Aquino Cifuentes*
 # P10 - Reciplease
  ##  Simple recipe application.
  Project number 10 of the formation: [iOS Application Developer.](https://openclassrooms.com/fr/paths/69-developpeur-dapplication-ios#path-tabs "iOS Application Developer.")
+ 
 This application allows the search of recipes using the api provided by [EDAMAM](https://www.edamam.com "EDAMAM").
 
 ## How Use:
