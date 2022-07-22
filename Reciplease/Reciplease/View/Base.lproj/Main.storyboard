@@ -44,12 +44,14 @@
                                                 <rect key="frame" x="5" y="0.0" width="295" height="40"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <color key="tintColor" red="0.34901961679999999" green="0.57254904510000004" blue="0.37647059560000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <accessibility key="accessibilityConfiguration" hint="The ingredients must be entered in this field." label="Ingredient field"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rg-vj-gx3">
                                                 <rect key="frame" x="300" y="0.0" width="70" height="40"/>
                                                 <color key="backgroundColor" red="0.34901961679999999" green="0.57254904510000004" blue="0.37647059560000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <accessibility key="accessibilityConfiguration" hint="Add the ingredient to the list." label="Add ingredients"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="5rg-vj-gx3" secondAttribute="height" multiplier="70:40" id="4Gk-cf-5u3"/>
                                                     <constraint firstAttribute="height" constant="40" id="xOc-bu-tNd"/>
@@ -101,6 +103,7 @@
                                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="     Your indgredients :    " minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Vd2-r1-t01">
                                                 <rect key="frame" x="5" y="40.5" width="295" height="30.5"/>
                                                 <color key="backgroundColor" red="0.2117646933" green="0.20000001789999999" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <accessibility key="accessibilityConfiguration" label="Your ingredients."/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" name="TypoRoundLightDemo" family="Typo Round Light Demo" pointSize="25"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
@@ -108,6 +111,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jte-Da-uVA">
                                                 <rect key="frame" x="300" y="36" width="70" height="40"/>
                                                 <color key="backgroundColor" red="0.5411764979" green="0.5411764979" blue="0.5411764979" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <accessibility key="accessibilityConfiguration" hint="Completely clean the list of ingredients." label="Clear list."/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Jte-Da-uVA" secondAttribute="height" multiplier="70:40" id="One-pd-FEY"/>
                                                     <constraint firstAttribute="height" constant="40" id="vFI-Aq-CFI"/>
@@ -135,6 +139,7 @@
                                     <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8K-if-fbN">
                                         <rect key="frame" x="0.0" y="231" width="375" height="248"/>
                                         <color key="backgroundColor" red="0.2117646933" green="0.20000001789999999" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Completely clean the list of ingredients." label="List of ingredients."/>
                                         <string key="text">- Chicken
 - Curry
 - Tomatoes</string>
@@ -154,6 +159,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eac-vu-Na4">
                                                 <rect key="frame" x="10" y="0.0" width="355" height="45"/>
                                                 <color key="backgroundColor" red="0.34901961679999999" green="0.57254904510000004" blue="0.37647059560000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <accessibility key="accessibilityConfiguration" hint="Launch the search with the ingredients in the list." label="Search recipes."/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="hOs-wg-0b1"/>
                                                 </constraints>
@@ -280,6 +286,7 @@
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3f-FX-gPx">
                                                                     <rect key="frame" x="0.0" y="16.5" width="6.5" height="12"/>
+                                                                    <accessibility key="accessibilityConfiguration" hint="Number of portions of the recipe." label="Yields"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
@@ -287,6 +294,9 @@
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ygr-Ex-nU4">
                                                                     <rect key="frame" x="6.5" y="14" width="19" height="17.5"/>
                                                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <accessibility key="accessibilityConfiguration">
+                                                                        <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                                                    </accessibility>
                                                                 </imageView>
                                                             </subviews>
                                                         </stackView>
@@ -295,6 +305,9 @@
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOI-Yj-UO6">
                                                                     <rect key="frame" x="0.0" y="0.0" width="46" height="20"/>
+                                                                    <accessibility key="accessibilityConfiguration" hint="Preparation time of recipe." label="Time ">
+                                                                        <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                                    </accessibility>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
@@ -302,6 +315,9 @@
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wun-fy-s8n">
                                                                     <rect key="frame" x="46" y="1.5" width="14" height="16"/>
                                                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <accessibility key="accessibilityConfiguration">
+                                                                        <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                                                    </accessibility>
                                                                     <imageReference key="image" image="alarm" catalog="system" symbolScale="small"/>
                                                                 </imageView>
                                                             </subviews>
@@ -316,6 +332,9 @@
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGb-t3-n2M">
                                                             <rect key="frame" x="0.0" y="0.0" width="285" height="40.5"/>
+                                                            <accessibility key="accessibilityConfiguration" hint="Name of recipe" label="Name">
+                                                                <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                            </accessibility>
                                                             <fontDescription key="fontDescription" name="TypoRoundLightDemo" family="Typo Round Light Demo" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
@@ -323,6 +342,9 @@
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tomate, patati, patata" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0C2-JN-gUV">
                                                             <rect key="frame" x="0.0" y="40.5" width="285" height="14.5"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <accessibility key="accessibilityConfiguration" hint="Preview of ingredients." label="Ingredients">
+                                                                <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                            </accessibility>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -331,6 +353,10 @@
                                                 </stackView>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultImage" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eLQ-7o-wHn">
                                                     <rect key="frame" x="10" y="12.5" width="75" height="75"/>
+                                                    <accessibility key="accessibilityConfiguration" hint="Image of recipe." label="Image">
+                                                        <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                                        <bool key="isElement" value="YES"/>
+                                                    </accessibility>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="75" id="LpP-kb-pcK"/>
                                                         <constraint firstAttribute="width" constant="75" id="Q4X-A7-EHh"/>
@@ -393,6 +419,10 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yhm-Dn-7yD">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="244"/>
+                                <accessibility key="accessibilityConfiguration" hint="Image of recipe." label="Image ">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="yhm-Dn-7yD" secondAttribute="height" multiplier="123:80" id="GhZ-fj-Suj"/>
                                 </constraints>
@@ -402,6 +432,9 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo de la receta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZf-Le-uvn">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="20.5"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Name of recipe." label="Name">
+                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                        </accessibility>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -413,6 +446,9 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minutos" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7UV-3f-GZ8">
                                         <rect key="frame" x="0.0" y="0.0" width="111" height="20"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Preparation time." label="Time">
+                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                        </accessibility>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" red="0.5411764979" green="0.5411764979" blue="0.5411764979" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -423,6 +459,7 @@
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="porciones" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Uw-D1-Szd">
                                         <rect key="frame" x="153.5" y="0.0" width="136.5" height="20"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Portions of recipes " label="Portions"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -439,6 +476,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZr-MP-1Kk">
                                         <rect key="frame" x="0.0" y="0.0" width="355" height="45"/>
                                         <color key="backgroundColor" red="0.34901961679999999" green="0.57254904510000004" blue="0.37647059560000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Open safari in web site of recipe." label="Get Directions"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="PDg-Ky-E6D"/>
                                         </constraints>
@@ -459,6 +497,7 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="h6t-Fi-xUv">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="258.5"/>
                                         <color key="backgroundColor" red="0.2117646933" green="0.20000001789999999" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Detailed list of ingredients." label="List ingredients."/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -581,6 +620,9 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ciO-3N-QIu">
                                         <rect key="frame" x="57.5" y="265.5" width="260.5" height="43"/>
+                                        <accessibility key="accessibilityConfiguration" hint="The list of favorite recipes is empty." label="Favorite recipes empty">
+                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                        </accessibility>
                                         <string key="text">No recipes favorite  is select yet!
 Click «  ♥ » to add un recipe.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -614,6 +656,9 @@ Click «  ♥ » to add un recipe.</string>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X8A-ug-GfC">
                                                                     <rect key="frame" x="0.0" y="16.5" width="6.5" height="12"/>
+                                                                    <accessibility key="accessibilityConfiguration" hint="Yield recipe." label="Yield">
+                                                                        <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                                    </accessibility>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
@@ -629,6 +674,9 @@ Click «  ♥ » to add un recipe.</string>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Tt-nU-XPb">
                                                                     <rect key="frame" x="0.0" y="0.0" width="46" height="20"/>
+                                                                    <accessibility key="accessibilityConfiguration" hint="Preparation time." label="Time ">
+                                                                        <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                                    </accessibility>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
@@ -650,6 +698,9 @@ Click «  ♥ » to add un recipe.</string>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJn-xk-mWW">
                                                             <rect key="frame" x="0.0" y="0.0" width="285" height="40.5"/>
+                                                            <accessibility key="accessibilityConfiguration" hint="Name of recipe." label="Name">
+                                                                <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                            </accessibility>
                                                             <fontDescription key="fontDescription" name="TypoRoundLightDemo" family="Typo Round Light Demo" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
@@ -657,6 +708,7 @@ Click «  ♥ » to add un recipe.</string>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tomate, patati, patata" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6dt-Cc-1j7">
                                                             <rect key="frame" x="0.0" y="40.5" width="285" height="14.5"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <accessibility key="accessibilityConfiguration" hint="Preview of the list of ingredients." label="Ingredients."/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -665,6 +717,10 @@ Click «  ♥ » to add un recipe.</string>
                                                 </stackView>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultImage" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z4E-Kv-ewK">
                                                     <rect key="frame" x="10" y="12.5" width="75" height="75"/>
+                                                    <accessibility key="accessibilityConfiguration" hint="Image of recipe." label="Image">
+                                                        <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                                        <bool key="isElement" value="YES"/>
+                                                    </accessibility>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="75" id="he1-8t-9Nk"/>
                                                         <constraint firstAttribute="height" constant="75" id="tiF-QU-cxr"/>
@@ -728,6 +784,10 @@ Click «  ♥ » to add un recipe.</string>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rse-vu-5xb">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="244"/>
+                                <accessibility key="accessibilityConfiguration" hint="Image of recipe." label="Image">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="rse-vu-5xb" secondAttribute="height" multiplier="123:80" id="mcm-sy-SbC"/>
                                 </constraints>
@@ -737,6 +797,9 @@ Click «  ♥ » to add un recipe.</string>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo de la receta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qrO-uf-voL">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="20.5"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Name of recipe." label="Name">
+                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                        </accessibility>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -748,6 +811,9 @@ Click «  ♥ » to add un recipe.</string>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minutos" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCV-T6-wQJ">
                                         <rect key="frame" x="0.0" y="0.0" width="111" height="20"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Preparation time." label="Time">
+                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                        </accessibility>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" red="0.5411764979" green="0.5411764979" blue="0.5411764979" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -758,6 +824,9 @@ Click «  ♥ » to add un recipe.</string>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="porciones" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTQ-K5-0r6">
                                         <rect key="frame" x="153.5" y="0.0" width="136.5" height="20"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Portions recipe" label="Portions">
+                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                        </accessibility>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -774,6 +843,7 @@ Click «  ♥ » to add un recipe.</string>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2k-6Y-dhY">
                                         <rect key="frame" x="0.0" y="0.0" width="355" height="45"/>
                                         <color key="backgroundColor" red="0.34901961679999999" green="0.57254904510000004" blue="0.37647059560000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Open safari in web site of recipe." label="Get directions"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="1pW-sg-bpf"/>
                                         </constraints>
@@ -794,6 +864,7 @@ Click «  ♥ » to add un recipe.</string>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6tA-Zp-PCn">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="258.5"/>
                                         <color key="backgroundColor" red="0.2117646933" green="0.20000001789999999" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Detailed list of ingredients." label="Ingredients."/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
