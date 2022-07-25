@@ -619,11 +619,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="574"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ciO-3N-QIu">
-                                        <rect key="frame" x="57.5" y="265.5" width="260.5" height="43"/>
+                                        <rect key="frame" x="47.5" y="265.5" width="280.5" height="43"/>
                                         <accessibility key="accessibilityConfiguration" hint="The list of favorite recipes is empty." label="Favorite recipes empty">
                                             <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                         </accessibility>
-                                        <string key="text">No recipes favorite  is select yet!
+                                        <string key="text">No recipes favorite  is selected yet!
 Click «  ♥ » to add un recipe.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
